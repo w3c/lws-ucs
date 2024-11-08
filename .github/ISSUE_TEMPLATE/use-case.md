@@ -13,7 +13,7 @@ assignees: ''
 
 ## Preconditions:
 
-*What preconditions do we expect there to be fulfilled prior to this use case being triggered?*
+*What conditions must be in place or assumed before this use case can begin?*
 
 ## Trigger:
 
@@ -25,20 +25,20 @@ assignees: ''
 
 ## Distinction:
 
-*What is the challenge in realizing this use case? What distinguishes it from other, similar use cases?*
+*What unique challenges or distinguishing factors (like technical issues, user experience needs, workflow integration, etc.) are associated with this use case?*
 
 ## Scenario:
 
-*A more detailed happy-case scenario where this use case would be relevant*
+*Describe an ideal or happy-case scenario where this use case would play out as intended.*
 
 ## Alternative case(s):
 
-*What alternative flows do we think a system must cover for this use case?*
+*What alternative flows or variations should the system handle for this use case?*
 
 ## Acceptance Criteria:
 
-*When do we consider this use case to be sufficiently covered by the specification, what limitations do we consider acceptable?*
+*What conditions or criteria must be met for this use case to be considered successfully handled? What limitations are acceptable?*
 
 ## References:
 
-*Any relevant references, for example to practical examples of this use case or possible solutions (in other domains)*
+*List any relevant resources or examples that could inform this use case, possibly from other domains or solutions.*
