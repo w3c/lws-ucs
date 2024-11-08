@@ -3,7 +3,6 @@ name: Use Case
 about: Use this template to propose an LWS use case.
 title: "[UC] <<brief description of use case>>"
 labels: triage, usecase
-assignees: ''
 
 ---
 
