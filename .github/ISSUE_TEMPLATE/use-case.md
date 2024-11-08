@@ -17,7 +17,7 @@ assignees: ''
 
 ## Trigger:
 
-*What triggers this use case?*
+*What (user or system) event or action initiates this use case?*
 
 ## Actors:
 
