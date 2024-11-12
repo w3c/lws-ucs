@@ -34,6 +34,9 @@ labels: triage, usecase
 
 *What alternative flows or variations should the system handle for this use case?*
 
+## Error scenario:
+
+*What unexpected issues or errors might arise, and how should the system handle them?*
 ## Acceptance Criteria:
 
 *What conditions or criteria must be met for this use case to be considered successfully handled? What limitations are acceptable?*
