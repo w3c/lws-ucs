@@ -1,0 +1,2 @@
+ - **Storage Provider** - A Service Provider that ofers a cloud-based data storage service conformant with the LWS protocol.
+ - **Identity Provider** - The party that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials ; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider)
