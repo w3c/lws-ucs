@@ -42,7 +42,7 @@ User/developer has at least one methodology that will be available in order to u
 
 #### References:
 
-- [Resumable Uploads for HTTP](https://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.html)
+- [[[RESUMABLE_UPLOADS]]]
 
 
 ## Non-Functional Stories
