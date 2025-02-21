@@ -6,8 +6,7 @@ labels: triage
 
 ---
 
-**A [component],**
-**[MUST,SHOULD,MAY...] <<description or requirement>>**
+[component / actor] shall [behave like this | have that property]
 
 NOTE
 << additional notes>>
