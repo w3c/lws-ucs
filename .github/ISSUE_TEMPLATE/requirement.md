@@ -1,7 +1,7 @@
 ---
 name: Requirement
 about: Use this template to propose an LWS requirement.
-title: "[REQ] <<brief description of requirement>>"
+title: "[REQ-F]/[REQ-NF] <<brief description of requirement>>"
 labels: triage
 
 ---
