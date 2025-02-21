@@ -12,7 +12,9 @@ labels: triage
 NOTE
 << additional notes>>
 
-
+Supporting use-case(s):
+- [link to use-case issue]
+- ...
 
   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
   NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
