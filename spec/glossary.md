@@ -1,6 +1,6 @@
- - <dfn>Entity</dfn> - An individual (person), organization, device or process. Used interchangeably with “party”; see [NIST definition](https://csrc.nist.gov/glossary/term/entity).
- - <dfn>Identifier</dfn> - The bit string denoting the identifier associated with an Entity; see [NIST definition](https://csrc.nist.gov/glossary/term/identifier).
- - <dfn>Controlled Identifier</dfn> - A type of Identifier that can be proven to be under the control of an Entity; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier).
+ - <dfn>Entity</dfn> — An individual (person), organization, device, or process. Used interchangeably with “party”; see [NIST definition](https://csrc.nist.gov/glossary/term/entity).
+ - <dfn>Identifier</dfn> — The bit string denoting the identifier associated with an Entity; see [NIST definition](https://csrc.nist.gov/glossary/term/identifier).
+ - <dfn>Controlled Identifier</dfn> — A type of Identifier that can be proven to be under the control of an Entity; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier).
  - <dfn>Self-Sovereign Identity (SSI)</dfn> — A digital identity that an Entity directly controls, without relying on a third party.
  - <dfn>Profile Document</dfn> — see "Controlled Identifier Document".
  - <dfn>Controlled Identifier Document</dfn> — A document that contains cryptographic material and lists service endpoints that can be used for verifying proofs from, and interacting with, the controller of an identifier; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document).
