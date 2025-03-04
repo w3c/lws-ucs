@@ -14,10 +14,10 @@
  - <dfn>Service</dfn> - An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service)
  - <dfn>Service Provider</dfn> - an Entity providing a Service; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#providerentity)
  - <dfn>Identity Service</dfn> - a Service that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
- - <dfn>Identity Provider</dfn> - a Service Provider that operates an Identity Service;
- - <dfn>Relying Party</dfn> - non-pysical entity that trusts an Identity Provider for Authentication; see also [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
- - <dfn>Storage</dfn> - description
- - <dfn>Storage Service</dfn> - TBD
- - <dfn>Storage Provider</dfn> - TBD
- - <dfn>Application</dfn> - TBD
- - <dfn>Notification Service</dfn> - TBD
+ - <dfn>Identity Provider</dfn> — a Service Provider that operates an Identity Service;
+ - <dfn>Relying Party</dfn> — a non-physical entity that trusts an Identity Provider for Authentication; see also [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
+ - <dfn>Storage</dfn> — description
+ - <dfn>Storage Service</dfn> — TBD
+ - <dfn>Storage Provider</dfn> — TBD
+ - <dfn>Application</dfn> — TBD
+ - <dfn>Notification Service</dfn> — TBD
