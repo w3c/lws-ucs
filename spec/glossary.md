@@ -7,10 +7,10 @@
  - <dfn>Profile Document Address</dfn> - The URL of a Profile Document. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
  - <dfn>Authentication</dfn> -  Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system; see [NIST definition](https://csrc.nist.gov/glossary/term/authentication).
  - <dfn>Authorization</dfn> - The process of verifying that a requested action or service is approved for a specific entity; see [NIST definition](https://csrc.nist.gov/glossary/term/authorization).
- - <dfn>User</dfn> - A human entity; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
- - <dfn>Non-human Entity</dfn> - An entity with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity)
- - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> – An entity that fully manages its own Identity credentials without relying on external Service(s).
- - <dfn>User Agent</dfn> – Software acting on behalf of a User to interact with Services, such as a browser or identity client.
+ - <dfn>User</dfn> — A human entity; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
+ - <dfn>Non-human Entity</dfn> — An entity with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity)
+ - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> — An entity that fully manages its own Identity credentials without relying on external Service(s).
+ - <dfn>User Agent</dfn> — Software acting on behalf of a User to interact with Services, such as a browser or identity client.
  - <dfn>Service</dfn> — An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service)
  - <dfn>Service Provider</dfn> — an Entity providing a Service; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#providerentity)
  - <dfn>Identity Service</dfn> — a Service that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
