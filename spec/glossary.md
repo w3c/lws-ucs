@@ -11,9 +11,9 @@
  - <dfn>Non-human Entity</dfn> - An entity with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity)
  - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> – An entity that fully manages its own Identity credentials without relying on external Service(s).
  - <dfn>User Agent</dfn> – Software acting on behalf of a User to interact with Services, such as a browser or identity client.
- - <dfn>Service</dfn> - An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service)
- - <dfn>Service Provider</dfn> - an Entity providing a Service; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#providerentity)
- - <dfn>Identity Service</dfn> - a Service that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
+ - <dfn>Service</dfn> — An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service)
+ - <dfn>Service Provider</dfn> — an Entity providing a Service; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#providerentity)
+ - <dfn>Identity Service</dfn> — a Service that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
  - <dfn>Identity Provider</dfn> — a Service Provider that operates an Identity Service;
  - <dfn>Relying Party</dfn> — a non-physical entity that trusts an Identity Provider for Authentication; see also [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
  - <dfn>Storage</dfn> — description
