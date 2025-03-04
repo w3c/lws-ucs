@@ -4,9 +4,9 @@
  - <dfn>Self-Sovereign Identity (SSI)</dfn> - A digital identity that an Entity directly controls, without relying on a third party.
  - <dfn>Profile Document</dfn> - see "Controlled Identifier Document".
  - <dfn>Controlled Identifier Document</dfn> - A document that contains cryptographic material and lists service endpoints that can be used for verifying proofs from, and interacting with, the controller of an identifier; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document).
- - <dfn>Profile Document Address</dfn> - The URL of a Profile Document. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
- - <dfn>Authentication</dfn> -  Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system; see [NIST definition](https://csrc.nist.gov/glossary/term/authentication).
- - <dfn>Authorization</dfn> - The process of verifying that a requested action or service is approved for a specific entity; see [NIST definition](https://csrc.nist.gov/glossary/term/authorization).
+ - <dfn>Profile Document Address</dfn> — The URL of a Profile Document. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
+ - <dfn>Authentication</dfn> — Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system; see [NIST definition](https://csrc.nist.gov/glossary/term/authentication).
+ - <dfn>Authorization</dfn> — The process of verifying that a requested action or service is approved for a specific entity; see [NIST definition](https://csrc.nist.gov/glossary/term/authorization).
  - <dfn>User</dfn> — A human entity; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
  - <dfn>Non-human Entity</dfn> — An entity with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity)
  - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> — An entity that fully manages its own Identity credentials without relying on external Service(s).
