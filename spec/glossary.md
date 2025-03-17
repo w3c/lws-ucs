@@ -3,7 +3,7 @@
  - <dfn>Authorization</dfn> — The process of verifying that a requested action or service is approved for a specific entity; see [NIST definition](https://csrc.nist.gov/glossary/term/authorization).
  - <dfn>Controlled Identifier</dfn> — A type of Identifier that can be proven to be under the control of an Entity; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier).
  - <dfn>Controlled Identifier Document</dfn> — A document that contains cryptographic material and lists service endpoints that can be used for verifying proofs from, and interacting with, the controller of an identifier; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document).
- - <dfn>Controller</dfn> — An entity that is capable of performing an action with a specific resource, such as updating a Controlled Identifier Document; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document).
+ - <dfn>Controller</dfn> — An entity that is capable of performing an action with a specific resource, such as updating a protected document.
  - <dfn>Entity</dfn> — An individual (person), organization, device, or process. Used interchangeably with “party”; see [NIST definition](https://csrc.nist.gov/glossary/term/entity).
  - <dfn>Identifier</dfn> — The bit string denoting the identifier associated with an Entity; see [NIST definition](https://csrc.nist.gov/glossary/term/identifier).
  - <dfn>Identity Provider</dfn> — a Service Provider that operates an Identity Service;
