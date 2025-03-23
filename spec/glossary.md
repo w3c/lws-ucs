@@ -10,7 +10,7 @@
  - <dfn>Identity Service</dfn> — a Service that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
  - <dfn>Non-human Entity</dfn> — An entity with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity)
  - <dfn>Notification Service</dfn> — TBD
- - <dfn>Owner</dfn> — an Entity that is considered to have the rights and responsibility of a Storage.
+ - <dfn>Owner</dfn> — an Entity that is considered to have the rights and responsibility of a resource.
  - <dfn>Profile Document</dfn> — see "Controlled Identifier Document".
  - <dfn>Profile Document Address</dfn> — The URL of a Profile Document. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
  - <dfn>Relying Party</dfn> — a non-physical entity that trusts an Identity Provider for Authentication; see also [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
