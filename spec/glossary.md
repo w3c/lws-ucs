@@ -1,25 +1,25 @@
  - <dfn>Application</dfn> — TBD
- - <dfn>Authentication</dfn> — Verifying the identity of a user, process, or device, often as a prerequisite to allowing access to resources in a system; see [NIST definition](https://csrc.nist.gov/glossary/term/authentication).
- - <dfn>Authorization</dfn> — The process of verifying that a requested action or service is approved for a specific entity; see [NIST definition](https://csrc.nist.gov/glossary/term/authorization).
- - <dfn>Controlled Identifier</dfn> — A type of Identifier that can be proven to be under the control of an Entity; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier).
- - <dfn>Controlled Identifier Document</dfn> — A document that contains cryptographic material and lists service endpoints that can be used for verifying proofs from, and interacting with, the controller of an identifier; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document).
- - <dfn>Controller</dfn> — An entity that is capable of performing an action with a specific resource, such as updating a protected document.
+ - <dfn data-lt="authentication|authenticated">Authentication</dfn> — Verifying the identity of a [=user=], process, or device, often as a prerequisite to allowing access to resources in a system; see [NIST definition](https://csrc.nist.gov/glossary/term/authentication).
+ - <dfn data-lt="authorization|authorized">Authorization</dfn> — The process of verifying that a requested action or service is approved for a specific [=entity=]; see [NIST definition](https://csrc.nist.gov/glossary/term/authorization).
+ - <dfn>Controlled Identifier</dfn> — A type of [=identifier=] that can be proven to be under the control of an [=entity=]; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier).
+ - <dfn>Controlled Identifier Document</dfn> — A document that contains cryptographic material and lists service endpoints that can be used for verifying proofs from, and interacting with, the [=controller=] of an [=identifier=]; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document).
+ - <dfn data-lt="controller|controlled">Controller</dfn> — An [=entity=] that is capable of performing an action with a specific resource, such as updating a protected document.
  - <dfn>Entity</dfn> — An individual (person), organization, device, or process. Used interchangeably with “party”; see [NIST definition](https://csrc.nist.gov/glossary/term/entity).
- - <dfn>Identifier</dfn> — The bit string denoting the identifier associated with an Entity; see [NIST definition](https://csrc.nist.gov/glossary/term/identifier).
- - <dfn>Identity Provider</dfn> — a Service Provider that operates an Identity Service;
- - <dfn>Identity Service</dfn> — a Service that manages the subscriber’s primary authentication credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
- - <dfn>Non-human Entity</dfn> — An entity with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity)
+ - <dfn data-lt="identifier|identified|identity">Identifier</dfn> — The bit string denoting the identifier associated with an Entity; see [NIST definition](https://csrc.nist.gov/glossary/term/identifier).
+ - <dfn>Identity Provider</dfn> — a [=service provider=] that operates an [=identity service=];
+ - <dfn>Identity Service</dfn> — a [=service=] that manages the subscriber’s primary [=authentication=] credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
+ - <dfn>Non-human Entity</dfn> — An [=entity=] with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity)
  - <dfn>Notification Service</dfn> — TBD
- - <dfn>Owner</dfn> — an Entity that is considered to have the rights and responsibility of a resource.
- - <dfn>Profile Document</dfn> — see "Controlled Identifier Document".
- - <dfn>Profile Document Address</dfn> — The URL of a Profile Document. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
- - <dfn>Relying Party</dfn> — a non-physical entity that trusts an Identity Provider for Authentication; see also [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
- - <dfn>Self-Sovereign Identity (SSI)</dfn> — A digital identity that an Entity directly controls, without relying on a third party.
- - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> — An entity that fully manages its own Identity credentials without relying on external Service(s).
+ - <dfn data-lt="owner|owned">Owner</dfn> — an [=entity=] that is considered to have the rights and responsibility of a resource.
+ - <dfn>Profile Document</dfn> — see [=Controlled Identifier Document=].
+ - <dfn>Profile Document Address</dfn> — The URL of a [=profile document=]. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
+ - <dfn>Relying Party</dfn> — a non-physical [=entity=] that trusts an [=identity provider=] for [=authentication=]; see also [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
+ - <dfn data-lt="SSI">Self-Sovereign Identity</dfn> (<abbr title="self-sovereign identity">SSI</abbr>) — A digital identity that an [=entity=] directly controls, without relying on a third party.
+ - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> — An [=entity=] that fully manages its own Identity credentials without relying on external [=service|service(s)=].
  - <dfn>Service</dfn> — An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service)
- - <dfn>Service Provider</dfn> — an Entity providing a Service; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#providerentity)
+ - <dfn>Service Provider</dfn> — an [=entity=] providing a [=service=]; see [W3C Glossaxry](https://www.w3.org/TR/ws-gloss/#providerentity)
  - <dfn>Storage</dfn> — description
  - <dfn>Storage Service</dfn> — TBD
  - <dfn>Storage Provider</dfn> — TBD
- - <dfn>User</dfn> — A human entity; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
- - <dfn>User Agent</dfn> — Software acting on behalf of a User to interact with Services, such as a browser or identity client.
+ - <dfn>User</dfn> — A human [=entity=]; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
+ - <dfn>User Agent</dfn> — Software acting on behalf of a [=user=] to interact with [=services=], such as a browser or identity client.
