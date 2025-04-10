@@ -1,44 +1,15 @@
 ## Functional Stories
 
-### Use Case 1: Large HTTP uploads
+### Administrative Assistant
 
-As a `user` and/or a `software developer`,
+As a Manager I want my administrative Assistant to exercise some, but not all, of my permissions, such as updating my calendar and screening my email, so that I don't have to waste my time on these matters. Manager spends a lot of time scheduling appointments and dealing with unimportant emails. Common permission infrastructure, such a Role-Based, Attribute-Based, or Policy-Based access control, doesn't provide sufficient flexibility for Manager to offload some of this work to Assistant and Assistant to offload some of that work to others.
+
+
+### Large HTTP uploads
+
+As a `user`,
 I want to upload large files that may or may/not complete due to network and/or server issues.  Further, for very large uploads also knowing what percentage of a file(s) that is uploaded is handy to have as both user and developer.
 
-#### Preconditions:
-
-User/developer is working with large files.
-
-#### Trigger:
-
-User attempts to upload a file.
-
-#### Actors:
-
- - User with a large file
- - the server to which the file needs to be uploaded to
-
-#### Distinction:
-
-N/A
-
-#### Scenario:
-
-Large file(s) is correctly uploaded and user knows how long it was going to take within a reasonably degree of accuracy.
-
-#### Alternative case(s):
-
-If large file handling is not available user/developer can get notification to the lack of this particular service or an alternate unspecified method for these sizes of files.
-
-#### Error scenario:
-
- - network crash and/or interruption
- - server crash and/or interruption
- - any interference that would disrupt the transfer of the large file(s) (ie cat on keyboard)
- 
-#### Acceptance Criteria:
-
-User/developer has at least one methodology that will be available in order to upload (or resume) a large file(s) upload.
 
 #### References:
 
