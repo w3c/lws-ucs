@@ -12,6 +12,8 @@ See also https://github.com/w3c/lws-ucs/issues/10
 As a `user`,
 I want to upload large files that may or may/not complete due to network and/or server issues.  Further, for very large uploads also knowing what percentage of a file(s) that is uploaded is handy to have as both user and developer.
 
+See also https://github.com/w3c/lws-ucs/issues/18
+
 
 #### References:
 
