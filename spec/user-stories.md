@@ -1,8 +1,14 @@
 ## Functional Stories
 
-### <dfn>Generic Portable Storage</dfn>
+### <dfn>Generic Storage</dfn>
 
-Bob wants to store and organize his data in a portable `[=storage=]`, so that data could be accessed from any device, any location, at any time. Bob wants to be free to store any type of resource in the `[=storage=]`. Bob wants resources to be added, updated and/or deleted. Bob also wants the ability and choice to host the `[=storage=]` himself, or delegate the hosting to a `[=storage provider=]`. The `[=storage provider=]` may impose certain limitations, such as of type or size, and Bob may accept that if informed in advance. Bob also wants to ability to move his storage to another `[=storage provider=]`.
+Bob wants to store and organize his data in a `[=storage=]` available online, so that data could be accessed from any device, any location, at any time. Bob wants to be free to store any type of resource in the `[=storage=]`. Bob wants his `[=storage=]` to allow for resources to be added, updated and/or deleted.
+
+### <dfn>Portable Storage</dfn>
+
+Bob wants the ability and choice to host the `[=storage=]` himself, or delegate the hosting to a `[=storage provider=]`. The `[=storage provider=]` may impose certain limitations, such as of type or size, and Bob may accept that if informed in advance. Bob also wants the ability to move (aka port) his `[=storage=]` to another `[=storage provider=]` as desired, without loosing any access to existing data or metadata, so that Bob is not dependent in perpetuity on one `[=storage provider=]`.
+
+Porting a `[=storage=]` from one provider to another should work the same even when Bob hosts the `[=storage=]` himself. In that situation Bob acts as `[=storage provider=]` as well. 
 
 ### <dfn>Profile Sharing</dfn>
 
