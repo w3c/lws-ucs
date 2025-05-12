@@ -10,6 +10,12 @@ Bob wants the ability and choice to host the `[=storage=]` himself, or delegate 
 
 Porting a `[=storage=]` from one provider to another should work the same even when Bob hosts the `[=storage=]` himself. In that situation Bob acts as `[=storage provider=]` as well. 
 
+### <dfn>Sharing Access</dfn>
+
+As an author with authoring permission, Guinan wants to use the sharing interface of her authoring tool to manage access permissions to her article, so that Deanna can review, Seven-of-Nine can co-edit, and Torres can view the progress. All `[=user=]`(s), Guinan, Deanna, Seven-of-Nine and Torres can identify themselves within the authoring tool using their personal online identities.
+
+The sharing interface of the protocl shall ensure that each `[=user=]` receives the appropriate access without confusion. The protocol shall handle updates to access permissions and determine whether changes should trigger notifications to the target `[=user=]`(s).
+
 ### <dfn>Profile Sharing</dfn>
 
 Alice wants to maintain and manage multiple profiles and have fine grained choice over who can see what profile, so that she can maintain her privacy. Alice wants to know and trust Bob's identity, the `[=user=]` she shares her data with, so that Mallory, a malicious actor could not impersonate Bob and gain access to her data.
