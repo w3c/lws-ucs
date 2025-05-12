@@ -14,7 +14,7 @@ Porting a `[=storage=]` from one provider to another should work the same even w
 
 As an author with authoring permission, Guinan wants to use the sharing interface of her authoring tool to manage access permissions to her article, so that Deanna can review, Seven-of-Nine can co-edit, and Torres can view the progress. All `[=user=]`(s), Guinan, Deanna, Seven-of-Nine and Torres can identify themselves within the authoring tool using their personal online identities.
 
-The sharing interface of the protocl shall ensure that each `[=user=]` receives the appropriate access without confusion. The protocol shall handle updates to access permissions and determine whether changes should trigger notifications to the target `[=user=]`(s).
+The sharing interface of the protocol shall ensure that each `[=user=]` receives the appropriate access without confusion. The protocol shall handle updates to access permissions and determine whether changes should trigger notifications to the target `[=user=]`(s).
 
 ### <dfn>Profile Sharing</dfn>
 
