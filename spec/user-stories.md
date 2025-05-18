@@ -20,6 +20,10 @@ The sharing interface of the protocol shall ensure that each `[=user=]` receives
 
 Alice wants to maintain and manage multiple profiles and have fine grained choice over who can see which profile(s), so that she can maintain her privacy. Alice wants to know and trust Bob's identity, the `[=user=]` she shares her data with, so that Mallory, a malicious actor, cannot impersonate Bob and gain access to her data.
 
+### <dfn>Offline Data</dfn>
+
+Bob wants his storage to be availabel offline on his own device. He uses tools that access data in storages controlled either by himself or other trusted entity. Bob is sometimes disconnected from the internet, but would like to use his tools, so a local copy of his data or data shared with him would help. Bob would like data to be read-only at the very least, but, ideally, writable as well and synchronized once he regains internet connection. For the data available offline, Bob wants some strong guarantees that the data was not corrupted.
+
 ### Administrative Assistant
 
 As a Manager, I want my administrative Assistant to be able to exercise some, but not all, of my permissions, such as updating my calendar and screening my email, so that I don't have to waste my time on these matters. A Manager spends a lot of time scheduling appointments and dealing with unimportant email. Common permission infrastructure, such a Role-Based, Attribute-Based, or Policy-Based access control, as commonly deployed today, doesn't provide sufficient flexibility for a Manager to offload some of this work to an Assistant nor for an Assistant to offload some of that work to others.
