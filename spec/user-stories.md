@@ -20,17 +20,25 @@ The sharing interface of the protocol shall ensure that each `[=user=]` receives
 
 Alice wants to maintain and manage multiple profiles and have fine grained choice over who can see which profile(s), so that she can maintain her privacy. Alice wants to know and trust Bob's identity, the `[=user=]` she shares her data with, so that Mallory, a malicious actor, cannot impersonate Bob and gain access to her data.
 
-### Administrative Assistant
+Charlie learns about Alice's profile and tries to access it from his business card management application called SolidRolodex. He's not able to see it, because he was not yet granted access. Charlie needs a way to request access to Alice's profile from his app. Once Alice receives and approves Charlie's request, he will be able to access and see the data.
 
-As a Manager, I want my administrative Assistant to be able to exercise some, but not all, of my permissions, such as updating my calendar and screening my email, so that I don't have to waste my time on these matters. A Manager spends a lot of time scheduling appointments and dealing with unimportant email. Common permission infrastructure, such a Role-Based, Attribute-Based, or Policy-Based access control, as commonly deployed today, doesn't provide sufficient flexibility for a Manager to offload some of this work to an Assistant nor for an Assistant to offload some of that work to others.
+### <dfn>Group Sharing</dfn>
 
-See also https://github.com/w3c/lws-ucs/issues/10
+Alice is organizing a conference and stores a calendar for the conference in a Storage. Alice wants to share the calendar with the whole group of participants to the conference. The group of participants changes all the time during the registration process, new participants register and some drop out. Alice does not want to have to update the sharing grants every time the group composition changes.
 
+Some of the participants are also speakers at the conference. They will need elevated permissions, such the ability to update the description of their presentation or upload and attach slides.
+
+### <dfn>Administrative Assistant<dfn>
+
+Charlie is the keynote speaker at the conference organized by Alice. Erin is his administrative assistant. Charlie wants to delegate the access granted to him by Alice to Erin so that she can make updates on his behalf. Charlie wants to delgate some, but not all, of his permissions, to Erin.
+
+### <dfn>Offline Data</dfn>
+
+Bob wants his storage to be available offline on his own device. He uses tools that access data in storages controlled either by himself or other trusted entities. Bob is sometimes disconnected from the internet, but would like to use his tools, so he needs local copies of his data or data shared with him. Bob would like data to be read-only at the very least, but, ideally, writable as well and synchronized once he regains internet connection. For the data available offline, Bob wants some strong guarantees that the data was not corrupted.
 
 ### Large HTTP uploads
 
-As a `user`,
-I want to upload large files that may or may/not succeed in total due to network and/or server issues.  Further, knowing what percentage of a large file was successfully transferred can be handy to have as both user and developer.
+As a `user`, I want to upload large files that may or may/not succeed in total due to network and/or server issues.  Further, knowing what percentage of a large file was successfully transferred can be handy to have as both user and developer.
 
 See also https://github.com/w3c/lws-ucs/issues/18
 
