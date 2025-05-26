@@ -28,6 +28,14 @@ Alice is organizing a conference and stores a calendar for the conference in a S
 
 Some of the participants are also speakers at the conference. They will need elevated permissions, such the ability to update the description of their presentation or upload and attach slides.
 
+### <dfn>Heart Patient</dfn>
+
+Frank is a heart patient and is measuring his heart rate and blood pressure from home. He does so every morning and evening. After moving to a new home in a different region/country, he wants a local cardiologist to have a look at his measurements to gain insights into his current condition and progress.
+
+### <dfn>General Practitioner</dfn>
+
+Over the last years Bob has accumulated comprehensive health data in his storage. He wants to share this data with his general practitioner, whom can change during his lifetime.
+
 ### <dfn>Administrative Assistant<dfn>
 
 Charlie is the keynote speaker at the conference organized by Alice. Erin is his administrative assistant. Charlie wants to delegate the access granted to him by Alice to Erin so that she can make updates on his behalf. Charlie wants to delgate some, but not all, of his permissions, to Erin.
