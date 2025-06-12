@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 35.4.0">
+<meta name="generator" content="ReSpec 35.4.1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
@@ -118,10 +118,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "github": "w3c/lws-ucs",
   "editors": [
     {
-      "name": "Pierre-Antoine Champin"
-    },
-    {
-      "name": "Hadrian Zbarcea"
+      "name": "Hadrian Zbarcea",
+      "w3cid": 142790
     }
   ],
   "group": "wg/lws",
@@ -145,21 +143,21 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "lint": {
     "no-unused-dfns": false
   },
-  "publishDate": "2025-06-12",
-  "publishISODate": "2025-06-12T00:00:00.000Z",
-  "generatedSubtitle": "W3C Group Draft Note 12 June 2025"
+  "publishDate": "2025-06-17",
+  "publishISODate": "2025-06-17T00:00:00.000Z",
+  "generatedSubtitle": "W3C Group Draft Note 17 June 2025"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-DNOTE"></head>
-  <body class="h-entry informative toc-inline"><div class="head">
+  <body class="h-entry informative"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Linked Web Storage Use Cases</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#DNOTE">W3C Group Draft Note</a> <time class="dt-published" datetime="2025-06-12">12 June 2025</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#DNOTE">W3C Group Draft Note</a> <time class="dt-published" datetime="2025-06-17">17 June 2025</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/2025/DNOTE-lws-ucs-20250612/">https://www.w3.org/TR/2025/DNOTE-lws-ucs-20250612/</a>
+                <a class="u-url" href="https://www.w3.org/TR/2025/DNOTE-lws-ucs-20250617/">https://www.w3.org/TR/2025/DNOTE-lws-ucs-20250617/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
                 <a href="https://www.w3.org/TR/lws-ucs/">https://www.w3.org/TR/lws-ucs/</a>
@@ -175,9 +173,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         
         
         
-        <dt>Editors:</dt><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Pierre-Antoine Champin</span>
-  </dd><dd class="editor p-author h-card vcard">
+        <dt>Editor:</dt><dd class="editor p-author h-card vcard" data-editor-id="142790">
     <span class="p-name fn">Hadrian Zbarcea</span>
   </dd>
         
@@ -240,7 +236,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </p><p>
                       This document is governed by the
                       <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">2. </bdi>Use Cases</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#functional-stories"><bdi class="secno">2.1 </bdi>Functional Stories</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generic-storage"><bdi class="secno">2.1.1 </bdi><span>Generic Storage</span></a></li><li class="tocline"><a class="tocxref" href="#portable-storage"><bdi class="secno">2.1.2 </bdi><span>Portable Storage</span></a></li><li class="tocline"><a class="tocxref" href="#sharing-access"><bdi class="secno">2.1.3 </bdi><span>Sharing Access</span></a></li><li class="tocline"><a class="tocxref" href="#profile-sharing"><bdi class="secno">2.1.4 </bdi><span>Profile Sharing</span></a></li><li class="tocline"><a class="tocxref" href="#group-sharing"><bdi class="secno">2.1.5 </bdi><span>Group Sharing</span></a></li><li class="tocline"><a class="tocxref" href="#administrative-assistant"><bdi class="secno">2.1.6 </bdi><span>Administrative Assistant<span data-lt=""></span></span></a></li><li class="tocline"><a class="tocxref" href="#offline-data"><bdi class="secno">2.1.7 </bdi><span>Offline Data</span></a></li><li class="tocline"><a class="tocxref" href="#large-http-uploads"><bdi class="secno">2.1.8 </bdi>Large HTTP uploads</a><ol class="toc"></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#non-functional-stories"><bdi class="secno">2.2 </bdi>Non-Functional Stories</a></li><li class="tocline"><a class="tocxref" href="#technical-stories"><bdi class="secno">2.3 </bdi>Technical Stories</a></li><li class="tocline"><a class="tocxref" href="#spike-stories"><bdi class="secno">2.4 </bdi>Spike Stories</a></li></ol></li><li class="tocline"><a class="tocxref" href="#requirements"><bdi class="secno">3. </bdi>Requirements</a></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">4. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.1 </bdi>Informative references</a></li></ol></li></ol></nav>
+                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">2. </bdi>Use Cases</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#functional-stories"><bdi class="secno">2.1 </bdi>Functional Stories</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generic-storage"><bdi class="secno">2.1.1 </bdi><span>Generic Storage</span></a></li><li class="tocline"><a class="tocxref" href="#portable-storage"><bdi class="secno">2.1.2 </bdi><span>Portable Storage</span></a></li><li class="tocline"><a class="tocxref" href="#sharing-access"><bdi class="secno">2.1.3 </bdi><span>Sharing Access</span></a></li><li class="tocline"><a class="tocxref" href="#profile-sharing"><bdi class="secno">2.1.4 </bdi><span>Profile Sharing</span></a></li><li class="tocline"><a class="tocxref" href="#group-sharing"><bdi class="secno">2.1.5 </bdi><span>Group Sharing</span></a></li><li class="tocline"><a class="tocxref" href="#administrative-assistant"><bdi class="secno">2.1.6 </bdi><span>Administrative Assistant</span></a></li><li class="tocline"><a class="tocxref" href="#offline-data"><bdi class="secno">2.1.7 </bdi><span>Offline Data</span></a></li><li class="tocline"><a class="tocxref" href="#large-http-uploads"><bdi class="secno">2.1.8 </bdi>Large HTTP uploads</a><ol class="toc"></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#non-functional-stories"><bdi class="secno">2.2 </bdi>Non-Functional Stories</a></li><li class="tocline"><a class="tocxref" href="#technical-stories"><bdi class="secno">2.3 </bdi>Technical Stories</a></li><li class="tocline"><a class="tocxref" href="#spike-stories"><bdi class="secno">2.4 </bdi>Spike Stories</a></li></ol></li><li class="tocline"><a class="tocxref" href="#requirements"><bdi class="secno">3. </bdi>Requirements</a></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">4. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.1 </bdi>Informative references</a></li></ol></li></ol></nav>
 
     <section id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
       
@@ -270,7 +266,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </section><section id="group-sharing"><div class="header-wrapper"><h4 id="x2-1-5-group-sharing"><bdi class="secno">2.1.5 </bdi><dfn id="dfn-group-sharing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Group Sharing</dfn></h4><a class="self-link" href="#group-sharing" aria-label="Permalink for Section 2.1.5"></a></div>
 <p>Alice is organizing a conference and stores a calendar for the conference in a Storage. Alice wants to share the calendar with the whole group of participants to the conference. The group of participants changes all the time during the registration process, new participants register and some drop out. Alice does not want to have to update the sharing grants every time the group composition changes.</p>
 <p>Some of the participants are also speakers at the conference. They will need elevated permissions, such the ability to update the description of their presentation or upload and attach slides.</p>
-</section><section id="administrative-assistant"><div class="header-wrapper"><h4 id="x2-1-6-administrative-assistant"><bdi class="secno">2.1.6 </bdi><dfn id="dfn-administrative-assistant" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Administrative Assistant<dfn data-lt="" data-dfn-type="dfn"></dfn></dfn></h4><a class="self-link" href="#administrative-assistant" aria-label="Permalink for Section 2.1.6"></a></div>
+</section><section id="administrative-assistant"><div class="header-wrapper"><h4 id="x2-1-6-administrative-assistant"><bdi class="secno">2.1.6 </bdi><dfn id="dfn-administrative-assistant" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Administrative Assistant</dfn></h4><a class="self-link" href="#administrative-assistant" aria-label="Permalink for Section 2.1.6"></a></div>
 <p>Charlie is the keynote speaker at the conference organized by Alice. Erin is his administrative assistant. Charlie wants to delegate the access granted to him by Alice to Erin so that she can make updates on his behalf. Charlie wants to delgate some, but not all, of his permissions, to Erin.</p>
 </section><section id="offline-data"><div class="header-wrapper"><h4 id="x2-1-7-offline-data"><bdi class="secno">2.1.7 </bdi><dfn id="dfn-offline-data" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Offline Data</dfn></h4><a class="self-link" href="#offline-data" aria-label="Permalink for Section 2.1.7"></a></div>
 <p>Bob wants his storage to be available offline on his own device. He uses tools that access data in storages controlled either by himself or other trusted entities. Bob is sometimes disconnected from the internet, but would like to use his tools, so he needs local copies of his data or data shared with him. Bob would like data to be read-only at the very least, but, ideally, writable as well and synchronized once he regains internet connection. For the data available offline, Bob wants some strong guarantees that the data was not corrupted.</p>
