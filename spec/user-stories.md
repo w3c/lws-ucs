@@ -28,7 +28,7 @@ Alice is organizing a conference and stores a calendar for the conference in a S
 
 Some of the participants are also speakers at the conference. They will need elevated permissions, such the ability to update the description of their presentation or upload and attach slides.
 
-### <dfn>Administrative Assistant<dfn>
+### <dfn>Administrative Assistant</dfn>
 
 Charlie is the keynote speaker at the conference organized by Alice. Erin is his administrative assistant. Charlie wants to delegate the access granted to him by Alice to Erin so that she can make updates on his behalf. Charlie wants to delgate some, but not all, of his permissions, to Erin.
 
