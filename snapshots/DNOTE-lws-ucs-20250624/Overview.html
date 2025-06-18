@@ -1,0 +1,1238 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="generator" content="ReSpec 35.4.1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+.dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+    
+    
+<title>Linked Web Storage Use Cases</title>
+    
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:italic}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+    
+    
+<style>
+
+      table {
+        border-collapse: collapse;
+      }
+      table th, table td {
+        border: thin solid black;
+        padding: 0 0.2em;
+      }
+    
+</style>
+  
+<meta name="color-scheme" content="light">
+<meta name="description" content="User stories and use cases for the Linked Web Storage (LWS) spec.">
+<link rel="canonical" href="https://www.w3.org/TR/lws-ucs/">
+<style>
+var:hover{text-decoration:underline;cursor:pointer}
+var.respec-hl{color:var(--color,#000);background-color:var(--bg-color);box-shadow:0 0 0 2px var(--bg-color)}
+@media (prefers-color-scheme:dark){
+var.respec-hl{filter:saturate(.9) brightness(.9)}
+}
+var.respec-hl-c1{--bg-color:#f4d200}
+var.respec-hl-c2{--bg-color:#ff87a2}
+var.respec-hl-c3{--bg-color:#96e885}
+var.respec-hl-c4{--bg-color:#3eeed2}
+var.respec-hl-c5{--bg-color:#eacfb6}
+var.respec-hl-c6{--bg-color:#82ddff}
+var.respec-hl-c7{--bg-color:#ffbcf2}
+@media print{
+var.respec-hl{background:0 0;color:#000;box-shadow:unset}
+}
+</style>
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#222}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#222;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specStatus": "DNOTE",
+  "shortName": "lws-ucs",
+  "copyrightStart": "2024",
+  "github": "w3c/lws-ucs",
+  "editors": [
+    {
+      "name": "Hadrian Zbarcea",
+      "w3cid": 142790
+    }
+  ],
+  "group": "wg/lws",
+  "wg": "Linked Web Storage",
+  "maxTocLevel": 3,
+  "localBiblio": {
+    "RESUMABLE_UPLOADS": {
+      "title": "Resumable Uploads for HTTP",
+      "authors": [
+        "M. Kleidl",
+        "G. Zhang",
+        "L. Pardue"
+      ],
+      "date": "3 December 2024",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload",
+      "status": "Draft",
+      "publisher": "IETF",
+      "id": "resumable_uploads"
+    }
+  },
+  "lint": {
+    "no-unused-dfns": false
+  },
+  "publishDate": "2025-06-24",
+  "publishISODate": "2025-06-24T00:00:00.000Z",
+  "generatedSubtitle": "W3C Group Draft Note 24 June 2025"
+}</script>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-DNOTE"></head>
+  <body class="h-entry informative toc-inline"><div class="head">
+    <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
+  </a></p>
+    <h1 id="title" class="title">Linked Web Storage Use Cases</h1> 
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#DNOTE">W3C Group Draft Note</a> <time class="dt-published" datetime="2025-06-24">24 June 2025</time></p>
+    <details open="">
+      <summary>More details about this document</summary>
+      <dl>
+        <dt>This version:</dt><dd>
+                <a class="u-url" href="https://www.w3.org/TR/2025/DNOTE-lws-ucs-20250624/">https://www.w3.org/TR/2025/DNOTE-lws-ucs-20250624/</a>
+              </dd>
+        <dt>Latest published version:</dt><dd>
+                <a href="https://www.w3.org/TR/lws-ucs/">https://www.w3.org/TR/lws-ucs/</a>
+              </dd>
+        <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/lws-ucs/">https://w3c.github.io/lws-ucs/</a></dd>
+        <dt>History:</dt><dd>
+                    <a href="https://www.w3.org/standards/history/lws-ucs/">https://www.w3.org/standards/history/lws-ucs/</a>
+                  </dd><dd>
+                    <a href="https://github.com/w3c/lws-ucs/commits/">Commit history</a>
+                  </dd>
+        
+        
+        
+        
+        
+        <dt>Editor:</dt><dd class="editor p-author h-card vcard" data-editor-id="142790">
+    <span class="p-name fn">Hadrian Zbarcea</span>
+  </dd>
+        
+        
+        <dt>Feedback:</dt><dd>
+        <a href="https://github.com/w3c/lws-ucs/">GitHub w3c/lws-ucs</a>
+        (<a href="https://github.com/w3c/lws-ucs/pulls/">pull requests</a>,
+        <a href="https://github.com/w3c/lws-ucs/issues/new/choose">new issue</a>,
+        <a href="https://github.com/w3c/lws-ucs/issues/">open issues</a>)
+      </dd>
+        
+        
+      </dl>
+    </details>
+    
+    
+    <p class="copyright">
+    <a href="https://www.w3.org/policies/#copyright">Copyright</a>
+    ©
+    2024-2025
+    
+    <a href="https://www.w3.org/">World Wide Web Consortium</a>.
+    <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+    <a href="https://www.w3.org/policies/#Legal_Disclaimer">liability</a>,
+    <a href="https://www.w3.org/policies/#W3C_Trademarks">trademark</a> and
+    <a rel="license" href="https://www.w3.org/copyright/software-license-2023/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
+  </p>
+    <hr title="Separator for header">
+  </div>
+    <section id="abstract" class="introductory"><h2>Abstract</h2>
+      <p>
+        User stories and use cases for the Linked Web Storage (<abbr title="Linked Web Storage">LWS</abbr>) spec.
+      </p>
+    </section>
+    <section id="sotd" class="introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this
+      document at the time of its publication. A list of current <abbr title="World Wide Web Consortium">W3C</abbr>
+      publications and the latest revision of this technical report can be found
+      in the
+      <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> standards and drafts index</a> at
+      https://www.w3.org/TR/.</em></p>
+    <p>
+    This document was published by the <a href="https://www.w3.org/groups/wg/lws">Linked Web Storage Working Group</a> as
+    a Group Draft Note using the
+        <a href="https://www.w3.org/policies/process/20231103/#recs-and-notes">Note track</a>. 
+  </p><p>Group Draft Notes are not endorsed by
+        <abbr title="World Wide Web Consortium">W3C</abbr> nor its Members. </p><p>
+    This is a draft document and may be updated, replaced, or obsoleted by other
+    documents at any time. It is inappropriate to cite this document as other
+    than work in progress.
+    
+  </p><p data-deliverer="159634">
+    
+        The
+        <a href="https://www.w3.org/policies/patent-policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
+          Policy</a>
+        does not carry any licensing requirements or commitments on this
+        document.
+      
+    
+  </p><p>
+                      This document is governed by the
+                      <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">2. </bdi>Use Cases</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#functional-stories"><bdi class="secno">2.1 </bdi>Functional Stories</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generic-storage"><bdi class="secno">2.1.1 </bdi><span>Generic Storage</span></a></li><li class="tocline"><a class="tocxref" href="#portable-storage"><bdi class="secno">2.1.2 </bdi><span>Portable Storage</span></a></li><li class="tocline"><a class="tocxref" href="#sharing-access"><bdi class="secno">2.1.3 </bdi><span>Sharing Access</span></a></li><li class="tocline"><a class="tocxref" href="#profile-sharing"><bdi class="secno">2.1.4 </bdi><span>Profile Sharing</span></a></li><li class="tocline"><a class="tocxref" href="#group-sharing"><bdi class="secno">2.1.5 </bdi><span>Group Sharing</span></a></li><li class="tocline"><a class="tocxref" href="#administrative-assistant"><bdi class="secno">2.1.6 </bdi><span>Administrative Assistant</span></a></li><li class="tocline"><a class="tocxref" href="#offline-data"><bdi class="secno">2.1.7 </bdi><span>Offline Data</span></a></li><li class="tocline"><a class="tocxref" href="#large-http-uploads"><bdi class="secno">2.1.8 </bdi>Large HTTP uploads</a><ol class="toc"></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#non-functional-stories"><bdi class="secno">2.2 </bdi>Non-Functional Stories</a></li><li class="tocline"><a class="tocxref" href="#technical-stories"><bdi class="secno">2.3 </bdi>Technical Stories</a></li><li class="tocline"><a class="tocxref" href="#spike-stories"><bdi class="secno">2.4 </bdi>Spike Stories</a></li></ol></li><li class="tocline"><a class="tocxref" href="#requirements"><bdi class="secno">3. </bdi>Requirements</a></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">4. </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.1 </bdi>Informative references</a></li></ol></li></ol></nav>
+
+    <section id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
+      
+      <p>
+      The <abbr title="Linked Web Storage">LWS</abbr> specifications aim to enable the development of web applications where data storage, entity authentication, access control, and application provider are all loosely coupled, as compared to the web of today where these are typically all tightly coupled, so changing one requires changing all, sometimes at a cost of all past data.
+      </p>
+      <p>
+      This document lists user stories and use-cases for the <abbr title="Linked Web Storage">LWS</abbr> specifications, as well as requirements identified as necessary to satisfy these use cases.
+      </p>
+    </section>
+
+    <section id="use-cases"><div class="header-wrapper"><h2 id="x2-use-cases"><bdi class="secno">2. </bdi>Use Cases</h2><a class="self-link" href="#use-cases" aria-label="Permalink for Section 2."></a></div>
+      
+      <p>The use cases for the <abbr title="Linked Web Storage">LWS</abbr> specifications are documented below.</p>
+      <section id="functional-stories"><div class="header-wrapper"><h3 id="x2-1-functional-stories"><bdi class="secno">2.1 </bdi>Functional Stories</h3><a class="self-link" href="#functional-stories" aria-label="Permalink for Section 2.1"></a></div>
+<section id="generic-storage"><div class="header-wrapper"><h4 id="x2-1-1-generic-storage"><bdi class="secno">2.1.1 </bdi><dfn id="dfn-generic-storage" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Generic Storage</dfn></h4><a class="self-link" href="#generic-storage" aria-label="Permalink for Section 2.1.1"></a></div>
+<p>Bob wants to store and organize his data in a <code><a data-link-type="dfn|abstract-op" href="#dfn-storage" class="internalDFN" id="ref-for-dfn-storage-1">storage</a></code> available online, so that data can be accessed from any device, any location, at any time. Bob wants to be free to store any type of resource in the <code><a data-link-type="dfn|abstract-op" href="#dfn-storage" class="internalDFN" id="ref-for-dfn-storage-2">storage</a></code>. Bob wants his <code><a data-link-type="dfn|abstract-op" href="#dfn-storage" class="internalDFN" id="ref-for-dfn-storage-3">storage</a></code> to allow for resources to be added, updated, and/or deleted.</p>
+</section><section id="portable-storage"><div class="header-wrapper"><h4 id="x2-1-2-portable-storage"><bdi class="secno">2.1.2 </bdi><dfn id="dfn-portable-storage" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Portable Storage</dfn></h4><a class="self-link" href="#portable-storage" aria-label="Permalink for Section 2.1.2"></a></div>
+<p>Bob wants the ability and choice to host the <code><a data-link-type="dfn|abstract-op" href="#dfn-storage" class="internalDFN" id="ref-for-dfn-storage-4">storage</a></code> himself, or delegate the hosting to a <code><a data-link-type="dfn|abstract-op" href="#dfn-storage-provider" class="internalDFN" id="ref-for-dfn-storage-provider-1">storage provider</a></code>. A <code><a data-link-type="dfn|abstract-op" href="#dfn-storage-provider" class="internalDFN" id="ref-for-dfn-storage-provider-2">storage provider</a></code> may impose certain limitations, such as resource type or size, and Bob may accept that if informed in advance. Bob also wants the ability to move (a/k/a port) his <code><a data-link-type="dfn|abstract-op" href="#dfn-storage" class="internalDFN" id="ref-for-dfn-storage-5">storage</a></code> to another <code><a data-link-type="dfn|abstract-op" href="#dfn-storage-provider" class="internalDFN" id="ref-for-dfn-storage-provider-3">storage provider</a></code> as desired, without losing any access to existing data or metadata, so that Bob is not dependent in perpetuity on one <code><a data-link-type="dfn|abstract-op" href="#dfn-storage-provider" class="internalDFN" id="ref-for-dfn-storage-provider-4">storage provider</a></code>.</p>
+<p>Porting a <code><a data-link-type="dfn|abstract-op" href="#dfn-storage" class="internalDFN" id="ref-for-dfn-storage-6">storage</a></code> from one provider to another should work the same even when Bob hosts the <code><a data-link-type="dfn|abstract-op" href="#dfn-storage" class="internalDFN" id="ref-for-dfn-storage-7">storage</a></code> himself. In that situation Bob also acts as <code><a data-link-type="dfn|abstract-op" href="#dfn-storage-provider" class="internalDFN" id="ref-for-dfn-storage-provider-5">storage provider</a></code>. </p>
+</section><section id="sharing-access"><div class="header-wrapper"><h4 id="x2-1-3-sharing-access"><bdi class="secno">2.1.3 </bdi><dfn id="dfn-sharing-access" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Sharing Access</dfn></h4><a class="self-link" href="#sharing-access" aria-label="Permalink for Section 2.1.3"></a></div>
+<p>As an author with authoring permission, Guinan uses the sharing interface of her authoring tool to manage access to her article, so that Deanna can review, Seven-of-Nine can co-edit, and Torres can view the progress. All <code><a data-link-type="dfn|abstract-op" href="#dfn-user" class="internalDFN" id="ref-for-dfn-user-1">user</a></code>(s) — Guinan, Deanna, Seven-of-Nine, and Torres — have personal online identities that can be used to assign these permissions.</p>
+<p>The sharing interface of the protocol shall ensure that each <code><a data-link-type="dfn|abstract-op" href="#dfn-user" class="internalDFN" id="ref-for-dfn-user-2">user</a></code> receives the appropriate access without confusion. The protocol shall handle updates to access permissions, and determine whether changes should trigger notifications to the target <code><a data-link-type="dfn|abstract-op" href="#dfn-user" class="internalDFN" id="ref-for-dfn-user-3">user</a></code>(s).</p>
+</section><section id="profile-sharing"><div class="header-wrapper"><h4 id="x2-1-4-profile-sharing"><bdi class="secno">2.1.4 </bdi><dfn id="dfn-profile-sharing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Profile Sharing</dfn></h4><a class="self-link" href="#profile-sharing" aria-label="Permalink for Section 2.1.4"></a></div>
+<p>Alice wants to maintain and manage multiple profiles and have fine grained choice over who can see which profile(s), so that she can maintain her privacy. Alice wants to know and trust Bob's identity, the <code><a data-link-type="dfn|abstract-op" href="#dfn-user" class="internalDFN" id="ref-for-dfn-user-4">user</a></code> she shares her data with, so that Mallory, a malicious actor, cannot impersonate Bob and gain access to her data.</p>
+<p>Charlie learns about Alice's profile and tries to access it from his business card management application called SolidRolodex. He's not able to see it, because he was not yet granted access. Charlie needs a way to request access to Alice's profile from his app. Once Alice receives and approves Charlie's request, he will be able to access and see the data.</p>
+</section><section id="group-sharing"><div class="header-wrapper"><h4 id="x2-1-5-group-sharing"><bdi class="secno">2.1.5 </bdi><dfn id="dfn-group-sharing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Group Sharing</dfn></h4><a class="self-link" href="#group-sharing" aria-label="Permalink for Section 2.1.5"></a></div>
+<p>Alice is organizing a conference and stores a calendar for the conference in a Storage. Alice wants to share the calendar with the whole group of participants to the conference. The group of participants changes all the time during the registration process, new participants register and some drop out. Alice does not want to have to update the sharing grants every time the group composition changes.</p>
+<p>Some of the participants are also speakers at the conference. They will need elevated permissions, such the ability to update the description of their presentation or upload and attach slides.</p>
+</section><section id="administrative-assistant"><div class="header-wrapper"><h4 id="x2-1-6-administrative-assistant"><bdi class="secno">2.1.6 </bdi><dfn id="dfn-administrative-assistant" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Administrative Assistant</dfn></h4><a class="self-link" href="#administrative-assistant" aria-label="Permalink for Section 2.1.6"></a></div>
+<p>Charlie is the keynote speaker at the conference organized by Alice. Erin is his administrative assistant. Charlie wants to delegate the access granted to him by Alice to Erin so that she can make updates on his behalf. Charlie wants to delgate some, but not all, of his permissions, to Erin.</p>
+</section><section id="offline-data"><div class="header-wrapper"><h4 id="x2-1-7-offline-data"><bdi class="secno">2.1.7 </bdi><dfn id="dfn-offline-data" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Offline Data</dfn></h4><a class="self-link" href="#offline-data" aria-label="Permalink for Section 2.1.7"></a></div>
+<p>Bob wants his storage to be available offline on his own device. He uses tools that access data in storages controlled either by himself or other trusted entities. Bob is sometimes disconnected from the internet, but would like to use his tools, so he needs local copies of his data or data shared with him. Bob would like data to be read-only at the very least, but, ideally, writable as well and synchronized once he regains internet connection. For the data available offline, Bob wants some strong guarantees that the data was not corrupted.</p>
+</section><section id="large-http-uploads"><div class="header-wrapper"><h4 id="x2-1-8-large-http-uploads"><bdi class="secno">2.1.8 </bdi>Large HTTP uploads</h4><a class="self-link" href="#large-http-uploads" aria-label="Permalink for Section 2.1.8"></a></div>
+<p>As a <code>user</code>, I want to upload large files that may or may/not succeed in total due to network and/or server issues.  Further, knowing what percentage of a large file was successfully transferred can be handy to have as both user and developer.</p>
+<p>See also <a href="https://github.com/w3c/lws-ucs/issues/18">https://github.com/w3c/lws-ucs/issues/18</a></p>
+<section id="references-0"><div class="header-wrapper"><h5 id="x2-1-8-1-references"><bdi class="secno">2.1.8.1 </bdi>References:</h5><a class="self-link" href="#references-0" aria-label="Permalink for Section 2.1.8.1"></a></div>
+<ul>
+<li><cite><a data-matched-text="[[[RESUMABLE_UPLOADS]]]" href="https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload">Resumable Uploads for HTTP</a></cite></li>
+</ul>
+</section></section></section><section id="non-functional-stories"><div class="header-wrapper"><h3 id="x2-2-non-functional-stories"><bdi class="secno">2.2 </bdi>Non-Functional Stories</h3><a class="self-link" href="#non-functional-stories" aria-label="Permalink for Section 2.2"></a></div>
+</section><section id="technical-stories"><div class="header-wrapper"><h3 id="x2-3-technical-stories"><bdi class="secno">2.3 </bdi>Technical Stories</h3><a class="self-link" href="#technical-stories" aria-label="Permalink for Section 2.3"></a></div>
+</section><section id="spike-stories"><div class="header-wrapper"><h3 id="x2-4-spike-stories"><bdi class="secno">2.4 </bdi>Spike Stories</h3><a class="self-link" href="#spike-stories" aria-label="Permalink for Section 2.4"></a></div>
+</section>
+    </section>
+    <section id="requirements"><div class="header-wrapper"><h2 id="x3-requirements"><bdi class="secno">3. </bdi>Requirements</h2><a class="self-link" href="#requirements" aria-label="Permalink for Section 3."></a></div>
+      
+      <p>The following requirements were identified and sufficient to satisfy the use cases above. This is a non-normative document and the workgroup may decide that some requirements are out of scope.</p>
+      <table>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a data-link-type="dfn|abstract-op" href="#dfn-generic-storage" class="internalDFN" id="ref-for-dfn-generic-storage-1">Generic Storage</a></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn|abstract-op" href="#dfn-portable-storage" class="internalDFN" id="ref-for-dfn-portable-storage-1">Portable Storage</a></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn|abstract-op" href="#dfn-sharing-access" class="internalDFN" id="ref-for-dfn-sharing-access-1">Sharing Access</a></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn|abstract-op" href="#dfn-profile-sharing" class="internalDFN" id="ref-for-dfn-profile-sharing-1">Profile Sharing</a></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn|abstract-op" href="#dfn-group-sharing" class="internalDFN" id="ref-for-dfn-group-sharing-1">Group Sharing</a></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn|abstract-op" href="#dfn-administrative-assistant" class="internalDFN" id="ref-for-dfn-administrative-assistant-1">Administrative Assistant</a></td>
+<td>✓</td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn|abstract-op" href="#dfn-offline-data" class="internalDFN" id="ref-for-dfn-offline-data-1">Offline Data</a></td>
+<td>✓</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+</tr>
+</tbody></table>
+
+      <ol>
+<li><dfn id="dfn-globally-unique-identifiers" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Globally Unique Identifiers</dfn> — Resources, including Entities and Storages, shall be uniquely identifiable globally. No two distinct Resources shall share the same Identifier (though a "collective" Resource with one Identifier may be comprised of several Resources, each with its own Identifier, and actions taken on the collective Resource can affect all the Resources which comprise the collective Resource). A Resource may be identifiable via multiple, distinct identifiers. A Resource Owner shall be able to prove control of owned Resource Identifiers.</li>
+<li><dfn id="dfn-use-of-service-providers" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Use of Service Providers</dfn> — The protocol shall provide a mechanism for Entities to delegate some functions to trusted Service Providers. Some interactions may require a trust relationship between Service Providers and Entities. In general, this should not impede the ability of an Entity to operate or self-host a service. Also, trust relationship are not transitive, in the sense that if an Entity trusts a Service Provider, e.g. an Identity Provider, it does not follow that another Service Provider the Entity interacts with, e.g. a Storage Provider, is under any obligation to trust said Identity Provider.</li>
+<li><dfn id="dfn-control-of-storages" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Control of Storages</dfn> — An Entity shall be able to control one or more Storages across one or more Storage Providers. A Storage shall have exactly one Controller.</li>
+<li><dfn id="dfn-delegation-of-control" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Delegation of Control</dfn> — The system shall allow for an Entity to delegate control of a Storage to another Entity. Delegation could be temporary, i.e. have an expiration time, or not. An Entity shall be able to modify delegation at a later time, either by changing expiration of revoking it altogether.</li>
+<li><dfn id="dfn-transfer-of-control" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Transfer of Control</dfn> — The protocol shall allow for an Entity to transfer, i.e. irrevocably reassign control of a Storage to another Entity.</li>
+<li><dfn id="dfn-storage-portability" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Storage Portability</dfn> — The protocol shall allow for an Entity to port, i.e. move or transfer, the entire contents of a Storage from one Storage Provider to another. Once the move is complete, the previous Storage Provider shall be freed from any responsibility related to the Storage.</li>
+<li><dfn id="dfn-adding-updating-deleting-resources-in-storage" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Adding, Updating, Deleting Resources in Storage</dfn> — The protocol shall allow for Resources to be added, updated and/or deleted within a Storage by authorized Entities. In general the protocol shall allow for any type of resource to be stored in a Storage, however Storage Providers may impose certain limitations, such as of type or size.</li>
+<li><dfn id="dfn-data-sharing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Data Sharing</dfn> — The protocol shall allow an Entity to grant give access to a Resource it controls to another Entity. In other words, the first Entity may allow the other Entity to perform some operations (read, modify, remove...) on the Resource. Access grant could be temporary, i.e. have an expiration time, or not. The first Entity shall be able to modify delegation at a later time, either by changing the expiration time of revoking it altogether. </li>
+<li><dfn id="dfn-auditable-trail" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Auditable Trail</dfn> — The protocol shall make it possible for an authorized Entity to access an auditable log of all access requests and grants to Resources and all read/write/delete of Resources.</li>
+<li><dfn id="dfn-serialization-format" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Serialization Format</dfn> — The protocol shall make it possible for data in a Storage to be serialized in a known format.</li>
+</ol>
+
+    </section>
+    <section id="glossary"><div class="header-wrapper"><h2 id="x4-glossary"><bdi class="secno">4. </bdi>Glossary</h2><a class="self-link" href="#glossary" aria-label="Permalink for Section 4."></a></div>
+      
+      <p>The glossary provides definitions of key terms and concepts used throughout this specification. It serves as a quick reference to ensure clarity and a shared understanding among readers and contributors. By standardizing terminology, the glossary supports consistent communication and alignment in interpreting this specification.</p>
+      <ul>
+<li><dfn id="dfn-application" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Application</dfn> — TBD</li>
+<li><dfn data-lt="authentication|authenticated|Authentication" id="dfn-authentication" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Authentication</dfn> — Verifying the identity of a <a data-link-type="dfn|abstract-op" href="#dfn-user" class="internalDFN" id="ref-for-dfn-user-5">user</a>, process, or device, often as a prerequisite to allowing access to resources in a system; see <a href="https://csrc.nist.gov/glossary/term/authentication">NIST definition</a>.</li>
+<li><dfn data-lt="authorization|authorized|Authorization" id="dfn-authorization" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Authorization</dfn> — The process of verifying that a requested action or service is approved for a specific <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-1">entity</a>; see <a href="https://csrc.nist.gov/glossary/term/authorization">NIST definition</a>.</li>
+<li><dfn id="dfn-controlled-identifier" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Controlled Identifier</dfn> — A type of <a data-link-type="dfn|abstract-op" href="#dfn-identifier" class="internalDFN" id="ref-for-dfn-identifier-1">identifier</a> that can be proven to be under the control of an <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-2">entity</a>; see <a href="https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier"><abbr title="World Wide Web Consortium">W3C</abbr> CID definition</a>.</li>
+<li><dfn id="dfn-controlled-identifier-document" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Controlled Identifier Document</dfn> — A document that contains cryptographic material and lists service endpoints that can be used for verifying proofs from, and interacting with, the <a data-link-type="dfn|abstract-op" href="#dfn-controller" class="internalDFN" id="ref-for-dfn-controller-1">controller</a> of an <a data-link-type="dfn|abstract-op" href="#dfn-identifier" class="internalDFN" id="ref-for-dfn-identifier-2">identifier</a>; see <a href="https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier-document"><abbr title="World Wide Web Consortium">W3C</abbr> CID definition</a>.</li>
+<li><dfn data-lt="controller|controlled|Controller" id="dfn-controller" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Controller</dfn> — An <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-3">entity</a> that is capable of performing an action with a specific resource, such as updating a protected document.</li>
+<li><dfn id="dfn-entity" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Entity</dfn> — An individual (person), organization, device, or process. Used interchangeably with “party”; see <a href="https://csrc.nist.gov/glossary/term/entity">NIST definition</a>.</li>
+<li><dfn data-lt="identifier|identified|identity|Identifier" id="dfn-identifier" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Identifier</dfn> — The bit string denoting the identifier associated with an Entity; see <a href="https://csrc.nist.gov/glossary/term/identifier">NIST definition</a>.</li>
+<li><dfn id="dfn-identity-provider" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Identity Provider</dfn> — a <a data-link-type="dfn|abstract-op" href="#dfn-service-provider" class="internalDFN" id="ref-for-dfn-service-provider-1">service provider</a> that operates an <a data-link-type="dfn|abstract-op" href="#dfn-identity-service" class="internalDFN" id="ref-for-dfn-identity-service-1">identity service</a>;</li>
+<li><dfn id="dfn-identity-service" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Identity Service</dfn> — a <a data-link-type="dfn|abstract-op" href="#dfn-service" class="internalDFN" id="ref-for-dfn-service-1">service</a> that manages the subscriber’s primary <a data-link-type="dfn|abstract-op" href="#dfn-authentication" class="internalDFN" id="ref-for-dfn-authentication-1">authentication</a> credentials and issues assertions derived from those credentials; see <a href="https://csrc.nist.gov/glossary/term/identity_provider">NIST definition</a>.</li>
+<li><dfn id="dfn-non-human-entity" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Non-human Entity</dfn> — An <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-4">entity</a> with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see <a href="https://csrc.nist.gov/glossary/term/non-human_entity">NIST definition</a></li>
+<li><dfn id="dfn-notification-service" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Notification Service</dfn> — TBD</li>
+<li><dfn data-lt="owner|owned|Owner" id="dfn-owner" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Owner</dfn> — an <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-5">entity</a> that is considered to have the rights and responsibility of a resource.</li>
+<li><dfn id="dfn-profile-document" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Profile Document</dfn> — see <a data-link-type="dfn|abstract-op" href="#dfn-controlled-identifier-document" class="internalDFN" id="ref-for-dfn-controlled-identifier-document-1">Controlled Identifier Document</a>.</li>
+<li><dfn id="dfn-profile-document-address" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Profile Document Address</dfn> — The URL of a <a data-link-type="dfn|abstract-op" href="#dfn-profile-document" class="internalDFN" id="ref-for-dfn-profile-document-1">profile document</a>. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see <a href="https://www.w3.org/Addressing/URL/url-spec.html"><abbr title="World Wide Web Consortium">W3C</abbr> Addressing definition</a>.</li>
+<li><dfn id="dfn-relying-party" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Relying Party</dfn> — a non-physical <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-6">entity</a> that trusts an <a data-link-type="dfn|abstract-op" href="#dfn-identity-provider" class="internalDFN" id="ref-for-dfn-identity-provider-1">identity provider</a> for <a data-link-type="dfn|abstract-op" href="#dfn-authentication" class="internalDFN" id="ref-for-dfn-authentication-2">authentication</a>; see also <a href="https://csrc.nist.gov/glossary/term/relying_party">NIST definition</a>.</li>
+<li><dfn data-lt="SSI|Self-Sovereign Identity" id="dfn-ssi" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Self-Sovereign Identity</dfn> (<abbr title="self-sovereign identity">SSI</abbr>) — A digital identity that an <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-7">entity</a> directly controls, without relying on a third party.</li>
+<li><dfn id="dfn-self-sovereign-identity-ssi-owner" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Self-Sovereign Identity (<abbr title="self-sovereign identity">SSI</abbr>) Owner</dfn> — An <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-8">entity</a> that fully manages its own Identity credentials without relying on external <a data-link-type="dfn|abstract-op" data-lt="service" href="#dfn-service" class="internalDFN" id="ref-for-dfn-service-2">service(s)</a>.</li>
+<li><dfn data-plurals="services" id="dfn-service" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Service</dfn> — An abstract resource that represents a capability of performing tasks that form a coherent functionality; see <a href="https://www.w3.org/TR/ws-gloss/#service"><abbr title="World Wide Web Consortium">W3C</abbr> Glossary</a></li>
+<li><dfn id="dfn-service-provider" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Service Provider</dfn> — an <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-9">entity</a> providing a <a data-link-type="dfn|abstract-op" href="#dfn-service" class="internalDFN" id="ref-for-dfn-service-3">service</a>; see <a href="https://www.w3.org/TR/ws-gloss/#providerentity"><abbr title="World Wide Web Consortium">W3C</abbr> Glossaxry</a></li>
+<li><dfn id="dfn-storage" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Storage</dfn> — description</li>
+<li><dfn id="dfn-storage-service" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Storage Service</dfn> — TBD</li>
+<li><dfn id="dfn-storage-provider" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Storage Provider</dfn> — TBD</li>
+<li><dfn id="dfn-user" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">User</dfn> — A human <a data-link-type="dfn|abstract-op" href="#dfn-entity" class="internalDFN" id="ref-for-dfn-entity-10">entity</a>; see <a href="https://csrc.nist.gov/glossary/term/user">NIST definition</a>.</li>
+<li><dfn id="dfn-user-agent" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">User Agent</dfn> — Software acting on behalf of a <a data-link-type="dfn|abstract-op" href="#dfn-user" class="internalDFN" id="ref-for-dfn-user-6">user</a> to interact with <a data-link-type="dfn|abstract-op" href="#dfn-service" class="internalDFN" id="ref-for-dfn-service-4">services</a>, such as a browser or identity client.</li>
+</ul>
+
+    </section>
+
+  
+
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-references"><bdi class="secno">A. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="informative-references"><div class="header-wrapper"><h3 id="a-1-informative-references"><bdi class="secno">A.1 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Appendix A.1"></a></div>
+    
+    <dl class="bibliography"><dt id="bib-resumable_uploads">[RESUMABLE_UPLOADS]</dt><dd>
+      <a href="https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload"><cite>Resumable Uploads for HTTP</cite></a>. M. Kleidl; G. Zhang; L. Pardue.  IETF. 3 December 2024. Draft. URL: <a href="https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload">https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-generic-storage" aria-label="Links in this document to definition: Generic Storage">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-generic-storage" aria-label="Permalink for definition: Generic Storage. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-generic-storage-1" title="§ 3. Requirements">§ 3. Requirements</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-portable-storage" aria-label="Links in this document to definition: Portable Storage">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-portable-storage" aria-label="Permalink for definition: Portable Storage. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-portable-storage-1" title="§ 3. Requirements">§ 3. Requirements</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-sharing-access" aria-label="Links in this document to definition: Sharing Access">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-sharing-access" aria-label="Permalink for definition: Sharing Access. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-sharing-access-1" title="§ 3. Requirements">§ 3. Requirements</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-profile-sharing" aria-label="Links in this document to definition: Profile Sharing">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-profile-sharing" aria-label="Permalink for definition: Profile Sharing. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-profile-sharing-1" title="§ 3. Requirements">§ 3. Requirements</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-group-sharing" aria-label="Links in this document to definition: Group Sharing">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-group-sharing" aria-label="Permalink for definition: Group Sharing. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-group-sharing-1" title="§ 3. Requirements">§ 3. Requirements</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-administrative-assistant" aria-label="Links in this document to definition: Administrative Assistant">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-administrative-assistant" aria-label="Permalink for definition: Administrative Assistant. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-administrative-assistant-1" title="§ 3. Requirements">§ 3. Requirements</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-offline-data" aria-label="Links in this document to definition: Offline Data">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-offline-data" aria-label="Permalink for definition: Offline Data. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-offline-data-1" title="§ 3. Requirements">§ 3. Requirements</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-globally-unique-identifiers" aria-label="Links in this document to definition: Globally Unique Identifiers">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-globally-unique-identifiers" aria-label="Permalink for definition: Globally Unique Identifiers. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-use-of-service-providers" aria-label="Links in this document to definition: Use of Service Providers">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-use-of-service-providers" aria-label="Permalink for definition: Use of Service Providers. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-control-of-storages" aria-label="Links in this document to definition: Control of Storages">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-control-of-storages" aria-label="Permalink for definition: Control of Storages. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-delegation-of-control" aria-label="Links in this document to definition: Delegation of Control">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-delegation-of-control" aria-label="Permalink for definition: Delegation of Control. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-transfer-of-control" aria-label="Links in this document to definition: Transfer of Control">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-transfer-of-control" aria-label="Permalink for definition: Transfer of Control. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-storage-portability" aria-label="Links in this document to definition: Storage Portability">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-storage-portability" aria-label="Permalink for definition: Storage Portability. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-adding-updating-deleting-resources-in-storage" aria-label="Links in this document to definition: Adding, Updating, Deleting Resources in Storage">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-adding-updating-deleting-resources-in-storage" aria-label="Permalink for definition: Adding, Updating, Deleting Resources in Storage. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-data-sharing" aria-label="Links in this document to definition: Data Sharing">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-data-sharing" aria-label="Permalink for definition: Data Sharing. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-auditable-trail" aria-label="Links in this document to definition: Auditable Trail">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-auditable-trail" aria-label="Permalink for definition: Auditable Trail. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-serialization-format" aria-label="Links in this document to definition: Serialization Format">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-serialization-format" aria-label="Permalink for definition: Serialization Format. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-application" aria-label="Links in this document to definition: Application">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-application" aria-label="Permalink for definition: Application. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-authentication" aria-label="Links in this document to definition: Authentication">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-authentication" aria-label="Permalink for definition: Authentication. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-authentication-1" title="§ 4. Glossary">§ 4. Glossary</a> <a href="#ref-for-dfn-authentication-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-authorization" aria-label="Links in this document to definition: Authorization">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-authorization" aria-label="Permalink for definition: Authorization. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-controlled-identifier" aria-label="Links in this document to definition: Controlled Identifier">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-controlled-identifier" aria-label="Permalink for definition: Controlled Identifier. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-controlled-identifier-document" aria-label="Links in this document to definition: Controlled Identifier Document">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-controlled-identifier-document" aria-label="Permalink for definition: Controlled Identifier Document. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-controlled-identifier-document-1" title="§ 4. Glossary">§ 4. Glossary</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-controller" aria-label="Links in this document to definition: Controller">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-controller" aria-label="Permalink for definition: Controller. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-controller-1" title="§ 4. Glossary">§ 4. Glossary</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-entity" aria-label="Links in this document to definition: Entity">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-entity" aria-label="Permalink for definition: Entity. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-entity-1" title="§ 4. Glossary">§ 4. Glossary</a> <a href="#ref-for-dfn-entity-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-entity-3" title="Reference 3">(3)</a> <a href="#ref-for-dfn-entity-4" title="Reference 4">(4)</a> <a href="#ref-for-dfn-entity-5" title="Reference 5">(5)</a> <a href="#ref-for-dfn-entity-6" title="Reference 6">(6)</a> <a href="#ref-for-dfn-entity-7" title="Reference 7">(7)</a> <a href="#ref-for-dfn-entity-8" title="Reference 8">(8)</a> <a href="#ref-for-dfn-entity-9" title="Reference 9">(9)</a> <a href="#ref-for-dfn-entity-10" title="Reference 10">(10)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-identifier" aria-label="Links in this document to definition: Identifier">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-identifier" aria-label="Permalink for definition: Identifier. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-identifier-1" title="§ 4. Glossary">§ 4. Glossary</a> <a href="#ref-for-dfn-identifier-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-identity-provider" aria-label="Links in this document to definition: Identity Provider">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-identity-provider" aria-label="Permalink for definition: Identity Provider. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-identity-provider-1" title="§ 4. Glossary">§ 4. Glossary</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-identity-service" aria-label="Links in this document to definition: Identity Service">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-identity-service" aria-label="Permalink for definition: Identity Service. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-identity-service-1" title="§ 4. Glossary">§ 4. Glossary</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-non-human-entity" aria-label="Links in this document to definition: Non-human Entity">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-non-human-entity" aria-label="Permalink for definition: Non-human Entity. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-notification-service" aria-label="Links in this document to definition: Notification Service">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-notification-service" aria-label="Permalink for definition: Notification Service. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-owner" aria-label="Links in this document to definition: Owner">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-owner" aria-label="Permalink for definition: Owner. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-profile-document" aria-label="Links in this document to definition: Profile Document">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-profile-document" aria-label="Permalink for definition: Profile Document. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-profile-document-1" title="§ 4. Glossary">§ 4. Glossary</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-profile-document-address" aria-label="Links in this document to definition: Profile Document Address">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-profile-document-address" aria-label="Permalink for definition: Profile Document Address. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-relying-party" aria-label="Links in this document to definition: Relying Party">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-relying-party" aria-label="Permalink for definition: Relying Party. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-ssi" aria-label="Links in this document to definition: Self-Sovereign Identity">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-ssi" aria-label="Permalink for definition: Self-Sovereign Identity. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-self-sovereign-identity-ssi-owner" aria-label="Links in this document to definition: Self-Sovereign Identity (SSI) Owner">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-self-sovereign-identity-ssi-owner" aria-label="Permalink for definition: Self-Sovereign Identity (SSI) Owner. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-service" aria-label="Links in this document to definition: Service">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-service" aria-label="Permalink for definition: Service. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-service-1" title="§ 4. Glossary">§ 4. Glossary</a> <a href="#ref-for-dfn-service-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-service-3" title="Reference 3">(3)</a> <a href="#ref-for-dfn-service-4" title="Reference 4">(4)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-service-provider" aria-label="Links in this document to definition: Service Provider">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-service-provider" aria-label="Permalink for definition: Service Provider. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-service-provider-1" title="§ 4. Glossary">§ 4. Glossary</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-storage" aria-label="Links in this document to definition: Storage">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-storage" aria-label="Permalink for definition: Storage. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-storage-1" title="§ 2.1.1 Generic Storage">§ 2.1.1 Generic Storage</a> <a href="#ref-for-dfn-storage-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-storage-3" title="Reference 3">(3)</a> 
+    </li><li>
+      <a href="#ref-for-dfn-storage-4" title="§ 2.1.2 Portable Storage">§ 2.1.2 Portable Storage</a> <a href="#ref-for-dfn-storage-5" title="Reference 2">(2)</a> <a href="#ref-for-dfn-storage-6" title="Reference 3">(3)</a> <a href="#ref-for-dfn-storage-7" title="Reference 4">(4)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-storage-service" aria-label="Links in this document to definition: Storage Service">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-storage-service" aria-label="Permalink for definition: Storage Service. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-storage-provider" aria-label="Links in this document to definition: Storage Provider">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-storage-provider" aria-label="Permalink for definition: Storage Provider. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-storage-provider-1" title="§ 2.1.2 Portable Storage">§ 2.1.2 Portable Storage</a> <a href="#ref-for-dfn-storage-provider-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-storage-provider-3" title="Reference 3">(3)</a> <a href="#ref-for-dfn-storage-provider-4" title="Reference 4">(4)</a> <a href="#ref-for-dfn-storage-provider-5" title="Reference 5">(5)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-user" aria-label="Links in this document to definition: User">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-user" aria-label="Permalink for definition: User. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-user-1" title="§ 2.1.3 Sharing Access">§ 2.1.3 Sharing Access</a> <a href="#ref-for-dfn-user-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-user-3" title="Reference 3">(3)</a> 
+    </li><li>
+      <a href="#ref-for-dfn-user-4" title="§ 2.1.4 Profile Sharing">§ 2.1.4 Profile Sharing</a> 
+    </li><li>
+      <a href="#ref-for-dfn-user-5" title="§ 4. Glossary">§ 4. Glossary</a> <a href="#ref-for-dfn-user-6" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-user-agent" aria-label="Links in this document to definition: User Agent">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-user-agent" aria-label="Permalink for definition: User Agent. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><script id="respec-highlight-vars">(() => {
+// @ts-check
+
+if (document.respec) {
+  document.respec.ready.then(setupVarHighlighter);
+} else {
+  setupVarHighlighter();
+}
+
+function setupVarHighlighter() {
+  document
+    .querySelectorAll("var")
+    .forEach(varElem => varElem.addEventListener("click", highlightListener));
+}
+
+function highlightListener(ev) {
+  ev.stopPropagation();
+  const { target: varElem } = ev;
+  const hightligtedElems = highlightVars(varElem);
+  const resetListener = () => {
+    const hlColor = getHighlightColor(varElem);
+    hightligtedElems.forEach(el => removeHighlight(el, hlColor));
+    [...HL_COLORS.keys()].forEach(key => HL_COLORS.set(key, true));
+  };
+  if (hightligtedElems.length) {
+    document.body.addEventListener("click", resetListener, { once: true });
+  }
+}
+
+// availability of highlight colors. colors from var.css
+const HL_COLORS = new Map([
+  ["respec-hl-c1", true],
+  ["respec-hl-c2", true],
+  ["respec-hl-c3", true],
+  ["respec-hl-c4", true],
+  ["respec-hl-c5", true],
+  ["respec-hl-c6", true],
+  ["respec-hl-c7", true],
+]);
+
+function getHighlightColor(target) {
+  // return current colors if applicable
+  const { value } = target.classList;
+  const re = /respec-hl-\w+/;
+  const activeClass = re.test(value) && value.match(re);
+  if (activeClass) return activeClass[0];
+
+  // first color preference
+  if (HL_COLORS.get("respec-hl-c1") === true) return "respec-hl-c1";
+
+  // otherwise get some other available color
+  return [...HL_COLORS.keys()].find(c => HL_COLORS.get(c)) || "respec-hl-c1";
+}
+
+function highlightVars(varElem) {
+  const textContent = norm(varElem.textContent);
+  const parent = varElem.closest(".algorithm, section");
+  const highlightColor = getHighlightColor(varElem);
+
+  const varsToHighlight = [...parent.querySelectorAll("var")].filter(
+    el =>
+      norm(el.textContent) === textContent &&
+      el.closest(".algorithm, section") === parent
+  );
+
+  // update availability of highlight color
+  const colorStatus = varsToHighlight[0].classList.contains("respec-hl");
+  HL_COLORS.set(highlightColor, colorStatus);
+
+  // highlight vars
+  if (colorStatus) {
+    varsToHighlight.forEach(el => removeHighlight(el, highlightColor));
+    return [];
+  } else {
+    varsToHighlight.forEach(el => addHighlight(el, highlightColor));
+  }
+  return varsToHighlight;
+}
+
+function removeHighlight(el, highlightColor) {
+  el.classList.remove("respec-hl", highlightColor);
+  // clean up empty class attributes so they don't come in export
+  if (!el.classList.length) el.removeAttribute("class");
+}
+
+function addHighlight(elem, highlightColor) {
+  elem.classList.add("respec-hl", highlightColor);
+}
+
+/**
+ * Same as `norm` from src/core/utils, but our build process doesn't allow
+ * imports in runtime scripts, so duplicated here.
+ * @param {string} str
+ */
+function norm(str) {
+  return str.trim().replace(/\s+/g, " ");
+}
+})()</script><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
