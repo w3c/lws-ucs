@@ -32,7 +32,7 @@
 - **Portable Storage**  
   **As a** user, **I want** the ability to self-host my storage or switch between providers without losing my data, **so that** I maintain control and resilience over my personal information.  
   *Context:* Portability prevents vendor lock-in and enhances data sovereignty.  
-  *Issues:* [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140)
+  *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140)
 
 - **Offline Data Access**  
   **As a** user, **I want** to access and modify my data offline, with automatic synchronization upon reconnection, **so that** I can work without a network and avoid data corruption or conflicts.  
