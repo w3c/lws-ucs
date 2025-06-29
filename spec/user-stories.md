@@ -1,24 +1,3 @@
-# Table of Contents
-
-1. [Functional Stories](#functional-stories)
-   - [Data Management](#data-management)
-   - [Access Control and Sharing](#access-control-and-sharing)
-   - [Collaboration and Communication](#collaboration-and-communication)
-   - [Application Integration](#application-integration)
-   - [Advanced Features](#advanced-features)
-
-2. [Non-Functional Stories](#non-functional-stories)
-   - [Security and Privacy](#security-and-privacy)
-   - [Performance and Usability](#performance-and-usability)
-
-3. [Technical Stories](#technical-stories)
-   - [Identity, Authentication, and Trust](#identity-authentication-and-trust)
-   - [API and Protocol Flexibility](#api-and-protocol-flexibility)
-   - [Storage and Resource Management](#storage-and-resource-management)
-
-4. [Additional Covered Issues](#additional-covered-issues)
-
----
 
 ## Functional Stories
 
