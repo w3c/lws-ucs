@@ -95,7 +95,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
 ### Application Integration
 
 - **Personal Information Management**  
-  **As a** user, **I want** to manage my personal data in my storage and integrate it with non-Solid apps via data projection, **so that** I can use various apps without creating data silos.  
+  **As a** user, **I want** to manage my personal data in my storage and integrate it with non-Solid apps via some data transformation, **so that** I can use various apps without creating data silos.  
   *Context:* This promotes interoperability and user control.  
   *Issues:* [#2](https://github.com/w3c/lws-ucs/issues/2)
 
