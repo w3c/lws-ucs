@@ -30,6 +30,11 @@
   *Context:* Granular control ensures secure and tailored data sharing.  
   *Issues:* [#7](https://github.com/w3c/lws-ucs/issues/7), [#27](https://github.com/w3c/lws-ucs/issues/27),  [#116](https://github.com/w3c/lws-ucs/issues/116), [#148](https://github.com/w3c/lws-ucs/issues/148), [#120](https://github.com/w3c/lws-ucs/issues/120), [#98](https://github.com/w3c/lws-ucs/issues/98)
 
+- **Notifications for Permission Changes**
+**As a collaborator**, **I want** to receive notifications when my permissions on a resource are granted, revoked, or modified, so that I am informed about changes to my access rights in a timely manner.
+Context: Timely notifications help collaborators stay updated on their access to shared resources, enhancing collaboration and security.
+Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
+
 - **Profile Sharing**  
   **As a** user, **I want** to maintain multiple profiles with distinct access controls, **so that** I can share specific information while keeping other data private.  
   *Context:* Multiple profiles support different personas or contexts (e.g., work vs. personal).  
