@@ -100,7 +100,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
   *Issues:* [#2](https://github.com/w3c/lws-ucs/issues/2)
 
 - **Bring-Your-Own-Data Apps**  
-  **As an** app developer, **I want** my applications to store data in users’ personal stores, with support for CRUD operations and store discovery, **so that** users retain ownership and control of their data.  
+  **As an** app developer, **I want** my applications to store data in user's storage, with support for CRUD operations and store discovery, **so that** users retain ownership and control of their data.  
   *Context:* This shifts data ownership from apps to users.  
   *Issues:* [#12](https://github.com/w3c/lws-ucs/issues/12), [#120](https://github.com/w3c/lws-ucs/issues/120)
 
