@@ -63,7 +63,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
 ### Collaboration and Communication
 
 - **Meeting Scheduling**  
-  **As a** user, **I want** to schedule meetings directly through my Pod, with conflict detection for online and offline scenarios, **so that** I avoid double-booking.  
+  **As a** user, **I want** to schedule meetings directly through my storage, with conflict detection for online and offline scenarios, **so that** I avoid double-booking.  
   *Context:* Integrated scheduling boosts productivity and coordination.  
   *Issues:* [#3](https://github.com/w3c/lws-ucs/issues/3), [#42](https://github.com/w3c/lws-ucs/issues/42)
 
@@ -73,17 +73,17 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
   *Issues:* [#32](https://github.com/w3c/lws-ucs/issues/32), [#79](https://github.com/w3c/lws-ucs/issues/79)
 
 - **Application Notifications**  
-  **As a** user, **I want** email or web push notifications for Pod activity, **so that** I remain aware of important events.  
+  **As a** user, **I want** email or web push notifications for storage activity, **so that** I remain aware of important events.  
   *Context:* Notifications keep users engaged with their data.  
   *Issues:* [#100](https://github.com/w3c/lws-ucs/issues/100)
 
 - **Universal Communication**  
-  **As a** user, **I want** direct messaging channels with other Pod owners, **so that** I can collaborate seamlessly within the platform.  
+  **As a** user, **I want** direct messaging channels with other storage owners, **so that** I can collaborate seamlessly within the platform.  
   *Context:* Built-in communication strengthens user interaction.  
   *Issues:* [#99](https://github.com/w3c/lws-ucs/issues/99), [#22](https://github.com/w3c/lws-ucs/issues/22)
 
 - **Polling**  
-  **As a** user, **I want** to create and manage polls within my Pod, **so that** I can gather opinions and feedback from others.  
+  **As a** user, **I want** to create and manage polls within my storage, **so that** I can gather opinions and feedback from others.  
   *Context:* Polls support decision-making and community engagement.  
   *Issues:* [#144](https://github.com/w3c/lws-ucs/issues/144)
 
@@ -95,7 +95,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
 ### Application Integration
 
 - **Personal Information Management**  
-  **As a** user, **I want** to manage my personal data in my Pod and integrate it with non-Solid apps via data projection, **so that** I can use various apps without creating data silos.  
+  **As a** user, **I want** to manage my personal data in my storage and integrate it with non-Solid apps via data projection, **so that** I can use various apps without creating data silos.  
   *Context:* This promotes interoperability and user control.  
   *Issues:* [#2](https://github.com/w3c/lws-ucs/issues/2)
 
@@ -157,7 +157,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
   *Issues:* [#31](https://github.com/w3c/lws-ucs/issues/31)
 
 - **Home Access**  
-  **As a** user, **I want** to access my Pod from home devices with dynamic IPs, **so that** connectivity issues don’t prevent me from using my data.  
+  **As a** user, **I want** to access my storage from home devices with dynamic IPs, **so that** connectivity issues don’t prevent me from using my data.  
   *Context:* This ensures accessibility in home environments.  
   *Issues:* [#105](https://github.com/w3c/lws-ucs/issues/105)
 
