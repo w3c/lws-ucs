@@ -9,7 +9,7 @@
   *Issues:* [#117](https://github.com/w3c/lws-ucs/issues/117), [#97](https://github.com/w3c/lws-ucs/issues/97)
 
 - **Portable Storage**  
-  **As a** user, **I want** the ability to self-host my storage or switch between providers without losing my data, **so that** I maintain control and resilience over my personal information.  
+  **As a** user, **I want** the ability to self-host my storage or switch between providers without losing my data, **so that** I retain data sovereignty and can withstand provider outages or migrations without data loss.  
   *Context:* Portability prevents vendor lock-in and enhances data sovereignty.  
   *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140)
 
