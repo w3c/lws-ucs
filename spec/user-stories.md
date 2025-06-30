@@ -207,7 +207,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
 - **Performant Access Control**  
   **As a** user, **I want** access control mechanisms that are responsive and scalable, **so that** the system performs well even under heavy load.  
   *Context:* Performance is critical for large-scale use.  
-  *Issues:* [#72](https://github.com/w3c/lws-ucs/issues/72), [#153](https://github.com/w3c/lws-ucs/issues/153), [#93](https://github.com/w3c/lws-ucs/issues/93)
+  *Issues:* [#72](https://github.com/w3c/lws-ucs/issues/72), [#153](https://github.com/w3c/lws-ucs/issues/153))
 
 - **Clear Error Messages**  
   **As a** user, **I want** error messages that are clear and actionable, **so that** I can resolve issues quickly and without frustration.  
