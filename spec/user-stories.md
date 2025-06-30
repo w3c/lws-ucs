@@ -19,7 +19,7 @@
   *Issues:* [#138](https://github.com/w3c/lws-ucs/issues/138)
 
 - **Large File Uploads**  
-  **As a** user, **I want** to upload large files with resumable uploads (per the RESUMABLE_UPLOADS standard), **so that** interruptions don’t force me to restart the entire transfer.  
+  **As a** user, **I want** to upload large files with resumable uploads, **so that** interruptions don’t force me to restart the entire transfer.  
   *Context:* This improves usability for managing large media or data files.  
   *Issues:* [#18](https://github.com/w3c/lws-ucs/issues/18)
 
