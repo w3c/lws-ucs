@@ -51,7 +51,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
   *Issues:* [#10](https://github.com/w3c/lws-ucs/issues/10), [#104](https://github.com/w3c/lws-ucs/issues/104), [#118](https://github.com/w3c/lws-ucs/issues/118)
 
 - **Context-Aware Access Policies**  
-  **As an** administrator, **I want** to enforce access policies based on contextual factors like location or time, **so that** access to data adapts dynamically to real-world conditions.  
+  **As an** administrator, **I want** to enforce access policies based on contextual factors like time or geolocation or relative location (near Bob), **so that** access to data adapts dynamically to real-world conditions.  
   *Context:* Context-aware policies enhance security and flexibility.  
   *Issues:* [#17](https://github.com/w3c/lws-ucs/issues/17), [#147](https://github.com/w3c/lws-ucs/issues/147), [#94](https://github.com/w3c/lws-ucs/issues/94)
 
