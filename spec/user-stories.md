@@ -6,17 +6,17 @@
 - **Generic Storage**  
   **As a** user, **I want** a format-agnostic online storage system that supports any type of [resource](../glossary.md#resource), **so that** I can perform Create, Read, Update, and Delete (CRUD) — including metadata and access-control modifications, as well as recovering previous versions—from any device at any time.  
   *Context:* This ensures seamless data management across devices, empowering users with full control over their resources.  
-  *Issues:* [#117](https://github.com/w3c/lws-ucs/issues/117), [#97](https://github.com/w3c/lws-ucs/issues/97)
+  *Issues:* [#117](https://github.com/w3c/lws-ucs/issues/117), [#97](https://github.com/w3c/lws-ucs/issues/97), [#60](https://github.com/w3c/lws-ucs/issues/60), [#63](https://github.com/w3c/lws-ucs/issues/63), [#62](https://github.com/w3c/lws-ucs/issues/62), [#69](https://github.com/w3c/lws-ucs/issues/69)
 
 - **Portable Storage**  
   **As a** user, **I want** the ability to self-host my storage or switch between providers without losing my data, **so that** I retain data sovereignty and can withstand provider outages or migrations without data loss.  
   *Context:* Portability prevents vendor lock-in and enhances data sovereignty.  
-  *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140)
+  *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140), [#61](https://github.com/w3c/lws-ucs/issues/61)
 
 - **Offline Data Access**  
   **As a** user, **I want** to access and modify my data offline, with automatic synchronization upon reconnection, **so that** I can work without a network and avoid data corruption or conflicts.  
   *Context:* Offline support is vital for users in areas with unreliable connectivity.  
-  *Issues:* [#138](https://github.com/w3c/lws-ucs/issues/138)
+  *Issues:* [#138](https://github.com/w3c/lws-ucs/issues/138), [#64](https://github.com/w3c/lws-ucs/issues/64), [#65](https://github.com/w3c/lws-ucs/issues/65), [#67](https://github.com/w3c/lws-ucs/issues/67)
 
 - **Large File Uploads**  
   **As a** user, **I want** to upload large files with resumable uploads, **so that** interruptions don’t force me to restart the entire transfer.  
@@ -33,7 +33,7 @@
 - **Notifications for Permission Changes**
 **As a collaborator**, **I want** to receive notifications when my permissions on a resource are granted, revoked, or modified, so that I am informed about changes to my access rights in a timely manner.
 Context: Timely notifications help collaborators stay updated on their access to shared resources, enhancing collaboration and security.
-Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
+*Issues:* [#116](https://github.com/w3c/lws-ucs/issues/116), [#78](https://github.com/w3c/lws-ucs/issues/78)
 
 - **Profile Sharing**  
   **As a** user, **I want** to maintain multiple profiles with distinct access controls, **so that** I can share specific information while keeping other data private.  
@@ -159,7 +159,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
 - **Home Access**  
   **As a** user, **I want** to access my storage from home devices with dynamic IPs, **so that** connectivity issues don’t prevent me from using my data.  
   *Context:* This ensures accessibility in home environments.  
-  *Issues:* [#105](https://github.com/w3c/lws-ucs/issues/105)
+  *Issues:* [#105](https://github.com/w3c/lws-ucs/issues/105), [#68](https://github.com/w3c/lws-ucs/issues/68)
 
 - **Contextual Interactions**  
   **As a** user, **I want** context-aware display of interactions alongside content, **so that** I can understand permissions and history intuitively.  
@@ -207,7 +207,7 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
 - **Performant Access Control**  
   **As a** user, **I want** access control mechanisms that are responsive and scalable, **so that** the system performs well even under heavy load.  
   *Context:* Performance is critical for large-scale use.  
-  *Issues:* [#72](https://github.com/w3c/lws-ucs/issues/72), [#153](https://github.com/w3c/lws-ucs/issues/153))
+  *Issues:* [#72](https://github.com/w3c/lws-ucs/issues/72), [#153](https://github.com/w3c/lws-ucs/issues/153), [#71](https://github.com/w3c/lws-ucs/issues/71)
 
 - **Clear Error Messages**  
   **As a** user, **I want** error messages that are clear and actionable, **so that** I can resolve issues quickly and without frustration.  
@@ -252,46 +252,26 @@ Issues: [#116](https://github.com/w3c/lws-ucs/issues/116)
   *Context:* This ensures reliable backend connectivity.  
   *Issues:* [#40](https://github.com/w3c/lws-ucs/issues/40), [#56](https://github.com/w3c/lws-ucs/issues/56), [#92](https://github.com/w3c/lws-ucs/issues/92)
 
+- **Storage Description and Discovery**  
+  **As a** user or application, **I want** to retrieve metadata about available storage and service capabilities, **so that** I can configure interactions appropriately and adapt to different storage behaviors.  
+  *Context:* Describing server capabilities in a standardized way allows clients to dynamically adjust their operations, improves interoperability, and facilitates tooling or automation.  
+  *Issues:* [#21](https://github.com/w3c/lws-ucs/issues/21)
+
 ### Storage and Resource Management
 
 - **Globally Unique Identifiers**  
   **As a** user, **I want** all resources and entities to have globally unique identifiers, **so that** I avoid conflicts and ensure data integrity across systems.  
   *Context:* Unique IDs are foundational for decentralized systems.  
-  *Issues:* [#108](https://github.com/w3c/lws-ucs/issues/108), [#115](https://github.com/w3c/lws-ucs/issues/115), [#160](https://github.com/w3c/lws-ucs/issues/160)
+  *Issues:* [#108](https://github.com/w3c/lws-ucs/issues/108), [#115](https://github.com/w3c/lws-ucs/issues/115), [#160](https://github.com/w3c/lws-ucs/issues/160), [#66](https://github.com/w3c/lws-ucs/issues/66)
 
 - **Storage Flexibility**  
   **As a** user, **I want** the ability to dynamically split or aggregate storage units, **so that** I can adjust capacity and organization as my needs evolve.  
   *Context:* Flexible storage supports scalability and customization.  
-  *Issues:* [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136), [#127](https://github.com/w3c/lws-ucs/issues/127)
+  *Issues:* [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136), [#127](https://github.com/w3c/lws-ucs/issues/127), [#69](https://github.com/w3c/lws-ucs/issues/69), [#70](https://github.com/w3c/lws-ucs/issues/70)
 
 - **Hypermedia Authoring**  
   **As a** developer, **I want** consistent mechanisms for authoring hypermedia representations (e.g., JSON-LD, Siren), **so that** clients can navigate and interact with APIs uniformly.  
   *Context:* Standardized hypermedia improves API usability.  
   *Issues:* [#33](https://github.com/w3c/lws-ucs/issues/33), [#124](https://github.com/w3c/lws-ucs/issues/124)
-
----
-
-## Additional Covered Issues
-
-The following issues are addressed within the context of this document but do not fit neatly into specific stories:
-
-- [#159](https://github.com/w3c/lws-ucs/issues/159): Feedback process on use case document
-- [#158](https://github.com/w3c/lws-ucs/issues/158): Consistent actor naming
-- [#91](https://github.com/w3c/lws-ucs/issues/91): Categorization of user stories
-- [#21](https://github.com/w3c/lws-ucs/issues/21): Server/Storage Description
-- [#59](https://github.com/w3c/lws-ucs/issues/59): Offline data consistency
-- [#60](https://github.com/w3c/lws-ucs/issues/60): Data versioning
-- [#61](https://github.com/w3c/lws-ucs/issues/61): Data migration
-- [#62](https://github.com/w3c/lws-ucs/issues/62): Data backup
-- [#63](https://github.com/w3c/lws-ucs/issues/63): Data recovery
-- [#64](https://github.com/w3c/lws-ucs/issues/64): Data synchronization
-- [#65](https://github.com/w3c/lws-ucs/issues/65): Data conflict resolution
-- [#66](https://github.com/w3c/lws-ucs/issues/66): Data integrity
-- [#67](https://github.com/w3c/lws-ucs/issues/67): Data consistency
-- [#68](https://github.com/w3c/lws-ucs/issues/68): Data availability
-- [#69](https://github.com/w3c/lws-ucs/issues/69): Data durability
-- [#70](https://github.com/w3c/lws-ucs/issues/70): Data scalability
-- [#71](https://github.com/w3c/lws-ucs/issues/71): Data performance
-- [#78](https://github.com/w3c/lws-ucs/issues/78): Notification of Access Requests <DRAFT>
 
 ---
