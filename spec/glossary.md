@@ -17,7 +17,7 @@
  - <dfn data-lt="SSI">Self-Sovereign Identity</dfn> (<abbr title="self-sovereign identity">SSI</abbr>) — A digital identity that an [=entity=] directly controls, without relying on a third party.
  - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> — An [=entity=] that fully manages its own Identity credentials without relying on external [=service|service(s)=].
  - <dfn>Service</dfn> — An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service)
- - <dfn>Service Provider</dfn> — an [=entity=] providing a [=service=]; see [W3C Glossaxry](https://www.w3.org/TR/ws-gloss/#providerentity)
+ - <dfn>Service Provider</dfn> — an [=entity=] providing a [=service=]; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#providerentity)
  - <dfn>Storage</dfn> — description
  - <dfn>Storage Service</dfn> — TBD
  - <dfn>Storage Provider</dfn> — TBD
