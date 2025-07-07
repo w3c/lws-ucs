@@ -254,11 +254,6 @@ Context: Timely notifications help collaborators stay updated on their access to
 
 ### Storage and Resource Management
 
-- <dfn>Globally Unique Identifiers</dfn>
-  **As a** user, **I want** all resources and entities to have globally unique identifiers, **so that** I avoid conflicts and ensure data integrity across systems.  
-  *Context:* Unique IDs are foundational for decentralized systems.  
-  *Issues:* [#108](https://github.com/w3c/lws-ucs/issues/108), [#115](https://github.com/w3c/lws-ucs/issues/115), [#160](https://github.com/w3c/lws-ucs/issues/160), [#66](https://github.com/w3c/lws-ucs/issues/66)
-
 - <dfn>Storage Flexibility</dfn>
   **As a** user, **I want** the ability to dynamically split or aggregate storage units, **so that** I can adjust capacity and organization as my needs evolve.  
   *Context:* Flexible storage supports scalability and customization.  
