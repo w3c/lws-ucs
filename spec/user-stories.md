@@ -235,11 +235,6 @@ Context: Timely notifications help collaborators stay updated on their access to
   *Context:* This trust relationship is crucial for maintaining security in a decentralized system where multiple Identity Providers may be involved.  
   *Issues:* [#129](https://github.com/w3c/lws-ucs/issues/129)
 
-- <dfn>Delegation of Control</dfn>
-  **As an** entity, **I want** to delegate control of my storage to another entity, temporarily or permanently, **so that** I can manage access flexibly while retaining the ability to modify or revoke the delegation later.  
-  *Context:* Delegation of control enables entities to grant others the ability to manage their storage, which is critical for collaborative or administrative use cases in a decentralized system.  
-  *Issues:* [#132](https://github.com/w3c/lws-ucs/issues/132)
-
 ### API and Protocol Flexibility
 
 - <dfn>API Protocol Decoupling</dfn>
