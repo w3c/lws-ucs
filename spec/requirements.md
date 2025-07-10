@@ -96,7 +96,10 @@
 22. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities should be able to detect if data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, or checksums so clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.  
     Stories: Legal Reporting
 
-23. <dfn>Consent-Based Data Sharing</dfn> — The protocol shall provide a means to record and honor user consent for data sharing. When an Entity grants another party access to personal or sensitive data, there shall be a verifiable record of that consent (who, what, and for what purpose or duration). Such consent receipts or tokens should be auditable and revocable, ensuring that once consent is withdrawn, access is removed.
+23. <dfn>Consent-Based Data Sharing</dfn> —
+* The system shall enable an Agent to grant access (create, read, write, append, delete, admin) by another Agent to a Resource it controls.
+* The system shall enable an Agent to request access to a Resource to which it does not initially have such access, from the Owner/Controller/other of that Resource by verifiable consent.
+* Such consent receipts or tokens should be auditable and revocable, ensuring that once consent is withdrawn, access is removed.
 
     Issues: [#141](https://github.com/w3c/lws-ucs/issues/141), [#81](https://github.com/w3c/lws-ucs/issues/81)  
     Stories: Consent-Based Sharing
