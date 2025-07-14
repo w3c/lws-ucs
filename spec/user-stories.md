@@ -13,7 +13,7 @@
   *Context:* Portability prevents vendor lock-in and enhances data sovereignty.  
   *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140), [#61](https://github.com/w3c/lws-ucs/issues/61)
 
-### <dfn>Offline Data Access</dfn>
+### <dfn>Offline Data</dfn>
   **As a** user, **I want** to access and modify my data offline, with automatic synchronization upon reconnection, **so that** I can work without a network and avoid data corruption or conflicts.  
   *Context:* Offline support is vital for users in areas with unreliable connectivity.  
   *Issues:* [#138](https://github.com/w3c/lws-ucs/issues/138), [#64](https://github.com/w3c/lws-ucs/issues/64), [#65](https://github.com/w3c/lws-ucs/issues/65), [#67](https://github.com/w3c/lws-ucs/issues/67)
