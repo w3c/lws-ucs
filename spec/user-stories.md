@@ -26,8 +26,9 @@
 
 ### Access Control and Sharing
 
-- <dfn>Sharing Access</dfn> 
-  **As a** data owner, **I want** to grant and revoke fine-grained permissions on my resources, **so that** collaborators have appropriate access and receive notifications when their permissions change.  
+- **<dfn>Sharing Access</dfn>**
+
+  **As a** data owner, **I want** to grant and revoke fine-grained permissions on my resources, **so that** collaborators have appropriate access and receive notifications when their permissions change.
   *Context:* Granular control ensures secure and tailored data sharing.  
   *Issues:* [#7](https://github.com/w3c/lws-ucs/issues/7), [#27](https://github.com/w3c/lws-ucs/issues/27),  [#116](https://github.com/w3c/lws-ucs/issues/116), [#148](https://github.com/w3c/lws-ucs/issues/148), [#120](https://github.com/w3c/lws-ucs/issues/120), [#98](https://github.com/w3c/lws-ucs/issues/98)
 
