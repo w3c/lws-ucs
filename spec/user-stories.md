@@ -3,17 +3,17 @@
 
 ### Data Management
 
-- **Generic Storage**  
+### <dfn>Generic Storage</dfn>
   **As a** user, **I want** a format-agnostic online storage system that supports any type of [resource](../glossary.md#resource), **so that** I can perform Create, Read, Update, and Delete (CRUD) — including metadata and access-control modifications, as well as recovering previous versions—from any device at any time.  
   *Context:* This ensures seamless data management across devices, empowering users with full control over their resources.  
   *Issues:* [#117](https://github.com/w3c/lws-ucs/issues/117), [#97](https://github.com/w3c/lws-ucs/issues/97), [#60](https://github.com/w3c/lws-ucs/issues/60), [#63](https://github.com/w3c/lws-ucs/issues/63), [#62](https://github.com/w3c/lws-ucs/issues/62), [#69](https://github.com/w3c/lws-ucs/issues/69)
 
-- **Portable Storage**  
+### <dfn>Portable Storage</dfn>  
   **As a** user, **I want** the ability to self-host my storage or switch between providers without losing my data, **so that** I retain data sovereignty and can withstand provider outages or migrations without data loss.  
   *Context:* Portability prevents vendor lock-in and enhances data sovereignty.  
   *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140), [#61](https://github.com/w3c/lws-ucs/issues/61)
 
-- **Offline Data Access**  
+### <dfn>Offline Data Access</dfn>
   **As a** user, **I want** to access and modify my data offline, with automatic synchronization upon reconnection, **so that** I can work without a network and avoid data corruption or conflicts.  
   *Context:* Offline support is vital for users in areas with unreliable connectivity.  
   *Issues:* [#138](https://github.com/w3c/lws-ucs/issues/138), [#64](https://github.com/w3c/lws-ucs/issues/64), [#65](https://github.com/w3c/lws-ucs/issues/65), [#67](https://github.com/w3c/lws-ucs/issues/67)
@@ -25,7 +25,7 @@
 
 ### Access Control and Sharing
 
-- **Sharing Access**  
+### <dfn>Sharing Access</dfn> 
   **As a** data owner, **I want** to grant and revoke fine-grained permissions on my resources, **so that** collaborators have appropriate access and receive notifications when their permissions change.  
   *Context:* Granular control ensures secure and tailored data sharing.  
   *Issues:* [#7](https://github.com/w3c/lws-ucs/issues/7), [#27](https://github.com/w3c/lws-ucs/issues/27),  [#116](https://github.com/w3c/lws-ucs/issues/116), [#148](https://github.com/w3c/lws-ucs/issues/148), [#120](https://github.com/w3c/lws-ucs/issues/120), [#98](https://github.com/w3c/lws-ucs/issues/98)
@@ -35,17 +35,17 @@
 Context: Timely notifications help collaborators stay updated on their access to shared resources, enhancing collaboration and security.
 *Issues:* [#116](https://github.com/w3c/lws-ucs/issues/116), [#78](https://github.com/w3c/lws-ucs/issues/78)
 
-- **Profile Sharing**  
+### <dfn>Profile Sharing</dfn>  
   **As a** user, **I want** to maintain multiple profiles with distinct access controls, **so that** I can share specific information while keeping other data private.  
   *Context:* Multiple profiles support different personas or contexts (e.g., work vs. personal).  
   *Issues:* [#29](https://github.com/w3c/lws-ucs/issues/29), [#57](https://github.com/w3c/lws-ucs/issues/57)
 
-- **Group Sharing**  
+### <dfn>Group Sharing<dfn>
   **As a** user, **I want** to share data with dynamic groups (e.g., event attendees), **so that** membership and permissions update automatically as the group evolves.  
   *Context:* This simplifies access management for temporary or changing collaborations.  
   *Issues:* [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)
 
-- **Administrative Assistant**  
+### <dfn>Administrative Assistant</dfn>
   **As a** user, **I want** to delegate specific permissions to an assistant, with audit logs tracking their actions, **so that** they can manage my data securely on my behalf.  
   *Context:* Delegation aids users needing assistance while maintaining oversight.  
   *Issues:* [#10](https://github.com/w3c/lws-ucs/issues/10), [#104](https://github.com/w3c/lws-ucs/issues/104), [#118](https://github.com/w3c/lws-ucs/issues/118)
