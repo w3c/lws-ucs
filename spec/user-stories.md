@@ -3,8 +3,9 @@
 
 ### Data Management
 
-- <dfn>Generic Storage</dfn>
-  **As a** user, **I want** a format-agnostic online storage system that supports any type of [resource](../glossary.md#resource), **so that** I can perform Create, Read, Update, and Delete (CRUD) — including metadata and access-control modifications, as well as recovering previous versions—from any device at any time.  
+- **<dfn>Generic Storage</dfn>**
+
+  **As a** user, **I want** a format-agnostic online storage system that supports any type of [resource](../glossary.md#resource), **so that** I can perform Create, Read, Update, and Delete (CRUD) — including metadata and access-control modifications, as well as recovering previous versions—from any device at any time.
   *Context:* This ensures seamless data management across devices, empowering users with full control over their resources.  
   *Issues:* [#117](https://github.com/w3c/lws-ucs/issues/117), [#97](https://github.com/w3c/lws-ucs/issues/97), [#60](https://github.com/w3c/lws-ucs/issues/60), [#63](https://github.com/w3c/lws-ucs/issues/63), [#62](https://github.com/w3c/lws-ucs/issues/62), [#69](https://github.com/w3c/lws-ucs/issues/69)
 
