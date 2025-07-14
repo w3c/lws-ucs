@@ -97,9 +97,8 @@
     Stories: Legal Reporting
 
 23. <dfn>Consent-Based Data Sharing</dfn> —
-* The system shall enable an Agent to grant access (create, read, write, append, delete, admin) by another Agent to a Resource it controls.
-* The system shall enable an Agent to request access to a Resource to which it does not initially have such access, from the Owner/Controller/other of that Resource by verifiable consent.
-* Such consent receipts or tokens should be auditable and revocable, ensuring that once consent is withdrawn, access is removed.
+* The protocol shall provide a means to record and honor user consent for data sharing, including details on who, what, purpose, and duration.
+* There shall be a verifiable, auditable record of consent (e.g., receipts or tokens) that is revocable, ensuring access removal upon withdrawal.
 
     Issues: [#141](https://github.com/w3c/lws-ucs/issues/141), [#81](https://github.com/w3c/lws-ucs/issues/81)  
     Stories: Consent-Based Sharing
