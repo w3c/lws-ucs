@@ -13,7 +13,7 @@
   *Context:* Portability prevents vendor lock-in and enhances data sovereignty.  
   *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140), [#61](https://github.com/w3c/lws-ucs/issues/61)
 
-### <dfn>Offline Data</dfn>
+### <dfn>Offline Data Access</dfn>
   **As a** user, **I want** to access and modify my data offline, with automatic synchronization upon reconnection, **so that** I can work without a network and avoid data corruption or conflicts.  
   *Context:* Offline support is vital for users in areas with unreliable connectivity.  
   *Issues:* [#138](https://github.com/w3c/lws-ucs/issues/138), [#64](https://github.com/w3c/lws-ucs/issues/64), [#65](https://github.com/w3c/lws-ucs/issues/65), [#67](https://github.com/w3c/lws-ucs/issues/67)
@@ -30,7 +30,7 @@
   *Context:* Granular control ensures secure and tailored data sharing.  
   *Issues:* [#7](https://github.com/w3c/lws-ucs/issues/7), [#27](https://github.com/w3c/lws-ucs/issues/27),  [#116](https://github.com/w3c/lws-ucs/issues/116), [#148](https://github.com/w3c/lws-ucs/issues/148), [#120](https://github.com/w3c/lws-ucs/issues/120), [#98](https://github.com/w3c/lws-ucs/issues/98)
 
-- <dfn>Notifications for Permission Changes</dfn>
+### <dfn>Notifications for Permission Changes</dfn>
 **As a collaborator**, **I want** to receive notifications when my permissions on a resource are granted, revoked, or modified, so that I am informed about changes to my access rights in a timely manner.
 Context: Timely notifications help collaborators stay updated on their access to shared resources, enhancing collaboration and security.
 *Issues:* [#116](https://github.com/w3c/lws-ucs/issues/116), [#78](https://github.com/w3c/lws-ucs/issues/78)
@@ -40,7 +40,7 @@ Context: Timely notifications help collaborators stay updated on their access to
   *Context:* Multiple profiles support different personas or contexts (e.g., work vs. personal).  
   *Issues:* [#29](https://github.com/w3c/lws-ucs/issues/29), [#57](https://github.com/w3c/lws-ucs/issues/57)
 
-### <dfn>Group Sharing<dfn>
+### <dfn>Group Sharing</dfn>
   **As a** user, **I want** to share data with dynamic groups (e.g., event attendees), **so that** membership and permissions update automatically as the group evolves.  
   *Context:* This simplifies access management for temporary or changing collaborations.  
   *Issues:* [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)
@@ -99,7 +99,7 @@ Context: Timely notifications help collaborators stay updated on their access to
   *Context:* This promotes interoperability and user control.  
   *Issues:* [#2](https://github.com/w3c/lws-ucs/issues/2)
 
-- <dfn>Bring-Your-Own-Data Apps</dfn>
+- <dfn>'Bring Your Own Data' Apps</dfn>
   **As an** app developer, **I want** my applications to store data in user's storage, with support for CRUD operations and store discovery, **so that** users retain ownership and control of their data.  
   *Context:* This shifts data ownership from apps to users.  
   *Issues:* [#12](https://github.com/w3c/lws-ucs/issues/12), [#120](https://github.com/w3c/lws-ucs/issues/120)
@@ -182,7 +182,7 @@ Context: Timely notifications help collaborators stay updated on their access to
 
 ### Security and Privacy
 
-- <dfn>End-to-End Encryption</dfn>
+- <dfn>'End to End' Encryption</dfn>
   **As a** user, **I want** end-to-end encryption for all data storage and transfers, **so that** only authorized parties can decrypt and access my information.  
   *Context:* Encryption ensures data confidentiality.  
   *Issues:* [#4](https://github.com/w3c/lws-ucs/issues/4), [#44](https://github.com/w3c/lws-ucs/issues/44), [#73](https://github.com/w3c/lws-ucs/issues/73), [#74](https://github.com/w3c/lws-ucs/issues/74), [#75](https://github.com/w3c/lws-ucs/issues/75), [#76](https://github.com/w3c/lws-ucs/issues/76)
