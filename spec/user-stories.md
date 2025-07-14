@@ -37,8 +37,9 @@
 Context: Timely notifications help collaborators stay updated on their access to shared resources, enhancing collaboration and security.
 *Issues:* [#116](https://github.com/w3c/lws-ucs/issues/116), [#78](https://github.com/w3c/lws-ucs/issues/78)
 
-- <dfn>Profile Sharing</dfn>  
-  **As a** user, **I want** to maintain multiple profiles with distinct access controls, **so that** I can share specific information while keeping other data private.  
+- **<dfn>Profile Sharing</dfn>**
+
+  **As a** user, **I want** to maintain multiple profiles with distinct access controls, **so that** I can share specific information while keeping other data private.
   *Context:* Multiple profiles support different personas or contexts (e.g., work vs. personal).  
   *Issues:* [#29](https://github.com/w3c/lws-ucs/issues/29), [#57](https://github.com/w3c/lws-ucs/issues/57)
 
