@@ -143,11 +143,6 @@
     Issues: [#72](https://github.com/w3c/lws-ucs/issues/72)  
     Stories: Performant Access Control
 
-32. <dfn>Clear Error Messaging</dfn> — The protocol shall specify clear and standardized error messages for various failure conditions, including meaningful status codes and human-readable information indicating the cause and possible remediation.
-
-    Issues: [#34](https://github.com/w3c/lws-ucs/issues/34)  
-    Stories: Clear Error Messages
-
 33. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.  
     Stories: Profile Sharing
 
