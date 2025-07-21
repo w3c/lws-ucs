@@ -34,10 +34,10 @@
     Issues: [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
     Stories: Sharing Access, Profile Sharing, Group Sharing, Health Record Access
 
-9.  <dfn>Auditable Trail</dfn> — The protocol shall make it possible for an authorized Entity to access an auditable log of all access requests and grants to Resources and all read/write/delete of Resources.
+9.  <dfn>Auditable Trail</dfn> — The protocol shall make it possible for an authorized Entity to access an auditable log of all access requests and grants to Resources and all read/write/delete of Resources. This log shall include verifiable receipts or acknowledgements when Resources (such as digital goods) are created, modified, delivered or accessed, ensuring publishers can confirm successful delivery or consumption.
 
-    Issues: [#84](https://github.com/w3c/lws-ucs/issues/84)  
-    Stories: Administrative Assistant, Legal Reporting, Health Record Access
+    Issues: [#84](https://github.com/w3c/lws-ucs/issues/84), [#85](https://github.com/w3c/lws-ucs/issues/85)
+    Stories: Administrative Assistant, Legal Reporting, Health Record Access, Digital Goods Delivery
 
 10. <dfn>Serialization Format</dfn> — The protocol shall make it possible for data in a Storage to be serialized in a known format.  
     Stories: Data Integration, Personal Information Management
@@ -165,11 +165,6 @@
 
     Issues: [#88](https://github.com/w3c/lws-ucs/issues/88)  
     Stories: Data Integration, SPARQL Queries
-
-37. <dfn>Delivery Receipts</dfn> — The protocol shall provide a mechanism for sending verifiable receipts or acknowledgements when Resources (such as digital goods) are created, modified, delivered or accessed, ensuring publishers can confirm successful delivery or consumption.
-
-    Issues: [#85](https://github.com/w3c/lws-ucs/issues/85)  
-    Stories: Digital Goods Delivery
 
 38. <dfn>Collaborative Editing</dfn> — The protocol shall define optional mechanisms (e.g. locking, optimistic concurrency or CRDT-based merges) to allow multiple Entities to co-author or edit the same Resource concurrently, with built-in conflict detection and resolution.
 
