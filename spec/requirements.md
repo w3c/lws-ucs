@@ -186,11 +186,6 @@
     Issues: [#31](https://github.com/w3c/lws-ucs/issues/31)  
     Stories: Website Creation
 
-41. <dfn>Network Flexibility</dfn> — The protocol shall ensure Storages remain accessible from home or mobile environments with dynamic IPs or NAT, providing mechanisms (e.g., NAT traversal, DNS aliasing) so connectivity isn't impeded by changing network endpoints.
-
-    Issues: [#105](https://github.com/w3c/lws-ucs/issues/105), [#68](https://github.com/w3c/lws-ucs/issues/68)  
-    Stories: Home Access
-
 42. <dfn>Bring-Your-Own-Data Apps</dfn> — The protocol shall enable third-party applications to store, read, update, and delete their data within user-managed Storages, and to discover available Storage capabilities, so that users retain data ownership and sovereignty over app-generated content.
 
     Issues: [#12](https://github.com/w3c/lws-ucs/issues/12), [#120](https://github.com/w3c/lws-ucs/issues/120)  
