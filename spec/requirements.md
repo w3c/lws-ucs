@@ -151,7 +151,7 @@
 33. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.  
     Stories: Profile Sharing
 
-34. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and propagate membership changes dynamically so that permissions update automatically as the group evolves.
+34. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and propagate membership changes dynamically so that permissions update automatically as the group evolves. This protocol should also allow for group hierarchies Solid-admin can be defined as a subset of Solid-contributors so all permissions given to Solid-contributors also applies to Solid-admin.
 
     Issues: [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)  
     Stories: Group Sharing
