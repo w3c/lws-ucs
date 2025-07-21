@@ -78,10 +78,57 @@
     Issues: [#22](https://github.com/w3c/lws-ucs/issues/22), [#99](https://github.com/w3c/lws-ucs/issues/99)  
     Stories: Universal Communication
 
-19. <dfn>Search and Query</dfn> — The protocol shall support querying of data to help users and applications discover Resources based on content or metadata. It shall offer powerful search capabilities (e.g., full-text or attribute-based search) while enforcing access controls on results. To handle large result sets, the protocol shall provide features like pagination, filtering, and sorting of query results, and may support standard query languages (such as SPARQL) for advanced semantic queries over the data.
+19. <dfn>Search and Query</dfn> — Collection of query reqs:
+  
+      Stories: Search Functionality, Pagination & Filtering, SPARQL Queries
 
-    Issues: [#45](https://github.com/w3c/lws-ucs/issues/45), [#103](https://github.com/w3c/lws-ucs/issues/103), [#152](https://github.com/w3c/lws-ucs/issues/152)  
-    Stories: Search Functionality, Pagination & Filtering, SPARQL Queries
+- 1. <dfn>pod-level query</dfn> — SPARQL queries, respecting ACLs to easily find stuff in potentially large pods
+      ```
+      GET <my-pod-path>?query=SELECT…
+      Host: <my-pod-server>
+      ```
+  
+      Issues: [#45 SPARQL queries](https://github.com/w3c/lws-ucs/issues/45), [#152 query (/search)](https://github.com/w3c/lws-ucs/issues/152)  
+      Stories: Search Functionality, SPARQL Queries
+
+- 2. <dfn>resource-level query</dfn> — query other people's pods, respecting ACLs
+      ```
+      GET <my-pod-path>/<my-resource>?query=SELECT…
+      Host: <my-pod-server>
+      ```
+  
+- 3. <dfn>query other pods</dfn> — query other people's pods, respecting ACLs
+      ```
+      GET <other-pod-path>/<my-resource>?query=SELECT…
+      Host: <my-pod-server>
+      ```
+  
+- 4. <dfn>paginate,filter,sort</dfn> — To handle large result sets, the protocol shall provide features like pagination, filtering, and sorting of query results, and may support standard query languages (such as SPARQL) for advanced semantic queries over the data.
+      <span class="issue">This could equally apply to protocol-level query, e.g. GET on an LWP Container</span>
+
+      Issues: [#103 Pagination, filtering and ordering](https://github.com/w3c/lws-ucs/issues/103)
+      Stories: Search Functionality, Pagination & Filtering, SPARQL Queries
+
+- 5. <dfn>federated query</dfn> — SPARQL queries joining external data, respecting ACLs to easily find stuff in potentially large pods
+
+  - 1. <dfn>joins across multiple pods</dfn> — SPARQL queries joining pods, respecting ACLs
+      ```
+      GET <my-resource>?query=SELECT…FROM <other-pod-path>…
+      Host: <my-pod-server>
+      ```
+
+    Issues: [#88 Resource Aggregation](https://github.com/w3c/lws-ucs/issues/88)  
+    Stories: Data Integration, SPARQL Queries
+
+  - 2. <dfn>joins across multiple resources</dfn> — SPARQL queries joining external data, respecting ACLs
+      ```
+      GET <my-resource>?query=SELECT…FROM <wikidata>…
+      Host: <my-pod-server>
+      ```
+      ```
+      GET <my-resource>?query=SELECT…SERVICE <wikidata>…
+      Host: <my-pod-server>
+      ```
 
 20. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means for clients to discover available capabilities and navigate a Storage's data and access control interfaces uniformly. This could be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, or features.
 
@@ -160,11 +207,6 @@
 
     Issues: [#63](https://github.com/w3c/lws-ucs/issues/63), [#106](https://github.com/w3c/lws-ucs/issues/106), [#116](https://github.com/w3c/lws-ucs/issues/116)  
     Stories: Sensor Data Sharing
-
-36. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including SPARQL federation), aggregating and returning results transparently while enforcing each Storage's access controls.
-
-    Issues: [#88](https://github.com/w3c/lws-ucs/issues/88)  
-    Stories: Data Integration, SPARQL Queries
 
 37. <dfn>Delivery Receipts</dfn> — The protocol shall provide a mechanism for sending verifiable receipts or acknowledgements when Resources (such as digital goods) are created, modified, delivered or accessed, ensuring publishers can confirm successful delivery or consumption.
 
