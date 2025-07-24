@@ -93,13 +93,13 @@
 
 - 2. <dfn>metadata query</dfn> — SPARQL queries, respecting ACLs, over server-maintained data
 
-      e.g. on a root Container:
+      e.g., on a root Container:
       ```
       GET <my-pod-path>?query=SELECT…
       Host: <my-pod-server>
       ```
 
-      e.g. on a Resource (or nested Container)
+      e.g., on a Resource (or nested Container)
       ```
       GET <my-pod-path>/<my-resource>?query=SELECT…
       Host: <my-pod-server>
