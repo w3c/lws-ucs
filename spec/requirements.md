@@ -118,7 +118,7 @@
       ```
   
 - 5. <dfn>paginate,filter,sort</dfn> — To handle large result sets, the protocol shall provide features like pagination, filtering, and sorting of query results, and may support standard query languages (such as SPARQL) for advanced semantic queries over the data.
-      <span class="issue">This could equally apply to protocol-level query, e.g. GET on an LWP Container</span>
+      <span class="issue">This could equally apply to protocol-level query, e.g., `GET` on an LWP Container</span>
 
       Issues: [#103 Pagination, filtering and ordering](https://github.com/w3c/lws-ucs/issues/103)
       Stories: Search Functionality, Pagination & Filtering, SPARQL Queries
