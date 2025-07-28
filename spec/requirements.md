@@ -201,7 +201,7 @@
     Issues: [#47](https://github.com/w3c/lws-ucs/issues/47), [#48](https://github.com/w3c/lws-ucs/issues/48)  
     Stories: WebID Profile Interaction
 
-44. <dfn>Personal Data Projection</dfn> — The protocol shall provide a mechanism to support automatic transformation (projection) of personal data into formats consumable by non-LWS applications (e.g., JSON, vCard), without duplicating underlying resources, to prevent data silos and provide compatibility/interoperability with existing Web (de facto) standards. (This may also apply to converting from one LWS data schema or structure to another, for interoperability across LWS applciations.)
+44. <dfn>Personal Data Projection</dfn> — The protocol shall provide a mechanism to support automatic transformation (projection) of personal data into formats consumable by non-LWS applications (e.g., JSON, vCard), without duplicating underlying resources, to prevent data silos and provide compatibility/interoperability with existing Web standards. (This may also apply to converting from one LWS data schema or structure to another, for interoperability across LWS applciations.)
 
     Issues: [#2](https://github.com/w3c/lws-ucs/issues/2)  
     Stories: Personal Information Management
