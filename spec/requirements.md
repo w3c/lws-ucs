@@ -169,15 +169,10 @@
     Issues: [#80](https://github.com/w3c/lws-ucs/issues/80), [#77](https://github.com/w3c/lws-ucs/issues/77)  
     Stories: Legal Grounds Support
 
-25. <dfn>User-Centric Identity Management</dfn> — The protocol shall integrate with identity systems in a way that empowers users to control their credentials and identifiers. Users should be able to manage self-sovereign identities or locally stored credentials and authenticate to a Storage using an identity solution they trust, accommodating standards like decentralized identifiers or client-managed credentials.
+25. <dfn>Authentication Mechanisms</dfn> — The protocol shall support federated and self-sovereign authentication mechanisms.
 
-    Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128)  
-    Stories: Identity & Credentials Management
-
-26. <dfn>Modern Authentication Methods</dfn> — The protocol shall support contemporary web authentication methods, such as passkeys or WebAuthn for passwordless login, "silent" non-interactive flows for scripts, and client-credentials or token-based auth for automation. All methods must result in a verified Entity identity recognized by the Storage.
-
-    Issues: [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
-    Stories: Authentication Mechanisms
+    Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
+    Stories: Identity & Credentials Management, Authentication Mechanisms
 
 27. <dfn>Trusted Identity Providers</dfn> — The protocol shall enable Storage Providers to establish trust relationships with Identity Providers of their choosing, rather than blindly accepting any identity source. Trust is non-transitive: a Storage only accepts credentials from IdPs it explicitly trusts.
 
