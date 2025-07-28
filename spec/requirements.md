@@ -169,7 +169,7 @@
     Issues: [#80](https://github.com/w3c/lws-ucs/issues/80), [#77](https://github.com/w3c/lws-ucs/issues/77)  
     Stories: Legal Grounds Support
 
-25. <dfn>Authentication Mechanisms</dfn> — The protocol shall support federated and self-sovereign authentication mechanisms.
+25. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and self-sovereign types of authentication mechanisms.
 
     Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
     Stories: Identity & Credentials Management, Authentication Mechanisms
