@@ -184,7 +184,7 @@
     Issues: [#129](https://github.com/w3c/lws-ucs/issues/129)  
     Stories: Trust Mechanism for Storage Providers
 
-28. <dfn>Protocol Binding Independence</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
+28. <dfn>Loose Coupling of Underlying Protocols</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
 
     Issues: [#24](https://github.com/w3c/lws-ucs/issues/24)  
     Stories: API Protocol Decoupling
