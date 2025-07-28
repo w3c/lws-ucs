@@ -34,10 +34,10 @@
     Issues: [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
     Stories: Sharing Access, Profile Sharing, Group Sharing, Health Record Access
 
-9.  <dfn>Auditable Trail</dfn> — The protocol shall make it possible for an authorized Entity to access an auditable log of all access requests and grants to Resources and all read/write/delete of Resources.
+9.  <dfn>Auditable Trail</dfn> — The protocol shall make it possible for an authorized Entity to access an auditable log of all access requests and grants to Resources and all read/write/delete of Resources. This log shall include verifiable receipts or acknowledgements when Resources (such as digital goods) are created, modified, delivered, or accessed, ensuring publishers can confirm successful delivery or consumption.
 
-    Issues: [#84](https://github.com/w3c/lws-ucs/issues/84)  
-    Stories: Administrative Assistant, Legal Reporting, Health Record Access
+    Issues: [#84](https://github.com/w3c/lws-ucs/issues/84), [#85](https://github.com/w3c/lws-ucs/issues/85)
+    Stories: Administrative Assistant, Legal Reporting, Health Record Access, Digital Goods Delivery
 
 10. <dfn>Serialization Format</dfn> — The protocol shall make it possible for data in a Storage to be serialized in a known format.  
     Stories: Data Integration, Personal Information Management
@@ -207,7 +207,7 @@
 33. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.  
     Stories: Profile Sharing
 
-34. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and propagate membership changes dynamically so that permissions update automatically as the group evolves.
+34. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and propagate membership changes dynamically so that permissions update automatically as the group evolves. This protocol should also allow for group hierarchies, e.g., Solid-admin can be defined as a subset of Solid-contributors, so all permissions given to Solid-contributors also apply to Solid-admin.
 
     Issues: [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)  
     Stories: Group Sharing
@@ -217,10 +217,10 @@
     Issues: [#63](https://github.com/w3c/lws-ucs/issues/63), [#106](https://github.com/w3c/lws-ucs/issues/106), [#116](https://github.com/w3c/lws-ucs/issues/116)  
     Stories: Sensor Data Sharing
 
-37. <dfn>Delivery Receipts</dfn> — The protocol shall provide a mechanism for sending verifiable receipts or acknowledgements when Resources (such as digital goods) are created, modified, delivered or accessed, ensuring publishers can confirm successful delivery or consumption.
+36. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including SPARQL federation), aggregating and returning results transparently while enforcing each Storage's access controls.
 
-    Issues: [#85](https://github.com/w3c/lws-ucs/issues/85)  
-    Stories: Digital Goods Delivery
+    Issues: [#88](https://github.com/w3c/lws-ucs/issues/88)  
+    Stories: Data Integration, SPARQL Queries
 
 38. <dfn>Collaborative Editing</dfn> — The protocol shall define optional mechanisms (e.g. locking, optimistic concurrency or CRDT-based merges) to allow multiple Entities to co-author or edit the same Resource concurrently, with built-in conflict detection and resolution.
 
