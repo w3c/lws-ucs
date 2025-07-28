@@ -199,10 +199,10 @@
     Issues: [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136)  
     Stories: Storage Flexibility
 
-32. <dfn>Clear Error Messaging</dfn> — The protocol shall specify clear and standardized error messages for various failure conditions, including meaningful status codes and human-readable information indicating the cause and possible remediation.
+31. <dfn>Performance and Scalability</dfn> — The protocol and its implementations shall be designed for high performance at scale. Access control checks and data operations should incur minimal overhead, and the design should allow batching, caching, and distributed/clustered deployments to meet typical web performance needs.
 
-    Issues: [#34](https://github.com/w3c/lws-ucs/issues/34)  
-    Stories: Clear Error Messages
+    Issues: [#72](https://github.com/w3c/lws-ucs/issues/72)  
+    Stories: Performant Access Control
 
 33. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.  
     Stories: Profile Sharing
