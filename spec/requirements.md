@@ -169,27 +169,22 @@
     Issues: [#80](https://github.com/w3c/lws-ucs/issues/80), [#77](https://github.com/w3c/lws-ucs/issues/77)  
     Stories: Legal Grounds Support
 
-25. <dfn>User-Centric Identity Management</dfn> — The protocol shall integrate with identity systems in a way that empowers users to control their credentials and identifiers. Users should be able to manage self-sovereign identities or locally stored credentials and authenticate to a Storage using an identity solution they trust, accommodating standards like decentralized identifiers or client-managed credentials.
+25. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and self-sovereign types of authentication mechanisms.
 
-    Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128)  
-    Stories: Identity & Credentials Management
-
-26. <dfn>Modern Authentication Methods</dfn> — The protocol shall support contemporary web authentication methods, such as passkeys or WebAuthn for passwordless login, "silent" non-interactive flows for scripts, and client-credentials or token-based auth for automation. All methods must result in a verified Entity identity recognized by the Storage.
-
-    Issues: [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
-    Stories: Authentication Mechanisms
+    Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
+    Stories: Identity & Credentials Management, Authentication Mechanisms
 
 27. <dfn>Trusted Identity Providers</dfn> — The protocol shall enable Storage Providers to establish trust relationships with Identity Providers of their choosing, rather than blindly accepting any identity source. Trust is non-transitive: a Storage only accepts credentials from IdPs it explicitly trusts.
 
     Issues: [#129](https://github.com/w3c/lws-ucs/issues/129)  
     Stories: Trust Mechanism for Storage Providers
 
-28. <dfn>Protocol Binding Independence</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
+28. <dfn>Loose Coupling of Underlying Protocols</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
 
     Issues: [#24](https://github.com/w3c/lws-ucs/issues/24)  
     Stories: API Protocol Decoupling
 
-29. <dfn>Service Integration Authentication</dfn> — The protocol shall support secure authentication and authorization flows suitable for server-to-server and backend service integration, such as mutual TLS, signed JWT-based service credentials, or scoped long-lived tokens, enabling trusted services to access user Storages without interactive login.
+29. <dfn>Server-to-server Authentication</dfn> — The protocol shall support secure authentication and authorization flows suitable for server-to-server and backend service integration enabling trusted services to access user Storages without interactive login. Possibilities include mutual TLS, signed JWT-based service credentials, and/or scoped long-lived tokens.
 
     Issues: [#40](https://github.com/w3c/lws-ucs/issues/40), [#92](https://github.com/w3c/lws-ucs/issues/92)  
     Stories: Backend Service Integration
