@@ -144,10 +144,10 @@
       Host: <my-pod-server>
       ```
 
-20. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means for clients to discover available capabilities and navigate a Storage's data and access control interfaces uniformly. This could be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, or features.
+20. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means for Services to discover available capabilities and navigate a Storage's data and access control interfaces uniformly. This way, Services can store, read, update, and delete their data within user-managed Storages, so that Users retain data ownership and sovereignty over app-generated content. This could be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, or features.
 
-    Issues: [#21](https://github.com/w3c/lws-ucs/issues/21), [#70](https://github.com/w3c/lws-ucs/issues/70)  
-    Stories: Storage Description and Discovery
+    Issues: [#12](https://github.com/w3c/lws-ucs/issues/12), [#21](https://github.com/w3c/lws-ucs/issues/21), [#70](https://github.com/w3c/lws-ucs/issues/70), [#120](https://github.com/w3c/lws-ucs/issues/120)  
+    Stories: Storage Description and Discovery, Bring-Your-Own-Data Apps
 
 21. <dfn>End-to-End Encryption</dfn> — The protocol shall enable end-to-end encryption of data such that data stored or transmitted is unreadable to anyone except the authorized parties. Even Storage Providers or network intermediaries cannot decrypt the content (only the data owner and intended recipients can). End-to-end encryption should be achievable for data at rest and in transit, using standard algorithms.
 
@@ -231,11 +231,6 @@
 
     Issues: [#31](https://github.com/w3c/lws-ucs/issues/31)  
     Stories: Website Creation
-
-42. <dfn>Bring-Your-Own-Data Apps</dfn> — The protocol shall enable third-party applications to store, read, update, and delete their data within user-managed Storages, and to discover available Storage capabilities, so that users retain data ownership and sovereignty over app-generated content.
-
-    Issues: [#12](https://github.com/w3c/lws-ucs/issues/12), [#120](https://github.com/w3c/lws-ucs/issues/120)  
-    Stories: Bring-Your-Own-Data Apps
 
 43. <dfn>Profile Interaction UI</dfn> — The protocol shall define a standard method for clients to fetch and display an Entity's profile (e.g., WebID), along with supported actions (follow, message, share), so users can engage seamlessly with contacts.
 
