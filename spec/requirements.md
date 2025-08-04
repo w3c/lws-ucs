@@ -184,7 +184,7 @@
     Issues: [#24](https://github.com/w3c/lws-ucs/issues/24)  
     Stories: API Protocol Decoupling
 
-29. <dfn>Service Integration Authentication</dfn> — The protocol shall support secure authentication and authorization flows suitable for server-to-server and backend service integration, such as mutual TLS, signed JWT-based service credentials, or scoped long-lived tokens, enabling trusted services to access user Storages without interactive login.
+29. <dfn>Server-to-server Authentication</dfn> — The protocol shall support secure authentication and authorization flows suitable for server-to-server and backend service integration enabling trusted services to access user Storages without interactive login. Possibilities include mutual TLS, signed JWT-based service credentials, and/or scoped long-lived tokens.
 
     Issues: [#40](https://github.com/w3c/lws-ucs/issues/40), [#92](https://github.com/w3c/lws-ucs/issues/92)  
     Stories: Backend Service Integration
