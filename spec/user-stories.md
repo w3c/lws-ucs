@@ -265,7 +265,7 @@
   *Context:* Local management boosts security and autonomy.  
   *Issues:* [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#153](https://github.com/w3c/lws-ucs/issues/153), [#128](https://github.com/w3c/lws-ucs/issues/128)
 
-- <dfn>Authentication Mechanisms</dfn>
+- <dfn>Authentication Mechanism(s)</dfn>
 
   **As a** user, **I want** support for modern authentication methods like passkeys, silent authentication, and script-friendly options, **so that** I can authenticate securely across diverse scenarios.  
   *Context:* Flexible authentication meets varied user needs.  
