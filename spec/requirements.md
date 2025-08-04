@@ -241,3 +241,8 @@
 
     Issues: [#2](https://github.com/w3c/lws-ucs/issues/2)  
     Stories: Personal Information Management
+
+45. <dfn>Resource Listing Support</dfn> — The protocol shall define a standard method for clients to fetch a listing of all resources that client has access to within a specific Storage, enabling externalized indexing of said Storage.
+
+    Issues: Came up during LWS call of 4/8/25  
+    Stories: Discoverable Resource Listings

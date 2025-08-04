@@ -29,8 +29,8 @@
 
 - **<dfn>Discoverable Resource Listings</dfn>**
 
-  **As a** user, **I want** the ability to discover all resources defined in my storage, **so that** I can run (external) indexing  mechanisms.
-  *Context:* As a storage can be written by multiple Services and other users, as a user, it is not a always clear what data is exactly available in my pod.
+  **As a** user, **I want** the ability to discover all resources defined in my storage, **so that** I can run (external) indexing  mechanisms.  
+  *Context:* As a storage can be written by multiple Services and other users, as a user, it is not a always clear what data is exactly available in my pod.  
   *Issues:* Came up during LWS call of 4/8/25
 
 ### Access Control and Sharing
