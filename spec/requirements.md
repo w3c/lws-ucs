@@ -73,7 +73,7 @@
     Issues: [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65)  
     Stories: Context-Aware Access Policies
 
-18. <dfn>Inter-User Communication</dfn> — The protocol shall provide a mechanism for users (or their agents/applications) to exchange messages or data directly via their Storages in a standardized way, enabling built-in collaboration without relying on external messaging services. For example, a user should be able to send a message, notification, or invite to another user's Storage (with appropriate authorization), and the receiving user's client can retrieve or be alerted to this message.
+18. <dfn>Change tracking (notifications)</dfn> — The protocol shall provide a mechanism for users (or their agents/applications) to exchange messages or data directly via their Storages in a standardized way, enabling built-in collaboration without relying on external messaging services. For example, a user should be able to send a message, notification, or invite to another user's Storage (with appropriate authorization), and the receiving user's client can retrieve or be alerted to this message.
 
     Issues: [#22](https://github.com/w3c/lws-ucs/issues/22), [#99](https://github.com/w3c/lws-ucs/issues/99)  
     Stories: Universal Communication
