@@ -24,7 +24,7 @@
 - <dfn>Large File Uploads</dfn>
 
   **As a** user, **I want** to upload large files with resumable uploads, **so that** interruptions don’t force me to restart the entire transfer.  
-  *Context:* This improves usability for managing large media or data files.  
+  *Context:* This improves usability for managing large media or data files.
   *Issues:* [#18](https://github.com/w3c/lws-ucs/issues/18)
 
 - **<dfn>Discoverable Resource Listings</dfn>**
