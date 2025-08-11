@@ -53,7 +53,7 @@
 13. <dfn>Data Versioning</dfn> — The protocol shall support maintaining and retrieving previous versions of Resources. Authorized Entities should be able to recover or inspect earlier versions of data (including metadata and access control states) to enable undoing changes, auditing modifications, or recovering from accidental deletions. This helps ensure data durability and traceability over time.  
     Stories: Generic Storage
 
-14. <dfn>Notification and Eventing</dfn> — The protocol shall provide a mechanism to notify relevant Entities of significant events, such as changes to Resources or updates to access permissions. For example, if access rights on a Resource change or new data is available, the affected parties can be alerted in a timely manner. Notification delivery may be real-time (e.g., push/SSE) or via queued channels (e.g., email or inbox), respecting user preferences and privacy.
+14. <dfn>Subscribing to resource changes (Notifications)</dfn> — The protocol shall provide a mechanism to notify relevant Entities of significant events, such as changes to Resources or updates to access permissions. For example, if access rights on a Resource change or new data is available, the affected parties can be alerted in a timely manner. Notification delivery may be real-time (e.g., push/SSE) or via queued channels (e.g., email or inbox), respecting user preferences and privacy.
 
     Issues: [#32](https://github.com/w3c/lws-ucs/issues/32), [#100](https://github.com/w3c/lws-ucs/issues/100), [#101](https://github.com/w3c/lws-ucs/issues/101)  
     Stories: Notifications for Permission Changes, Real-Time Notifications, Application Notifications
@@ -73,7 +73,7 @@
     Issues: [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65)  
     Stories: Context-Aware Access Policies
 
-18. <dfn>Change tracking (notifications)</dfn> — The protocol shall provide a mechanism for users (or their agents/applications) to exchange messages or data directly via their Storages in a standardized way, enabling built-in collaboration without relying on external messaging services. For example, a user should be able to send a message, notification, or invite to another user's Storage (with appropriate authorization), and the receiving user's client can retrieve or be alerted to this message.
+18. <dfn>Inbox (notifications)</dfn> — The protocol shall provide a mechanism for users (or their agents/applications) to exchange messages or data directly via their Storages in a standardized way, enabling built-in collaboration without relying on external messaging services. For example, a user should be able to send a message, notification, or invite to another user's Storage (with appropriate authorization), and the receiving user's client can retrieve or be alerted to this message.
 
     Issues: [#22](https://github.com/w3c/lws-ucs/issues/22), [#99](https://github.com/w3c/lws-ucs/issues/99)  
     Stories: Universal Communication
