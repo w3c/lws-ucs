@@ -261,3 +261,14 @@
 
     Issues: [#92](https://github.com/w3c/lws-ucs/issues/92)
     Stories: ??? (Access Control?)
+
+99. <dfn>Creator Recording & Creator-Based Permission</dfn> — The permission model shall support defining permissions for the "creator of a resource", such as "creator of a resource can delete the resource". The creator is dynamic, especially for a public-writable container, and thus cannot be pre-defined. Consequently, this also requires the protocol to record the creator of a resource to satisfy this permission.
+
+    Issues: [#144](https://github.com/w3c/lws-ucs/issues/144)
+    Stories: ??? (Access Control?)
+
+99. <dfn>Anonymous Identity Recognition</dfn> — The protocol shall provide a way to differentiate between different anonymous users, especially to assign different permissions to them (e.g. creator-based permission).
+
+    Issues: [#144](https://github.com/w3c/lws-ucs/issues/144)
+    Stories: ??? (Access Control?)
+
