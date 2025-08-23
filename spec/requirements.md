@@ -241,3 +241,34 @@
 
     Issues: [#2](https://github.com/w3c/lws-ucs/issues/2)  
     Stories: Personal Information Management
+
+99. <dfn>User/Pod Customizable API Endpoints</dfn> — The protocol shall provide a mechanism to support users (pod owners) to assign customized API endpoints, or service providers for certain activities/operations/protocols. This is a generic mechanism, enabling many non-essential but useful features, for some but not all users. This allows the user to "integrate" custom features to their Storage without imposing noticable performance issue for the underlying server.
+
+    Issues: [#202](https://github.com/w3c/lws-ucs/issues/207), and many UCs (maybe) not classified as essential / classified as out of scope of LWS Spec. For example, alternative data "layouts" [#106](https://github.com/w3c/lws-ucs/issues/106), [#97](https://github.com/w3c/lws-ucs/issues/97), [#98](https://github.com/w3c/lws-ucs/issues/97); query interface [#45](https://github.com/w3c/lws-ucs/issues/45), [#152](https://github.com/w3c/lws-ucs/issues/152); arbitrary forms of policy engine [#81](https://github.com/w3c/lws-ucs/issues/81), [#82](https://github.com/w3c/lws-ucs/issues/82), [#72](https://github.com/w3c/lws-ucs/issues/72), [#60](https://github.com/w3c/lws-ucs/issues/60), [DToU](https://me.ryey.icu/solid-dtou/dtou-spec.html); facilitating operations requiring a "service", [#3](https://github.com/w3c/lws-ucs/issues/3)   
+    Stories: ??? (Extensibility?)
+
+99. <dfn>Custom metadata or custom HTTP response field</dfn> — The protocol shall provide a mechanism to allow users to configure custom metadata associated with a resource, and/or custom HTTP response fields when accessing a resource. This will allow a resource to have additional configurable metadata, further usable by apps of interest.
+
+    Issues: [#94](https://github.com/w3c/lws-ucs/issues/94), [#57](https://github.com/w3c/lws-ucs/issues/57)
+    Stories: ??? (Extensibility?)
+
+99. <dfn>App-Independent Resource Permission</dfn> — The protocol shall allow sharing resources to other users, while allowing those users to use apps/clients of their choice to access the shared resource. The data owner shall be able to limit the apps/clients that can access the resources, or not to limit.
+
+    Issues: [#120](https://github.com/w3c/lws-ucs/issues/120)  
+    Stories: ??? (Data sharing? Permission? Access control?)
+
+99. <dfn>Externalizing Permission Checking</dfn> — The protocol shall provide a means for a permitted Service to verify (read/write/etc) permission of a User, based on configuration (e.g. `.acl`/`.acr`) in the Storage. This is for reducing functionality/burden from the Service, to make them as small as possible.
+
+    Issues: [#92](https://github.com/w3c/lws-ucs/issues/92)
+    Stories: ??? (Access Control?)
+
+99. <dfn>Creator Recording & Creator-Based Permission</dfn> — The permission model shall support defining permissions for the "creator of a resource", such as "creator of a resource can delete the resource". The creator is dynamic, especially for a public-writable container, and thus cannot be pre-defined. Consequently, this also requires the protocol to record the creator of a resource to satisfy this permission.
+
+    Issues: [#144](https://github.com/w3c/lws-ucs/issues/144)
+    Stories: ??? (Access Control?)
+
+99. <dfn>Anonymous Identity Recognition</dfn> — The protocol shall provide a way to differentiate between different anonymous users, especially to assign different permissions to them (e.g. creator-based permission).
+
+    Issues: [#144](https://github.com/w3c/lws-ucs/issues/144)
+    Stories: ??? (Identity?)
+
