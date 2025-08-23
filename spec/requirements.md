@@ -256,3 +256,8 @@
 
     Issues: [#120](https://github.com/w3c/lws-ucs/issues/120)  
     Stories: ??? (Data sharing? Permission? Access control?)
+
+99. <dfn>Externalizing Permission Checking</dfn> — The protocol shall provide a means for a permitted Service to verify (read/write/etc) permission of a User, based on configuration (e.g. `.acl`/`.acr`) in the Storage. This is for reducing functionality/burden from the Service, to make them as small as possible.
+
+    Issues: [#92](https://github.com/w3c/lws-ucs/issues/92)
+    Stories: ??? (Access Control?)
