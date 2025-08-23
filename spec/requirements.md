@@ -270,5 +270,5 @@
 99. <dfn>Anonymous Identity Recognition</dfn> — The protocol shall provide a way to differentiate between different anonymous users, especially to assign different permissions to them (e.g. creator-based permission).
 
     Issues: [#144](https://github.com/w3c/lws-ucs/issues/144)
-    Stories: ??? (Access Control?)
+    Stories: ??? (Identity?)
 
