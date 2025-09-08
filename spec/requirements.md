@@ -144,10 +144,10 @@
       Host: <my-pod-server>
       ```
 
-20. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means for clients to discover available capabilities and navigate a Storage's data and access control interfaces uniformly. This could be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, or features.
+20. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means for Services to discover available capabilities and navigate a Storage's data and access control interfaces uniformly. This way, Services can store, read, update, and delete their data within user-managed Storages, so that Users retain data ownership and sovereignty over app-generated content. This could be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, or features.
 
-    Issues: [#21](https://github.com/w3c/lws-ucs/issues/21), [#70](https://github.com/w3c/lws-ucs/issues/70)  
-    Stories: Storage Description and Discovery
+    Issues: [#12](https://github.com/w3c/lws-ucs/issues/12), [#21](https://github.com/w3c/lws-ucs/issues/21), [#70](https://github.com/w3c/lws-ucs/issues/70), [#120](https://github.com/w3c/lws-ucs/issues/120)  
+    Stories: Storage Description and Discovery, Bring-Your-Own-Data Apps
 
 21. <dfn>End-to-End Encryption</dfn> — The protocol shall enable end-to-end encryption of data such that data stored or transmitted is unreadable to anyone except the authorized parties. Even Storage Providers or network intermediaries cannot decrypt the content (only the data owner and intended recipients can). End-to-end encryption should be achievable for data at rest and in transit, using standard algorithms.
 
@@ -169,15 +169,10 @@
     Issues: [#80](https://github.com/w3c/lws-ucs/issues/80), [#77](https://github.com/w3c/lws-ucs/issues/77)  
     Stories: Legal Grounds Support
 
-25. <dfn>User-Centric Identity Management</dfn> — The protocol shall integrate with identity systems in a way that empowers users to control their credentials and identifiers. Users should be able to manage self-sovereign identities or locally stored credentials and authenticate to a Storage using an identity solution they trust, accommodating standards like decentralized identifiers or client-managed credentials.
+25. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and self-sovereign types of authentication mechanisms.
 
-    Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128)  
-    Stories: Identity & Credentials Management
-
-26. <dfn>Modern Authentication Methods</dfn> — The protocol shall support contemporary web authentication methods, such as passkeys or WebAuthn for passwordless login, "silent" non-interactive flows for scripts, and client-credentials or token-based auth for automation. All methods must result in a verified Entity identity recognized by the Storage.
-
-    Issues: [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
-    Stories: Authentication Mechanisms
+    Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
+    Stories: Identity & Credentials Management, Authentication Mechanisms
 
 27. <dfn>Trusted Identity Providers</dfn> — The protocol shall enable Storage Providers to establish trust relationships with Identity Providers of their choosing, rather than blindly accepting any identity source. Trust is non-transitive: a Storage only accepts credentials from IdPs it explicitly trusts.
 
@@ -236,11 +231,6 @@
 
     Issues: [#31](https://github.com/w3c/lws-ucs/issues/31)  
     Stories: Website Creation
-
-42. <dfn>Bring-Your-Own-Data Apps</dfn> — The protocol shall enable third-party applications to store, read, update, and delete their data within user-managed Storages, and to discover available Storage capabilities, so that users retain data ownership and sovereignty over app-generated content.
-
-    Issues: [#12](https://github.com/w3c/lws-ucs/issues/12), [#120](https://github.com/w3c/lws-ucs/issues/120)  
-    Stories: Bring-Your-Own-Data Apps
 
 43. <dfn>Profile Interaction UI</dfn> — The protocol shall define a standard method for clients to fetch and display an Entity's profile (e.g., WebID), along with supported actions (follow, message, share), so users can engage seamlessly with contacts.
 
