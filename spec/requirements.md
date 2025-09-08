@@ -8,7 +8,7 @@
     Issues: [#127](https://github.com/w3c/lws-ucs/issues/127)  
     Stories: Trust Mechanism for Storage Providers
 
-3.  <dfn>Control of Storages</dfn> — An Entity shall be able to control one or more Storages across one or more Storage Providers. A Storage shall have exactly one Controller.
+3.  <dfn>Control of Storages</dfn> — An Entity shall be able to control one or more Storages across one or more Storage Providers. A Storage shall have exactly one Controller - this controller may be an abstract entity such as a group, rather than necessarily being an individual person or agent.
 
     Issues: [#130](https://github.com/w3c/lws-ucs/issues/130)  
     Stories: Storage Ownership
