@@ -13,10 +13,12 @@
     Issues: [#130](https://github.com/w3c/lws-ucs/issues/130)  
     Stories: Storage Ownership
 
-4.  <dfn>Delegation of Control</dfn> — The system shall allow for an Entity to delegate control of a Storage to another Entity. Delegation could be temporary, i.e. have an expiration time, or not. An Entity shall be able to modify delegation at a later time, either by changing expiration or revoking it altogether.  
+4.  <dfn>Delegation of Control</dfn> — The system shall allow for an Entity to delegate control of a Storage to another Entity. Delegation could be temporary, i.e. have an expiration time, or not. An Entity shall be able to modify delegation at a later time, either by changing expiration or revoking it altogether.
+
     Stories: Delegation of Control
 
-5.  <dfn>Transfer of Control</dfn> — The protocol shall allow for an Entity to transfer, i.e. irrevocably reassign control of a Storage to another Entity.  
+5.  <dfn>Transfer of Control</dfn> — The protocol shall allow for an Entity to transfer, i.e. irrevocably reassign control of a Storage to another Entity.
+
     Stories: Delegation of Control
 
 6.  <dfn>Storage Portability</dfn> — The protocol shall allow for an Entity to port, i.e. move or transfer, the entire contents of a Storage from one Storage Provider to another. Once the move is complete, the previous Storage Provider shall be freed from any responsibility related to the Storage.
@@ -39,10 +41,12 @@
     Issues: [#84](https://github.com/w3c/lws-ucs/issues/84), [#85](https://github.com/w3c/lws-ucs/issues/85)
     Stories: Administrative Assistant, Legal Reporting, Health Record Access, Digital Goods Delivery
 
-10. <dfn>Serialization Format</dfn> — The protocol shall make it possible for data in a Storage to be serialized in a known format.  
+10. <dfn>Serialization Format</dfn> — The protocol shall make it possible for data in a Storage to be serialized in a known format.
+
     Stories: Data Integration, Personal Information Management
 
-11. <dfn>Offline Access and Synchronization</dfn> — The protocol shall allow Entities to access and modify data even when disconnected from the network, with local changes synchronized to the online Storage once connectivity is restored. This includes providing strong guarantees against data corruption and robust conflict resolution to ensure data consistency after offline edits.  
+11. <dfn>Offline Access and Synchronization</dfn> — The protocol shall allow Entities to access and modify data even when disconnected from the network, with local changes synchronized to the online Storage once connectivity is restored. This includes providing strong guarantees against data corruption and robust conflict resolution to ensure data consistency after offline edits.
+
     Stories: Offline Data Access, Storage Listening
 
 12. <dfn>Resumable Large Data Transfers</dfn> — The protocol shall support efficient handling of large files and data streams, including the ability to resume interrupted uploads/downloads. This ensures that network or server interruptions do not force restarting an entire transfer, improving reliability for big file operations.
@@ -50,7 +54,8 @@
     Issues: [#18](https://github.com/w3c/lws-ucs/issues/18)  
     Stories: Large File Uploads
 
-13. <dfn>Resource Versioning</dfn> — The protocol shall support maintaining and retrieving previous versions of Resources. Authorized Entities should be able to recover or inspect earlier versions of data (including metadata and access control states) to enable undoing changes, auditing modifications, or recovering from accidental deletions. This helps ensure data durability and traceability over time.  
+13. <dfn>Resource Versioning</dfn> — The protocol shall support maintaining and retrieving previous versions of Resources. Authorized Entities should be able to recover or inspect earlier versions of data (including metadata and access control states) to enable undoing changes, auditing modifications, or recovering from accidental deletions. This helps ensure data durability and traceability over time.
+
     Stories: Generic Storage
 
 14. <dfn>Subscribing to resource changes (notifications)</dfn> — The protocol shall provide a mechanism to notify relevant Entities of significant events, such as changes to Resources or updates to access permissions. For example, if access rights on a Resource change or new data is available, the affected parties can be alerted in a timely manner. Notification delivery may be real-time (e.g., push/SSE) or via queued channels (e.g., email or inbox), respecting user preferences and privacy.
@@ -118,6 +123,7 @@
       ```
   
 - 5. <dfn>paginate,filter,sort</dfn> — To handle large result sets, the protocol shall provide features like pagination, filtering, and sorting of query results, and may support standard query languages (such as SPARQL) for advanced semantic queries over the data.
+
       <span class="issue">This could equally apply to protocol-level query, e.g., `GET` on an LWP Container</span>
 
       Issues: [#103 Pagination, filtering and ordering](https://github.com/w3c/lws-ucs/issues/103)
@@ -154,7 +160,8 @@
     Issues: [#4](https://github.com/w3c/lws-ucs/issues/4), [#44](https://github.com/w3c/lws-ucs/issues/44)  
     Stories: End-to-End Encryption
 
-22. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities should be able to detect if data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, or checksums so clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.  
+22. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities should be able to detect if data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, or checksums so clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.
+
     Stories: Legal Reporting
 
 23. <dfn>Consent-Based Data Sharing</dfn> —
@@ -199,7 +206,8 @@
     Issues: [#72](https://github.com/w3c/lws-ucs/issues/72)  
     Stories: Performant Access Control
 
-33. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.  
+33. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.
+
     Stories: Profile Sharing
 
 34. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and propagate membership changes dynamically so that permissions update automatically as the group evolves. This protocol should also allow for group hierarchies, e.g., Solid-admin can be defined as a subset of Solid-contributors, so all permissions given to Solid-contributors also apply to Solid-admin.
