@@ -278,9 +278,9 @@
     Issues: [#106](https://github.com/w3c/lws-ucs/issues/106), [#98](https://github.com/w3c/lws-ucs/issues/98)  
     Stories: ???
 
-99. <dfn>Cross-Client Automatic Log-in</dfn>: The protocol shall provide a standard way to allow different Clients/Apps to use the same log-in status, saving the User having to click “log-in” when switching Clients/Apps. This should be configurable, to limit what Clients/Apps this applies to.
+99. <dfn>Cross-Client Automatic / Simple Log-in</dfn>: The protocol shall provide a standard way to allow different Clients/Apps to use the same log-in status, saving the User having to click “log-in” when switching Clients/Apps., or at least with a single click (with sufficient information showing the shared log-in status). This should be configurable, to limit what Clients/Apps this applies to.
 
-    Issues:   
+    Issues: [#50](https://github.com/w3c/lws-ucs/issues/50)  
     Stories: ???
 
 99. <dfn>Custom Rendering</dfn>: The protocol shall provide standard ways to allow Storage Owner to configure information / metadata of certain Resources (files, folders, etc) to specify the designated rendering engine / Client / App. Such information / metadata should also allow to be tailored for different types of Clients / Apps / User Agents (e.g., browser can select HTML view; if not HTML view is configured, but a special browser extension installed, use a specified custom App to render it instead).
