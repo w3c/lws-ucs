@@ -5,7 +5,6 @@ This is the repository for lws-ucs. You're welcome to contribute! Let's make the
 The most recent HTML-rendered version of the specification(s) from this repository can be found at the following location(s):
  * [Linked Web Storage Use Cases](https://w3c.github.io/lws-ucs/spec/)
 
-
 ## Defining User Stories
 
 LWS user stories are classified under the following categories:
