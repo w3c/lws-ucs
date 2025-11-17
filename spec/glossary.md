@@ -18,7 +18,7 @@
  - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> — An [=entity=] that fully manages its own Identity credentials without relying on external [=service|service(s)=].
  - <dfn>Service</dfn> — An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service).
  - <dfn>Service Provider</dfn> — An [=entity=] providing a [=service=]; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#providerentity).
- - <dfn>Storage</dfn> — The system or location that provides the capability for the retrievable retention of digital resources (data); see [NIST definition](https://csrc.nist.gov/glossary/term/storage).
+ - <dfn>Storage</dfn> — The system or location that provides the capability for the retrievable retention of digital resources (data); see also [NIST definition](https://csrc.nist.gov/glossary/term/storage).
  - <dfn>Storage Service</dfn> — A [=service=] that provides the capability for persistent maintenance and management of digital resources for an [=entity=].
  - <dfn>Storage Provider</dfn> — A [=service provider=] that operates a [=storage service=].
  - <dfn>User</dfn> — A human [=entity=]; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
