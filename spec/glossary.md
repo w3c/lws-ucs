@@ -13,7 +13,7 @@
  - <dfn data-lt="owner|owned">Owner</dfn> — An [=entity=] that is considered to have the rights and responsibility of a resource.
  - <dfn>Profile Document</dfn> — see [=Controlled Identifier Document=].
  - <dfn>Profile Document Address</dfn> — The URL of a [=profile document=]. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
- - <dfn>Relying Party</dfn> — A non-physical [=entity=] that trusts an [=identity provider=] for [=authentication=]; see [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
+ - <dfn>Relying Party</dfn> — A non-physical [=entity=] that trusts an [=identity provider=] for [=authentication=]; see also [NIST definition](https://csrc.nist.gov/glossary/term/relying_party).
  - <dfn data-lt="SSI">Self-Sovereign Identity</dfn> (<abbr title="self-sovereign identity">SSI</abbr>) — A digital identity that an [=entity=] directly controls, without relying on a third party.
  - <dfn>Self-Sovereign Identity (SSI) Owner</dfn> — An [=entity=] that fully manages its own Identity credentials without relying on external [=service|service(s)=].
  - <dfn>Service</dfn> — An abstract resource that represents a capability of performing tasks that form a coherent functionality; see [W3C Glossary](https://www.w3.org/TR/ws-gloss/#service).
