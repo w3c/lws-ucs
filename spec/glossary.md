@@ -1,4 +1,4 @@
- - <dfn>Application</dfn> — TBD
+ - <dfn>Application</dfn> — A computer program or set of programs designed to perform a specific function for a [=user=] or another [=entity=].
  - <dfn data-lt="authentication|authenticated">Authentication</dfn> — Verifying the identity of a [=user=], process, or device, often as a prerequisite to allowing access to resources in a system; see [NIST definition](https://csrc.nist.gov/glossary/term/authentication).
  - <dfn data-lt="authorization|authorized">Authorization</dfn> — The process of verifying that a requested action or service is approved for a specific [=entity=]; see [NIST definition](https://csrc.nist.gov/glossary/term/authorization).
  - <dfn>Controlled Identifier</dfn> — A type of [=identifier=] that can be proven to be under the control of an [=entity=]; see [W3C CID definition](https://www.w3.org/TR/cid-1.0/#dfn-controlled-identifier).
