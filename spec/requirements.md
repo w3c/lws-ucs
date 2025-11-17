@@ -221,7 +221,7 @@
     Issues: [#63](https://github.com/w3c/lws-ucs/issues/63), [#106](https://github.com/w3c/lws-ucs/issues/106), [#116](https://github.com/w3c/lws-ucs/issues/116)  
     Stories: Sensor Data Sharing
 
-36. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including SPARQL federation), aggregating and returning results transparently while enforcing each Storage's access controls.
+36. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including SPARQL federation), aggregating and returning results transparently while enforcing each Storage's access controlss.
 
     Issues: [#88](https://github.com/w3c/lws-ucs/issues/88)  
     Stories: Data Integration, SPARQL Queries
@@ -250,3 +250,50 @@
 
     Issues: [#2](https://github.com/w3c/lws-ucs/issues/2)  
     Stories: Personal Information Management
+
+99. <dfn>Authorization Capability</dfn> — The protocol shall provide mechanisms for authorizing and unauthorizing resources in the Storage. The Owner shall be able to set different access permissions for different users, alicnets, services, etc. The authorization may be verified by other permitted Services as well.
+
+    Issues: ... [#92](https://github.com/w3c/lws-ucs/issues/92)
+, [#120](https://github.com/w3c/lws-ucs/issues/120), [#144](https://github.com/w3c/lws-ucs/issues/144)  
+    Stories: Authorization
+
+99. <dfn>User-controlled Protocol Extension</dfn>: The protocol shall provide standard ways for the Storage Owner (rather than the Service Provider) to configure additional features supported by the Storage. Such additional features are not necessarily operated by the Storage Service, also not necessarily limited to those provided by the Storage Service. Owner may also limit the extensions (i.e. providing less features than the Service provides).
+
+    Issues: [#202](https://github.com/w3c/lws-ucs/issues/207), and many UCs (maybe) not classified as essential / classified as out of scope of LWS Spec. For example, alternative data "layouts" [#106](https://github.com/w3c/lws-ucs/issues/106), [#97](https://github.com/w3c/lws-ucs/issues/97), [#98](https://github.com/w3c/lws-ucs/issues/97); query interface [#45](https://github.com/w3c/lws-ucs/issues/45), [#152](https://github.com/w3c/lws-ucs/issues/152); arbitrary forms of policy engine [#81](https://github.com/w3c/lws-ucs/issues/81), [#82](https://github.com/w3c/lws-ucs/issues/82), [#72](https://github.com/w3c/lws-ucs/issues/72), [#60](https://github.com/w3c/lws-ucs/issues/60), [DToU](https://me.ryey.icu/solid-dtou/dtou-spec.html); facilitating operations requiring a "service", [#3](https://github.com/w3c/lws-ucs/issues/3)   
+    Stories: ??? (Extensibility?)
+
+99. <dfn>Custom information for Clients</dfn> — The protocol shall provide a mechanism to allow users to configure custom metadata associated with a resource, and/or custom HTTP response fields when accessing / querying a resource. This will allow a resource to have additional configurable metadata, further usable by Apps / Clients / Services of interest.
+
+    Issues: [#94](https://github.com/w3c/lws-ucs/issues/94), [#57](https://github.com/w3c/lws-ucs/issues/57)  
+    Stories: ??? (Extensibility?)
+
+99. <dfn>Anonymous Identity Recognition</dfn> — The protocol shall provide a way to differentiate between different anonymous users, especially to assign different permissions to them (e.g. creator-based permission).
+
+    Issues: [#144](https://github.com/w3c/lws-ucs/issues/144)  
+    Stories: ??? (Identity?)
+
+99. <dfn>Data Authenticity Verification</dfn>: The protocol shall provide standard ways to verify that a piece of data is written by a particular User/Identity (e.g. something like a signature). The scope of “piece of data” is yet to be discussed. Ideally, it should be any level; at minimal, it should be a Resource.
+
+    Issues: [#138](https://github.com/w3c/lws-ucs/issues/138)  
+    Stories: ??? (Integrity)
+
+99. <dfn>Data Browsing</dfn>: The protocol shall provide standard ways for the User / Client to browse (and/or query) the content of the Storage. The browsing had better be in a familiar way (e.g. file-system-like, or knowledge-graph-like).
+
+    Issues: [#97](https://github.com/w3c/lws-ucs/issues/97), [#98](https://github.com/w3c/lws-ucs/issues/98)  
+    Stories: ???
+
+99. <dfn>Alternative Data Layouts</dfn>: The protocol shall provide standard ways for the User / Client to set or request the content of the Storage being presented/used in different layouts, while keeping the original / other layouts. The Client can be transparent about the layouts, or request a specific layout. For example, for a file-system-like layout, it can be by organizing data in a different directory-structure (e.g. from by-date to by-type). Unless for knowledge graphs, this has nothing to do with Resource contents, but just the layout of Resources.
+
+    Issues: [#106](https://github.com/w3c/lws-ucs/issues/106), [#98](https://github.com/w3c/lws-ucs/issues/98)  
+    Stories: ???
+
+99. <dfn>Cross-Client Automatic / Simple Log-in</dfn>: The protocol shall provide a standard way to allow different Clients/Apps to use the same log-in status, saving the User having to click “log-in” when switching Clients/Apps., or at least with a single click (with sufficient information showing the shared log-in status). This should be configurable, to limit what Clients/Apps this applies to.
+
+    Issues: [#50](https://github.com/w3c/lws-ucs/issues/50)  
+    Stories: ???
+
+99. <dfn>Custom Rendering</dfn>: The protocol shall provide standard ways to allow Storage Owner to configure information / metadata of certain Resources (files, folders, etc) to specify the designated rendering engine / Client / App. Such information / metadata should also allow to be tailored for different types of Clients / Apps / User Agents (e.g., browser can select HTML view; if not HTML view is configured, but a special browser extension installed, use a specified custom App to render it instead).
+
+    Issues: [#31](https://github.com/w3c/lws-ucs/issues/31), [#47](https://github.com/w3c/lws-ucs/issues/47), [#48](https://github.com/w3c/lws-ucs/issues/48), [#57](https://github.com/w3c/lws-ucs/issues/57)  
+    Stories: ???
+
