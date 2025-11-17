@@ -8,7 +8,7 @@
  - <dfn data-lt="identifier|identified|identity">Identifier</dfn> — The bit string denoting the identifier associated with an Entity; see [NIST definition](https://csrc.nist.gov/glossary/term/identifier).
  - <dfn>Identity Provider</dfn> — A [=service provider=] that operates an [=identity service=].
  - <dfn>Identity Service</dfn> — A [=service=] that manages the subscriber’s primary [=authentication=] credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
- - <dfn>Non-human Entity</dfn> — An [=entity=] with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity).
+ - <dfn>Non-human Entity</dfn> — An [=entity=] with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see also [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity).
  - <dfn>Notification Service</dfn> — TBD
  - <dfn data-lt="owner|owned">Owner</dfn> — An [=entity=] that is considered to have the rights and responsibility of a resource.
  - <dfn>Profile Document</dfn> — see [=Controlled Identifier Document=].
