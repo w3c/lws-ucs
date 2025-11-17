@@ -1,7 +1,10 @@
 # Specification 'lws-ucs'
 
-This is the repository for lws-ucs. You're welcome to contribute! Let's make the Web rock our socks
-off!
+This is the repository for lws-ucs. You're welcome to contribute! Let's make the Web rock our socks off!
+
+The most recent HTML-rendered version of the specification(s) from this repository can be found at the following location(s):
+ * [Linked Web Storage Use Cases](https://w3c.github.io/lws-ucs/spec/)
+
 
 ## Defining User Stories
 
