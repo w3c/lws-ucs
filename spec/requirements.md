@@ -75,7 +75,7 @@
 
 17. <dfn>Contextual Access Control</dfn> — The access control mechanisms shall support context-aware policies. An Entity should be able to impose additional conditions on Resource access based on context such as time windows, location, or group membership status. For instance, a policy could allow access only during certain hours, or only if the requesting party is within a specific role or group at the time.
 
-    Issues: [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65)  
+    Issues: [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65), [#179](https://github.com/w3c/lws-ucs/issues/179)  
     Stories: Context-Aware Access Policies
 
 18. <dfn>Inbox (notifications)</dfn> — The protocol shall provide a mechanism for users (or their agents/applications) to exchange messages or data directly via their Storages in a standardized way, enabling built-in collaboration without relying on external messaging services. For example, a user should be able to send a message, notification, or invite to another user's Storage (with appropriate authorization), and the receiving user's client can retrieve or be alerted to this message.
@@ -162,6 +162,7 @@
 
 22. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities should be able to detect if data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, or checksums so clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.
 
+    Issues:   
     Stories: Legal Reporting
 
 23. <dfn>Consent-Based Data Sharing</dfn> —
@@ -176,7 +177,7 @@
     Issues: [#80](https://github.com/w3c/lws-ucs/issues/80), [#77](https://github.com/w3c/lws-ucs/issues/77)  
     Stories: Legal Grounds Support
 
-25. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and self-sovereign types of authentication mechanisms.
+25. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and/or self-sovereign types of authentication mechanisms.
 
     Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
     Stories: Identity & Credentials Management, Authentication Mechanisms
