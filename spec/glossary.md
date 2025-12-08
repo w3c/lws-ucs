@@ -9,7 +9,7 @@
  - <dfn>Identity Provider</dfn> — A [=service provider=] that operates an [=identity service=].
  - <dfn>Identity Service</dfn> — A [=service=] that manages the subscriber’s primary [=authentication=] credentials and issues assertions derived from those credentials; see [NIST definition](https://csrc.nist.gov/glossary/term/identity_provider).
  - <dfn>Non-human Entity</dfn> — An [=entity=] with a digital identity that acts in cyberspace, but is not a human actor. This can include organizations, hardware devices, software applications, and information artifacts; see also [NIST definition](https://csrc.nist.gov/glossary/term/non-human_entity).
- - <dfn>Notification Service</dfn> — TBD
+ - <dfn>Notification Service</dfn> — A [=service=] that delivers asynchronous or real-time messages to an [=entity=] regarding significant changes or events within a subscribed resource or [=service=].
  - <dfn data-lt="owner|owned">Owner</dfn> — An [=entity=] that is considered to have the rights and responsibility of a resource.
  - <dfn>Profile Document</dfn> — see [=Controlled Identifier Document=].
  - <dfn>Profile Document Address</dfn> — The URL of a [=profile document=]. URLs are defined as the "physical addresses of objects which are retrievable using protocols already deployed on the net"; see [W3C Addressing definition](https://www.w3.org/Addressing/URL/url-spec.html).
@@ -22,4 +22,4 @@
  - <dfn>Storage Service</dfn> — A [=service=] that provides the capability for persistent maintenance and management of digital resources for an [=entity=].
  - <dfn>Storage Provider</dfn> — A [=service provider=] that operates a [=storage service=].
  - <dfn>User</dfn> — A human [=entity=]; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
- - <dfn>User Agent</dfn> — Software acting on behalf of a [=user=] to interact with [=services=], such as a browser or identity client.
+ - <dfn>User Agent</dfn> — Software acting on behalf of a [=user=] to interact with [=service|service(s)=], such as a browser or identity client.
