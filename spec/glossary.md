@@ -22,4 +22,4 @@
  - <dfn>Storage Service</dfn> — A [=service=] that provides the capability for persistent maintenance and management of digital resources for an [=entity=].
  - <dfn>Storage Provider</dfn> — A [=service provider=] that operates a [=storage service=].
  - <dfn>User</dfn> — A human [=entity=]; see [NIST definition](https://csrc.nist.gov/glossary/term/user).
- - <dfn>User Agent</dfn> — Software acting on behalf of a [=user=] to interact with [=service|service(s)=], such as a browser or identity client.
+ - <dfn>User Agent</dfn> — Software, such as a browser or identity client, acting on behalf of a [=user=] to interact with [=service|service(s)=].
