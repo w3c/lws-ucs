@@ -1,38 +1,38 @@
 1.  <dfn>Adding, Updating, Deleting Resources in Storage</dfn> — The protocol shall allow for Resources to be added, updated and/or deleted within a Storage by authorized Entities. In general the protocol shall allow for any type of resource to be stored in a Storage, however Storage Providers may impose certain limitations, such as of type or size.
 
-    Issues: [#117](https://github.com/w3c/lws-ucs/issues/117), [#124](https://github.com/w3c/lws-ucs/issues/124)  
-    Stories: Generic Storage
+    **Issues:** [#117](https://github.com/w3c/lws-ucs/issues/117), [#124](https://github.com/w3c/lws-ucs/issues/124)  
+    **Stories:** Generic Storage
 
-1.  <dfn>Data Sharing</dfn> — The protocol shall allow an Entity to grant access to a Resource it controls to another Entity. In other words, the first Entity may allow the other Entity to perform some operations (read, modify, remove...) on the Resource. Access grant could be temporary, i.e. have an expiration time, or not. The first Entity shall be able to modify delegation at a later time, either by changing the expiration time or revoking it altogether.
+1.  <dfn>Data Sharing</dfn> — The protocol shall allow an Entity to grant access to a Resource it controls to another Entity. In other words, the first Entity may allow the other Entity to perform some operations (read, modify, remove, ...) on the Resource. Access grant could be temporary, i.e., have an expiration time, or not. The first Entity shall be able to modify such delegation at a later time, by changing the expiration time or revoking the delegation altogether.
 
-    Issues: [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
-    Stories: Sharing Access, Profile Sharing, Group Sharing, Health Record Access
+    **Issues:** [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
+    **Stories:** Sharing Access, Profile Sharing, Group Sharing, Health Record Access
 
-1. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and/or self-sovereign types of authentication mechanisms.
+1. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and/or self-sovereign types of authentication mechanism.
 
-    Issues: [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
-    Stories: Identity & Credentials Management, Authentication Mechanisms
+    **Issues:** [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
+    **Stories:** Identity & Credentials Management, Authentication Mechanisms
 
-1.  <dfn>Globally Unique Identifiers</dfn> — Resources, including Entities and Storages, shall be uniquely identifiable globally. No two distinct Resources shall share the same Identifier (though a "collective" Resource with one Identifier may be comprised of several Resources, each with its own Identifier, and actions taken on the collective Resource can affect all the Resources which comprise the collective Resource). A Resource may be identifiable via multiple, distinct identifiers. 
+1.  <dfn>Globally Unique Identifiers</dfn> — Resources, including Entities and Storages, shall be uniquely identifiable globally. No two distinct Resources shall share the same Identifier (though a "collective" Resource with one Identifier may be comprised of several Resources, each with its own Identifier, and actions taken on the collective Resource can affect all the Resources which comprise the collective Resource). Further, a Resource may be identifiable via multiple, distinct identifiers. 
 
     Issues: [#136](https://github.com/w3c/lws-ucs/issues/136), [#108](https://github.com/w3c/lws-ucs/issues/108)  
     Stories: Globally Unique Identifiers
 
-1. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and propagate membership changes dynamically so that permissions update automatically as the group evolves. This protocol should also allow for group hierarchies, e.g., Solid-admin can be defined as a subset of Solid-contributors, so all permissions given to Solid-contributors also apply to Solid-admin.
+1. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and dynamically propagate membership changes so that permissions update automatically as the group evolves. The protocol should also allow for group hierarchies (which may also be thought of as nested groups), e.g., Solid-admin can be defined as a subset of Solid-contributors, so all permissions given to Solid-contributors also apply to Solid-admin.
 
     Issues: [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)  
     Stories: Group Sharing
 
-1.  <dfn>Delegation of Control</dfn> — The system shall allow for an Entity to delegate control of a Storage to another Entity. Delegation could be temporary, i.e. have an expiration time, or not. An Entity shall be able to modify delegation at a later time, either by changing expiration or revoking it altogether.
+1.  <dfn>Delegation of Control</dfn> — The system shall allow an Entity to delegate control of a Storage to another Entity. Such delegation could be temporary &mdash; i.e., have an expiration date & time &mdash; or permanent &mdash; i.e., have an expiration date of "never" or similar. An Entity shall be able to modify their delegations at a later time, such as by changing expiration or revoking the delegation altogether.
 
     Stories: Delegation of Control
 
-1. <dfn>Subscribing to resource changes (notifications)</dfn> — The protocol shall provide a mechanism to notify relevant Entities of significant events, such as changes to Resources or updates to access permissions. For example, if access rights on a Resource change or new data is available, the affected parties can be alerted in a timely manner. Notification delivery may be real-time (e.g., push/SSE) or via queued channels (e.g., email or inbox), respecting user preferences and privacy.
+1. <dfn>Subscribing to resource changes (notifications)</dfn> — The protocol shall provide a mechanism to notify relevant Entities of significant events, such as changes to Resources or updates to access permissions. For example, if access rights on a Resource change or new data is made available, the affected parties can be alerted in a timely manner. Notification delivery may be real-time (e.g., push/SSE) or via queued channels (e.g., email or inbox), respecting user preferences and privacy.
 
     Issues: [#32](https://github.com/w3c/lws-ucs/issues/32), [#100](https://github.com/w3c/lws-ucs/issues/100), [#101](https://github.com/w3c/lws-ucs/issues/101)  
     Stories: Notifications for Permission Changes, Real-Time Notifications, Application Notifications
 
-1. <dfn>Server-to-server Authentication</dfn> — The protocol shall support secure authentication and authorization flows suitable for server-to-server and backend service integration enabling trusted services to access user Storages without interactive login. Possibilities include mutual TLS, signed JWT-based service credentials, and/or scoped long-lived tokens.
+1. <dfn>Server-to-server Authentication</dfn> — The protocol shall support secure authentication and authorization flows, suitable for server-to-server and backend service integration, enabling trusted services to access user Storages without interactive login. Possibilities include mutual TLS, signed JWT-based service credentials, and scoped long-lived tokens, among others.
 
     Issues: [#40](https://github.com/w3c/lws-ucs/issues/40), [#92](https://github.com/w3c/lws-ucs/issues/92)  
     Stories: Backend Service Integration
@@ -41,36 +41,36 @@
 
     Stories: Data Integration, Personal Information Management
 
-1.  <dfn>Control of Storages</dfn> — An Entity shall be able to control one or more Storages across one or more Storage Providers. A Storage shall have exactly one Controller - this controller may be an abstract entity such as a group, rather than necessarily being an individual person or agent.
+1.  <dfn>Control of Storages</dfn> — An Entity shall be able to control one or more Storages across one or more Storage Providers. A Storage shall have exactly one Controller; this controller may be an abstract entity such as a group, rather than necessarily being an individual person or agent.
 
     Issues: [#130](https://github.com/w3c/lws-ucs/issues/130)  
     Stories: Storage Ownership
 
-1. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means for Services to discover available capabilities and navigate a Storage's data and access control interfaces uniformly. This way, Services can store, read, update, and delete their data within user-managed Storages, so that Users retain data ownership and sovereignty over app-generated content. This could be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, or features.
+1. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means by which Services can discover a Storage's available capabilities and uniformly navigate its data and access control interfaces. This way, Services can store, read, update, and delete their data within user-managed Storages, so that Users retain ownership of data and sovereignty over app-generated content. This might be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, and features.
 
     Issues: [#12](https://github.com/w3c/lws-ucs/issues/12), [#21](https://github.com/w3c/lws-ucs/issues/21), [#70](https://github.com/w3c/lws-ucs/issues/70), [#120](https://github.com/w3c/lws-ucs/issues/120)  
     Stories: Storage Description and Discovery, Bring-Your-Own-Data Apps
 
-1.  <dfn>Use of Service Providers</dfn> — The protocol shall provide a mechanism for Entities to delegate some functions to trusted Service Providers. Some interactions may require a trust relationship between Service Providers and Entities. In general, this should not impede the ability of an Entity to operate or self-host a service. Also, trust relationships are not transitive, in the sense that if an Entity trusts a Service Provider, e.g. an Identity Provider, it does not follow that another Service Provider the Entity interacts with, e.g. a Storage Provider, is under any obligation to trust said Identity Provider.
+1.  <dfn>Use of Service Providers</dfn> — The protocol shall provide a mechanism by which Entities can delegate some functions to trusted Service Providers. Some interactions might further require a trust relationship between Service Providers and Entities. This should not impede the ability of an Entity to operate or self-host such a service. Also note that trust relationships are not transitive, in the sense that if an Entity trusts a Service Provider, e.g. an Identity Provider, no other Service Provider the Entity interacts with, e.g. a Storage Provider, is under any obligation to trust said Identity Provider.
 
     Issues: [#127](https://github.com/w3c/lws-ucs/issues/127)  
     Stories: Trust Mechanism for Storage Providers
 
-1.  <dfn>Storage Portability</dfn> — The protocol shall allow for an Entity to port, i.e. move or transfer, the entire contents of a Storage from one Storage Provider to another. Once the move is complete, the previous Storage Provider shall be freed from any responsibility related to the Storage.
+1. <dfn>Storage Portability</dfn> — The protocol shall allow for an Entity to port, i.e., copy, move, or transfer, the entire contents of a Storage from one Storage Provider to another. Once a move or transfer is complete, at the Entity's choice, the initial Storage Provider can be freed from any responsibility related to the Storage.
 
     Issues: [#140](https://github.com/w3c/lws-ucs/issues/140)  
     Stories: Portable Storage
 
-1. <dfn>Delegation of Access Rights</dfn> — Beyond whole-storage control delegation, the protocol shall allow an Entity who has certain access rights on a Resource to delegate a subset of those rights to another Entity, if permitted by the original owner. Such sub-delegation may be temporary or scoped, and the original grantor (or the Resource owner) shall be able to revoke or modify the delegated rights at any time.
+1. <dfn>Delegation of Access Rights</dfn> — Beyond whole-storage control delegation, the protocol shall allow an Entity who has certain access rights on a Resource to delegate a subset of those rights to another Entity, if permitted by the original owner. Such sub-delegation may be temporary or otherwise scoped, and the original grantor (or the Resource owner) shall be able to revoke or modify the original and thereby subsidiary delegated rights at any time.
 
-    Issues: [#10](https://github.com/w3c/lws-ucs/issues/10), [#104](https://github.com/w3c/lws-ucs/issues/104)  
+    Issues: [#10 [UC] Administrative assistant working for department head](https://github.com/w3c/lws-ucs/issues/10), [#104 [UC] Access delegation by autonomous groups/organizations](https://github.com/w3c/lws-ucs/issues/104) <br>
     Stories: Administrative Assistant, Health Record Access
 
 1. <dfn>Search and Query</dfn> — Collection of query reqs:
   
       Stories: Search Functionality, Pagination & Filtering, SPARQL Queries
 
-- 1. <dfn>pod-level query</dfn> — SPARQL queries, respecting ACLs to easily find stuff in potentially large pods
+   1. <dfn>pod-level query</dfn> — SPARQL queries, respecting ACLs to easily find stuff in potentially large pods
       ```
       GET <my-pod-path>/__SPARQL?query=SELECT…
       Host: <my-pod-server>
@@ -137,53 +137,53 @@
 
     Stories: Profile Sharing
 
-1. <dfn>Access Request Handling</dfn> — The protocol shall enable an Entity to request access to a Resource they are currently not authorized to use, and allow the Resource owner (or controller) to review and grant or deny such requests. There should be a standard way for a requester to signal a desire for access and for the owner to be notified and respond. This ensures that data owners can easily share data upon request without preemptively granting broad access.
+1. <dfn>Access Request Handling</dfn> — The protocol shall enable an Entity to easily request access to a Resource they are currently not authorized to access, and allow the Resource owner (or controller) to easily review and grant or deny such requests. There shall be a standard way for a requester to signal a desire for access, and for the owner to be notified and respond. This will ensure that data owners can easily share particular data upon request without preemptively granting broad access.
 
     Issues: [#11](https://github.com/w3c/lws-ucs/issues/11), [#28](https://github.com/w3c/lws-ucs/issues/28), [#78](https://github.com/w3c/lws-ucs/issues/78), [#79](https://github.com/w3c/lws-ucs/issues/79), [#92](https://github.com/w3c/lws-ucs/issues/92)  
     Stories: Health Record Access
 
 1. <dfn>Consent-Based Data Sharing</dfn> —
-* The protocol shall provide a means to record and honor user consent for data sharing, including details on who, what, purpose, and duration.
-* There shall be a verifiable, auditable record of consent (e.g., receipts or tokens) that is revocable, ensuring access removal upon withdrawal.
+   * The protocol shall provide a means to record and honor user consent for data sharing, including details on whom they are sharing with, what they are sharing, the purpose of the sharing, and the duration of the sharing.
+   * There shall be a verifiable, auditable record of user consent (e.g., receipts or tokens) that is revocable, ensuring access removal upon withdrawal of consent.
 
     Issues: [#141](https://github.com/w3c/lws-ucs/issues/141), [#81](https://github.com/w3c/lws-ucs/issues/81)  
     Stories: Consent-Based Sharing
 
-1. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities should be able to detect if data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, or checksums so clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.
+1. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities SHOULD be able to detect whether data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, and/or checksums such that clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.
 
     Issues:   
     Stories: Legal Reporting
 
-1. <dfn>Contextual Access Control</dfn> — The access control mechanisms shall support context-aware policies. An Entity should be able to impose additional conditions on Resource access based on context such as time windows, location, or group membership status. For instance, a policy could allow access only during certain hours, or only if the requesting party is within a specific role or group at the time.
+1. <dfn>Contextual Access Control</dfn> — The access control mechanisms shall support context-aware policies. An Entity SHOULD be able to impose additional conditions on Resource access based on contexts such as time windows, location, and group membership status, among others. For instance, a policy could allow access only during certain hours, or only if the requesting party is within a specific role or group at the time.
 
     Issues: [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65), [#179](https://github.com/w3c/lws-ucs/issues/179)  
     Stories: Context-Aware Access Policies
 
-1. <dfn>Trusted Identity Providers</dfn> — The protocol shall enable Storage Providers to establish trust relationships with Identity Providers of their choosing, rather than blindly accepting any identity source. Trust is non-transitive: a Storage only accepts credentials from IdPs it explicitly trusts.
+1. <dfn>Trusted Identity Providers</dfn> — The protocol shall enable Storage Providers to establish trust relationships with Identity Providers of their choosing, rather than blindly accepting any identity source (though such blind acceptance SHOULD also be a configurable option). Trust is non-transitive: a Storage does not inherit trust relationships; it only accepts credentials from IdPs it is configured to trust (which might be or include a wildcard, e.g., for website content intended for general consumption).
 
     Issues: [#129](https://github.com/w3c/lws-ucs/issues/129)  
     Stories: Trust Mechanism for Storage Providers
 
-1.  <dfn>Transfer of Control</dfn> — The protocol shall allow for an Entity to transfer, i.e. irrevocably reassign control of a Storage to another Entity.
+1.  <dfn>Transfer of Control</dfn> — The protocol shall allow for an Entity to transfer, i.e., irrevocably reassign, control of a Storage to another Entity.
 
     Stories: Delegation of Control
 
-1. <dfn>Resumable Large Data Transfers</dfn> — The protocol shall support efficient handling of large files and data streams, including the ability to resume interrupted uploads/downloads. This ensures that network or server interruptions do not force restarting an entire transfer, improving reliability for big file operations.
+1. <dfn>Resumable Large Data Transfers</dfn> — The protocol shall support efficient handling of large files and data streams, including the ability to resume interrupted uploads/downloads. This ensures that network or server interruptions do not force restarting an entire transfer, improving reliability for big file operations. Note that supporting resumption for query-generated datasets may require large local storage, which may mean that resumption is not supported for all deployments.
 
     Issues: [#18](https://github.com/w3c/lws-ucs/issues/18)  
     Stories: Large File Uploads
 
-1. <dfn>Scalable Storage Management</dfn> — The protocol shall permit flexible management of an Entity's data across multiple storage units or providers, allowing logical unification of disparate back-ends. Clients should experience a single coherent Storage view even if data is split or migrated across providers, supporting scenarios like jurisdictional partitioning or provider failover.
+1. <dfn>Scalable Storage Management</dfn> — The protocol shall permit flexible management of an Entity's data across multiple storage units or providers, allowing logical unification of disparate back-ends. Clients should be able to experience a single coherent Storage view even if data is split or migrated across providers, supporting scenarios like jurisdictional partitioning or provider failover.
 
     Issues: [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136)  
     Stories: Storage Flexibility
 
-1. <dfn>View-Based Data Sharing</dfn> — The protocol shall enable Controllers to define and expose derived "views" of a Resource (e.g., filtered, aggregated or redacted subsets) such that recipients see only the authorized slice without duplicating the underlying data.
+1. <dfn>View-Based Data Sharing</dfn> — The protocol shall enable Controllers to define and expose derived "views" of a Resource (e.g., filtered, aggregated, or redacted subsets) such that recipients see only the authorized slice without duplicating the underlying data.
 
     Issues: [#63](https://github.com/w3c/lws-ucs/issues/63), [#106](https://github.com/w3c/lws-ucs/issues/106), [#116](https://github.com/w3c/lws-ucs/issues/116)  
     Stories: Sensor Data Sharing
 
-1. <dfn>Loose Coupling of Underlying Protocols</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
+1. <dfn>Loose Coupling of Underlying Protocols</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative or future transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
 
     Issues: [#24](https://github.com/w3c/lws-ucs/issues/24)  
     Stories: API Protocol Decoupling
@@ -198,12 +198,12 @@
     Issues: [#72](https://github.com/w3c/lws-ucs/issues/72)  
     Stories: Performant Access Control
 
-1. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including SPARQL federation), aggregating and returning results transparently while enforcing each Storage's access controls.
+1. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including Federated SPARQL), aggregating and returning results transparently while maintaining each Storage's access controls.
 
     Issues: [#88](https://github.com/w3c/lws-ucs/issues/88)  
     Stories: Data Integration, SPARQL Queries
 
-1. <dfn>Resource Versioning</dfn> — The protocol shall support maintaining and retrieving previous versions of Resources. Authorized Entities should be able to recover or inspect earlier versions of data (including metadata and access control states) to enable undoing changes, auditing modifications, or recovering from accidental deletions. This helps ensure data durability and traceability over time.
+1. <dfn>Resource Versioning</dfn> — The protocol shall support maintaining and retrieving previous versions of Resources. Authorized Entities should be able to recover or inspect earlier versions of data (including metadata and access control states) to enable modification audits and change reversion, including recovery from accidental deletions. This helps ensure data durability and traceability over time.
 
     Stories: Generic Storage
 
@@ -212,7 +212,7 @@
     Issues: [#22](https://github.com/w3c/lws-ucs/issues/22), [#99](https://github.com/w3c/lws-ucs/issues/99)  
     Stories: Universal Communication
 
-1. <dfn>Personal Data Projection</dfn> — The protocol shall provide a mechanism to support automatic transformation (projection) of personal data into formats consumable by non-LWS applications (e.g., JSON, vCard), without duplicating underlying resources, to prevent data silos and provide compatibility/interoperability with existing Web standards. (This may also apply to converting from one LWS data schema or structure to another, for interoperability across LWS applciations.)
+1. <dfn>Personal Data Projection</dfn> — The protocol shall provide a mechanism to support automatic transformation (projection) of personal data in formats consumable by non-LWS applications (e.g., JSON, vCard), without duplicating underlying resources, to prevent data silos and provide compatibility and interoperability with existing Web standards. (This may also apply to converting from one LWS data schema or structure to another, for interoperability across LWS applications.)
 
     Issues: [#2](https://github.com/w3c/lws-ucs/issues/2)  
     Stories: Personal Information Management
@@ -226,17 +226,17 @@
 
     Stories: Offline Data Access, Storage Listening
 
-1. <dfn>Self-Describing Website Publication</dfn> — The protocol shall support publishing self-describing websites with persistent URIs directly from a Storage, enabling durable, interoperable content hosting.
+1. <dfn>Self-Describing Website Publication</dfn> — The protocol shall support publication of self-describing websites with persistent URIs directly from a Storage, enabling durable, interoperable content hosting.
 
     Issues: [#31](https://github.com/w3c/lws-ucs/issues/31)  
     Stories: Website Creation
 
-1. <dfn>Collaborative Editing</dfn> — The protocol shall define optional mechanisms (e.g. locking, optimistic concurrency or CRDT-based merges) to allow multiple Entities to co-author or edit the same Resource concurrently, with built-in conflict detection and resolution.
+1. <dfn>Collaborative Editing</dfn> — The protocol shall define optional mechanisms (e.g., locking, optimistic concurrency, CRDT-based merges) to allow multiple Entities to co-author or edit the same Resource concurrently, with built-in conflict detection and resolution.
 
     Issues: [#146](https://github.com/w3c/lws-ucs/issues/146)  
     Stories: Semantic Collaboration
 
-1. <dfn>Timeseries Data Support</dfn> — The protocol shall include primitives for storing, querying and aggregating timeseries Resources—supporting configurable resolution limits and multidimensional analysis for data like IoT streams or metrics.
+1. <dfn>Timeseries Data Support</dfn> — The protocol shall include primitives for storing, querying, and aggregating time series Resources, supporting configurable resolution limits and multidimensional analysis for data like IoT streams or metrics.
 
     Issues: [#6](https://github.com/w3c/lws-ucs/issues/6)  
     Stories: Timeseries Storage
