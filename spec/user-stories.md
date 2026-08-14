@@ -7,19 +7,20 @@
 
   **As a** user, **I want** a format-agnostic online storage system that supports any type of [resource](../glossary.md#resource), **so that** I can perform Create, Read, Update, and Delete (CRUD) — including metadata and access-control modifications, as well as recovering previous versions—from any device at any time.
   *Context:* This ensures seamless data management across devices, empowering users with full control over their resources.  
-  *Issues:* [#117](https://github.com/w3c/lws-ucs/issues/117), [#97](https://github.com/w3c/lws-ucs/issues/97), [#60](https://github.com/w3c/lws-ucs/issues/60), [#63](https://github.com/w3c/lws-ucs/issues/63), [#62](https://github.com/w3c/lws-ucs/issues/62), [#69](https://github.com/w3c/lws-ucs/issues/69)
+  *Issues:* [#117](https://github.com/w3c/lws-ucs/issues/117), [#107](https://github.com/w3c/lws-ucs/issues/107), [#97](https://github.com/w3c/lws-ucs/issues/97), [#98](https://github.com/w3c/lws-ucs/issues/98), [#93](https://github.com/w3c/lws-ucs/issues/93), [#94](https://github.com/w3c/lws-ucs/issues/94), [#171](https://github.com/w3c/lws-ucs/issues/171)  
+  *Addressed by:* [Core: Operations](https://w3c.github.io/lws-protocol/lws10-core/#operations), [Core: Logical Resource Organization](https://w3c.github.io/lws-protocol/lws10-core/#logical-resource-organization), [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants)
 
 - **<dfn>Portable Storage</dfn>**
 
   **As a** user, **I want** the ability to self-host my storage or switch between providers without losing my data, **so that** I retain data sovereignty and can withstand provider outages or migrations without data loss.
   *Context:* Portability prevents vendor lock-in and enhances data sovereignty.  
-  *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#140](https://github.com/w3c/lws-ucs/issues/140), [#61](https://github.com/w3c/lws-ucs/issues/61)
+  *Issues:* [#30](https://github.com/w3c/lws-ucs/issues/30), [#58](https://github.com/w3c/lws-ucs/issues/58), [#111](https://github.com/w3c/lws-ucs/issues/111), [#108](https://github.com/w3c/lws-ucs/issues/108), [#138](https://github.com/w3c/lws-ucs/issues/138), [#77](https://github.com/w3c/lws-ucs/issues/77), [#164](https://github.com/w3c/lws-ucs/issues/164), [#165](https://github.com/w3c/lws-ucs/issues/165), [#127](https://github.com/w3c/lws-ucs/issues/127), [#140](https://github.com/w3c/lws-ucs/issues/140)
 
 - <dfn>Offline Data Access</dfn>
 
   **As a** user, **I want** to access and modify my data offline, with automatic synchronization upon reconnection, **so that** I can work without a network and avoid data corruption or conflicts.  
   *Context:* Offline support is vital for users in areas with unreliable connectivity.  
-  *Issues:* [#138](https://github.com/w3c/lws-ucs/issues/138), [#64](https://github.com/w3c/lws-ucs/issues/64), [#65](https://github.com/w3c/lws-ucs/issues/65), [#67](https://github.com/w3c/lws-ucs/issues/67)
+  *Issues:* [#96](https://github.com/w3c/lws-ucs/issues/96)
 
 - <dfn>Large File Uploads</dfn>
 
@@ -33,25 +34,27 @@
 
   **As a** data owner, **I want** to grant and revoke fine-grained permissions on my resources, **so that** collaborators have appropriate access and receive notifications when their permissions change.
   *Context:* Granular control ensures secure and tailored data sharing.  
-  *Issues:* [#7](https://github.com/w3c/lws-ucs/issues/7), [#27](https://github.com/w3c/lws-ucs/issues/27),  [#116](https://github.com/w3c/lws-ucs/issues/116), [#148](https://github.com/w3c/lws-ucs/issues/148), [#120](https://github.com/w3c/lws-ucs/issues/120), [#98](https://github.com/w3c/lws-ucs/issues/98)
+  *Issues:* [#35](https://github.com/w3c/lws-ucs/issues/35), [#113](https://github.com/w3c/lws-ucs/issues/113), [#27](https://github.com/w3c/lws-ucs/issues/27), [#116](https://github.com/w3c/lws-ucs/issues/116), [#148](https://github.com/w3c/lws-ucs/issues/148), [#64](https://github.com/w3c/lws-ucs/issues/64), [#60](https://github.com/w3c/lws-ucs/issues/60), [#61](https://github.com/w3c/lws-ucs/issues/61), [#62](https://github.com/w3c/lws-ucs/issues/62), [#63](https://github.com/w3c/lws-ucs/issues/63), [#69](https://github.com/w3c/lws-ucs/issues/69), [#73](https://github.com/w3c/lws-ucs/issues/73), [#74](https://github.com/w3c/lws-ucs/issues/74), [#75](https://github.com/w3c/lws-ucs/issues/75), [#76](https://github.com/w3c/lws-ucs/issues/76), [#153](https://github.com/w3c/lws-ucs/issues/153), [#212](https://github.com/w3c/lws-ucs/issues/212)  
+  *Addressed by:* [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants), [Core: Authorization](https://w3c.github.io/lws-protocol/lws10-core/#authorization), [Core: Constraints](https://w3c.github.io/lws-protocol/lws10-core/#odrl-constraint)
 
 - **<dfn>Notifications for Permission Changes</dfn>**
 
-  **As a collaborator**, **I want** to receive notifications when my permissions on a resource are granted, revoked, or modified, so that I am informed about changes to my access rights in a timely manner.
-  Context: Timely notifications help collaborators stay updated on their access to shared resources, enhancing collaboration and security.
-  *Issues:* [#116](https://github.com/w3c/lws-ucs/issues/116), [#78](https://github.com/w3c/lws-ucs/issues/78)
+  **As a** collaborator, **I want** to receive notifications when my permissions on a resource are granted, revoked, or modified, **so that** I am informed about changes to my access rights in a timely manner.
+  *Context:* Timely notifications help collaborators stay updated on their access to shared resources, enhancing collaboration and security.  
+  *Issues:* [#205](https://github.com/w3c/lws-ucs/issues/205), [#78](https://github.com/w3c/lws-ucs/issues/78), [#79](https://github.com/w3c/lws-ucs/issues/79)  
+  *Addressed by:* [Core: Access Requests and Grants — Notifications](https://w3c.github.io/lws-protocol/lws10-core/#access-notifications), [Core: Subscription Authorization](https://w3c.github.io/lws-protocol/lws10-core/#subscription-authorization)
 
 - **<dfn>Profile Sharing</dfn>**
 
   **As a** user, **I want** to maintain multiple profiles with distinct access controls, **so that** I can share specific information while keeping other data private.
   *Context:* Multiple profiles support different personas or contexts (e.g., work vs. personal).  
-  *Issues:* [#29](https://github.com/w3c/lws-ucs/issues/29), [#57](https://github.com/w3c/lws-ucs/issues/57)
+  *Issues:* [#95](https://github.com/w3c/lws-ucs/issues/95)
 
 - <dfn>Group Sharing</dfn>
 
   **As a** user, **I want** to share data with dynamic groups (e.g., event attendees), **so that** membership and permissions update automatically as the group evolves.  
   *Context:* This simplifies access management for temporary or changing collaborations.  
-  *Issues:* [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)
+  *Issues:* [#89](https://github.com/w3c/lws-ucs/issues/89), [#15](https://github.com/w3c/lws-ucs/issues/15), [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)
 
 - <dfn>Administrative Assistant</dfn>
 
@@ -63,13 +66,15 @@
 
   **As an** administrator, **I want** to enforce access policies based on contextual factors like time or geolocation or relative location (near Bob), **so that** access to data adapts dynamically to real-world conditions.  
   *Context:* Context-aware policies enhance security and flexibility.  
-  *Issues:* [#17](https://github.com/w3c/lws-ucs/issues/17), [#147](https://github.com/w3c/lws-ucs/issues/147), [#94](https://github.com/w3c/lws-ucs/issues/94)
+  *Issues:* [#17](https://github.com/w3c/lws-ucs/issues/17), [#147](https://github.com/w3c/lws-ucs/issues/147), [#59](https://github.com/w3c/lws-ucs/issues/59), [#65](https://github.com/w3c/lws-ucs/issues/65), [#66](https://github.com/w3c/lws-ucs/issues/66), [#67](https://github.com/w3c/lws-ucs/issues/67)  
+  *Addressed by:* [Core: Constraints](https://w3c.github.io/lws-protocol/lws10-core/#odrl-constraint), [Core: Purpose Constraints](https://w3c.github.io/lws-protocol/lws10-core/#constraint-purpose), [Core: Client Constraints](https://w3c.github.io/lws-protocol/lws10-core/#constraint-client), [Core: Temporal Constraints](https://w3c.github.io/lws-protocol/lws10-core/#constraint-temporal)
 
 - <dfn>Health Record Access</dfn>
 
   **As a** patient, **I want** to share specific health records with an AI assistant using delegated authorization, **so that** I can get a second opinion with audit logs ensuring accountability.  
   *Context:* This supports secure, audited health data sharing for informed decisions.  
-  *Issues:* [#11](https://github.com/w3c/lws-ucs/issues/11), [#46](https://github.com/w3c/lws-ucs/issues/46), [#54](https://github.com/w3c/lws-ucs/issues/54)
+  *Issues:* [#11](https://github.com/w3c/lws-ucs/issues/11), [#46](https://github.com/w3c/lws-ucs/issues/46), [#54](https://github.com/w3c/lws-ucs/issues/54), [#52](https://github.com/w3c/lws-ucs/issues/52)  
+  *Addressed by:* [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants), [Core: Purpose Constraints](https://w3c.github.io/lws-protocol/lws10-core/#constraint-purpose), [Core: Client Constraints](https://w3c.github.io/lws-protocol/lws10-core/#constraint-client)
 
 ### Collaboration and Communication
 
@@ -83,13 +88,15 @@
 
   **As a** collaborator, **I want** real-time notifications when resources I access are updated, **so that** I stay informed without manual checks.  
   *Context:* Timely updates enhance collaboration efficiency.  
-  *Issues:* [#32](https://github.com/w3c/lws-ucs/issues/32), [#79](https://github.com/w3c/lws-ucs/issues/79)
+  *Issues:* [#32](https://github.com/w3c/lws-ucs/issues/32)  
+  *Addressed by:* [Core: Notifications](https://w3c.github.io/lws-protocol/lws10-core/#notifications), [Core: Subscriptions](https://w3c.github.io/lws-protocol/lws10-core/#subscriptions), [Notification Suite: Webhooks](https://w3c.github.io/lws-protocol/lws10-notifications-webhook/)
 
 - <dfn>Application Notifications</dfn>
 
   **As a** user, **I want** email or web push notifications for storage activity, **so that** I remain aware of important events.  
   *Context:* Notifications keep users engaged with their data.  
-  *Issues:* [#100](https://github.com/w3c/lws-ucs/issues/100)
+  *Issues:* [#100](https://github.com/w3c/lws-ucs/issues/100)  
+  *Addressed by:* [Core: Notifications](https://w3c.github.io/lws-protocol/lws10-core/#notifications), [Notification Suite: Webhooks](https://w3c.github.io/lws-protocol/lws10-notifications-webhook/)
 
 - <dfn>Universal Communication</dfn>
 
@@ -107,7 +114,7 @@
 
   **As a** user, **I want** to co-author structured content with others using permanent URIs and flexible permissions, **so that** collaboration is efficient and traceable.  
   *Context:* This enables advanced use cases like shared knowledge bases.  
-  *Issues:* [#146](https://github.com/w3c/lws-ucs/issues/146), [#98](https://github.com/w3c/lws-ucs/issues/98)
+  *Issues:* [#146](https://github.com/w3c/lws-ucs/issues/146), [#7](https://github.com/w3c/lws-ucs/issues/7)
 
 ### Application Integration
 
@@ -115,31 +122,35 @@
 
   **As a** user, **I want** to manage my personal data in my storage and integrate it with non-Solid apps via some data transformation, **so that** I can use various apps without creating data silos.  
   *Context:* This promotes interoperability and user control.  
-  *Issues:* [#2](https://github.com/w3c/lws-ucs/issues/2)
+  *Issues:* [#2](https://github.com/w3c/lws-ucs/issues/2), [#1](https://github.com/w3c/lws-ucs/issues/1)
 
 - <dfn>'Bring Your Own Data' Apps</dfn>
 
   **As an** app developer, **I want** my applications to store data in user's storage, with support for CRUD operations and store discovery, **so that** users retain ownership and control of their data.  
   *Context:* This shifts data ownership from apps to users.  
-  *Issues:* [#12](https://github.com/w3c/lws-ucs/issues/12), [#120](https://github.com/w3c/lws-ucs/issues/120)
+  *Issues:* [#12](https://github.com/w3c/lws-ucs/issues/12), [#13](https://github.com/w3c/lws-ucs/issues/13), [#120](https://github.com/w3c/lws-ucs/issues/120)  
+  *Addressed by:* [Core: Discovery](https://w3c.github.io/lws-protocol/lws10-core/#discovery), [Core: Operations](https://w3c.github.io/lws-protocol/lws10-core/#operations), [Core: Authorization](https://w3c.github.io/lws-protocol/lws10-core/#authorization)
 
 - <dfn>Digital Goods Delivery</dfn>
 
   **As a** user, **I want** secure delivery of digital goods (e.g., software, media) with confirmation receipts, **so that** providers can deliver assets with minimal intervention.  
   *Context:* This ensures reliable digital product delivery.  
-  *Issues:* [#14](https://github.com/w3c/lws-ucs/issues/14)
+  *Issues:* [#14](https://github.com/w3c/lws-ucs/issues/14)  
+  *Addressed by:* [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants), [Core: Actions](https://w3c.github.io/lws-protocol/lws10-core/#odrl-action), [Core: Notifications](https://w3c.github.io/lws-protocol/lws10-core/#notifications)
 
 - <dfn>Data Integration</dfn>
 
   **As an** app developer, **I want** a standardized API to combine data from multiple sources, **so that** integrating diverse datasets is straightforward and efficient.  
   *Context:* Simplified integration reduces development complexity.  
-  *Issues:* [#26](https://github.com/w3c/lws-ucs/issues/26), [#53](https://github.com/w3c/lws-ucs/issues/53), [#88](https://github.com/w3c/lws-ucs/issues/88), [#106](https://github.com/w3c/lws-ucs/issues/106)
+  *Issues:* [#26](https://github.com/w3c/lws-ucs/issues/26), [#53](https://github.com/w3c/lws-ucs/issues/53), [#88](https://github.com/w3c/lws-ucs/issues/88), [#106](https://github.com/w3c/lws-ucs/issues/106)  
+  *Addressed by:* [LWS Protocol Core](https://w3c.github.io/lws-protocol/lws10-core/)
 
 - <dfn>Business Data Access</dfn>
 
   **As a** business user, **I want** clear enforcement rules for data sharing, **so that** enterprise integrations comply with organizational policies.  
   *Context:* This supports secure enterprise use cases.  
-  *Issues:* [#27](https://github.com/w3c/lws-ucs/issues/27), [#28](https://github.com/w3c/lws-ucs/issues/28)
+  *Issues:* [#27](https://github.com/w3c/lws-ucs/issues/27), [#28](https://github.com/w3c/lws-ucs/issues/28), [#70](https://github.com/w3c/lws-ucs/issues/70)  
+  *Addressed by:* [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants), [Core: Access Discovery](https://w3c.github.io/lws-protocol/lws10-core/#access-discovery)
 
 ### Advanced Features
 
@@ -159,25 +170,29 @@
 
   **As a** data provider, **I want** verifiable proof of data sharing to support audit compliance, **so that** I can meet legal obligations even after access is revoked.  
   *Context:* This ensures transparency and accountability.  
-  *Issues:* [#9](https://github.com/w3c/lws-ucs/issues/9)
+  *Issues:* [#9](https://github.com/w3c/lws-ucs/issues/9), [#83](https://github.com/w3c/lws-ucs/issues/83), [#85](https://github.com/w3c/lws-ucs/issues/85), [#228](https://github.com/w3c/lws-ucs/issues/228)  
+  *Addressed by:* [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants)
 
 - <dfn>Search Functionality</dfn>
 
   **As a** user, **I want** powerful search capabilities with contextual awareness and security enforcement, **so that** I can find relevant resources quickly and safely.  
   *Context:* Effective search is essential for large datasets.  
-  *Issues:* [#152](https://github.com/w3c/lws-ucs/issues/152), [#87](https://github.com/w3c/lws-ucs/issues/87)
+  *Issues:* [#152](https://github.com/w3c/lws-ucs/issues/152), [#87](https://github.com/w3c/lws-ucs/issues/87), [#208](https://github.com/w3c/lws-ucs/issues/208), [#222](https://github.com/w3c/lws-ucs/issues/222), [#226](https://github.com/w3c/lws-ucs/issues/226)  
+  *Addressed by:* [Search & Type Index: Type Index Service](https://w3c.github.io/lws-protocol/lws10-searchindex/#type-index-service), [Search & Type Index: Type Search Service](https://w3c.github.io/lws-protocol/lws10-searchindex/#type-search-service), [Search & Type Index: Security and Authorization](https://w3c.github.io/lws-protocol/lws10-searchindex/#security-authorization)
 
 - <dfn>Pagination & Filtering</dfn>
 
   **As a** user, **I want** efficient pagination, filtering, and ordering of search results, **so that** I can navigate large datasets easily.  
   *Context:* These features enhance data usability.  
-  *Issues:* [#103](https://github.com/w3c/lws-ucs/issues/103)
+  *Issues:* [#103](https://github.com/w3c/lws-ucs/issues/103)  
+  *Addressed by:* [Core: Pagination](https://w3c.github.io/lws-protocol/lws10-core/#pagination), [Search & Type Index: Type Search Service](https://w3c.github.io/lws-protocol/lws10-searchindex/#type-search-query)
 
 - <dfn>SPARQL Queries</dfn>
 
   **As a** power user, **I want** support for SPARQL queries to perform complex searches and data analysis, **so that** I can extract insights from linked data.  
   *Context:* SPARQL enables advanced semantic web queries.  
-  *Issues:* [#45](https://github.com/w3c/lws-ucs/issues/45)
+  *Issues:* [#45](https://github.com/w3c/lws-ucs/issues/45)  
+  *Addressed by:* [Search & Type Index: Type Search Service](https://w3c.github.io/lws-protocol/lws10-searchindex/#type-search-query) (as an alternate query format via `Accept-Query`)
 
 - <dfn>Website Creation</dfn>
 
@@ -189,7 +204,7 @@
 
   **As a** user, **I want** to access my storage from home devices with dynamic IPs, **so that** connectivity issues don’t prevent me from using my data.  
   *Context:* This ensures accessibility in home environments.  
-  *Issues:* [#105](https://github.com/w3c/lws-ucs/issues/105), [#68](https://github.com/w3c/lws-ucs/issues/68)
+  *Issues:* [#105](https://github.com/w3c/lws-ucs/issues/105)
 
 - <dfn>Contextual Interactions</dfn>
 
@@ -201,13 +216,14 @@
 
   **As a** user, **I want** clicking a WebID to display profiles and available actions, **so that** I can engage with contacts effortlessly.  
   *Context:* This enhances social and professional interactions.  
-  *Issues:* [#48](https://github.com/w3c/lws-ucs/issues/48), [#47](https://github.com/w3c/lws-ucs/issues/47)
+  *Issues:* [#48](https://github.com/w3c/lws-ucs/issues/48), [#47](https://github.com/w3c/lws-ucs/issues/47), [#57](https://github.com/w3c/lws-ucs/issues/57)
 
 - <dfn>Storage Listening</dfn>
 
   **As an** app developer, **I want** offline monitoring of storage changes, **so that** my applications stay synchronized even without connectivity.  
   *Context:* This supports robust offline app functionality.  
-  *Issues:* [#101](https://github.com/w3c/lws-ucs/issues/101)
+  *Issues:* [#101](https://github.com/w3c/lws-ucs/issues/101)  
+  *Addressed by:* [Core: Notifications](https://w3c.github.io/lws-protocol/lws10-core/#notifications), [Core: Subscriptions](https://w3c.github.io/lws-protocol/lws10-core/#subscriptions), [Notification Suite: Webhooks](https://w3c.github.io/lws-protocol/lws10-notifications-webhook/)
 
 ---
 
@@ -219,19 +235,21 @@
 
   **As a** user, **I want** end-to-end encryption for all data storage and transfers, **so that** only authorized parties can decrypt and access my information.  
   *Context:* Encryption ensures data confidentiality.  
-  *Issues:* [#4](https://github.com/w3c/lws-ucs/issues/4), [#44](https://github.com/w3c/lws-ucs/issues/44), [#73](https://github.com/w3c/lws-ucs/issues/73), [#74](https://github.com/w3c/lws-ucs/issues/74), [#75](https://github.com/w3c/lws-ucs/issues/75), [#76](https://github.com/w3c/lws-ucs/issues/76)
+  *Issues:* [#4](https://github.com/w3c/lws-ucs/issues/4), [#44](https://github.com/w3c/lws-ucs/issues/44)
 
 - <dfn>Consent-Based Sharing</dfn>
 
   **As a** user, **I want** verifiable consent mechanisms with audit trails for data sharing, **so that** I can ensure compliance with privacy regulations.  
   *Context:* Consent management supports ethical data practices.  
-  *Issues:* [#141](https://github.com/w3c/lws-ucs/issues/141), [#80](https://github.com/w3c/lws-ucs/issues/80), [#81](https://github.com/w3c/lws-ucs/issues/81), [#82](https://github.com/w3c/lws-ucs/issues/82), [#83](https://github.com/w3c/lws-ucs/issues/83), [#84](https://github.com/w3c/lws-ucs/issues/84), [#85](https://github.com/w3c/lws-ucs/issues/85), [#86](https://github.com/w3c/lws-ucs/issues/86)
+  *Issues:* [#141](https://github.com/w3c/lws-ucs/issues/141), [#84](https://github.com/w3c/lws-ucs/issues/84)  
+  *Addressed by:* [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants), [Core: Purpose Constraints](https://w3c.github.io/lws-protocol/lws10-core/#constraint-purpose)
 
 - <dfn>Legal Grounds Support</dfn>
 
   **As a** compliance officer, **I want** to define access policies based on legal grounds (e.g., GDPR), **so that** data sharing adheres to regulatory requirements.  
   *Context:* This ensures global compliance readiness.  
-  *Issues:* [#80](https://github.com/w3c/lws-ucs/issues/80), [#141](https://github.com/w3c/lws-ucs/issues/141), [#77](https://github.com/w3c/lws-ucs/issues/77)
+  *Issues:* [#80](https://github.com/w3c/lws-ucs/issues/80), [#210](https://github.com/w3c/lws-ucs/issues/210), [#81](https://github.com/w3c/lws-ucs/issues/81), [#82](https://github.com/w3c/lws-ucs/issues/82), [#141](https://github.com/w3c/lws-ucs/issues/141)  
+  *Addressed by:* [Core: Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#access-requests-and-grants), [Core: Constraints](https://w3c.github.io/lws-protocol/lws10-core/#odrl-constraint)
 
 ### Performance and Usability
 
@@ -239,19 +257,21 @@
 
   **As a** user, **I want** ownership assigned upon storage creation, **so that** I have full control from the outset.  
   *Context:* Immediate ownership clarifies user authority.  
-  *Issues:* [#43](https://github.com/w3c/lws-ucs/issues/43)
+  *Issues:* [#43](https://github.com/w3c/lws-ucs/issues/43), [#37](https://github.com/w3c/lws-ucs/issues/37)
 
 - <dfn>Performant Access Control</dfn>
 
   **As a** user, **I want** access control mechanisms that are responsive and scalable, **so that** the system performs well even under heavy load.  
   *Context:* Performance is critical for large-scale use.  
-  *Issues:* [#72](https://github.com/w3c/lws-ucs/issues/72), [#153](https://github.com/w3c/lws-ucs/issues/153), [#71](https://github.com/w3c/lws-ucs/issues/71)
+  *Issues:* [#72](https://github.com/w3c/lws-ucs/issues/72), [#179](https://github.com/w3c/lws-ucs/issues/179)  
+  *Addressed by:* [Core: Security Considerations — Access Requests and Grants](https://w3c.github.io/lws-protocol/lws10-core/#security-access-requests), [Search & Type Index: Security Considerations](https://w3c.github.io/lws-protocol/lws10-searchindex/#security-considerations)
 
 - <dfn>Clear Error Messages</dfn>
 
   **As a** user, **I want** error messages that are clear and actionable, **so that** I can resolve issues quickly and without frustration.  
   *Context:* Good error handling enhances user experience.  
-  *Issues:* [#34](https://github.com/w3c/lws-ucs/issues/34)
+  *Issues:* [#34](https://github.com/w3c/lws-ucs/issues/34), [#86](https://github.com/w3c/lws-ucs/issues/86)  
+  *Addressed by:* [Core: Operations](https://w3c.github.io/lws-protocol/lws10-core/#operations), [Search & Type Index: Errors](https://w3c.github.io/lws-protocol/lws10-searchindex/#type-search-errors)
 
 ---
 
@@ -263,19 +283,22 @@
 
   **As a** user, **I want** to manage my identities and credentials locally, **so that** I control my authentication process directly from my device.  
   *Context:* Local management boosts security and autonomy.  
-  *Issues:* [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#153](https://github.com/w3c/lws-ucs/issues/153), [#128](https://github.com/w3c/lws-ucs/issues/128)
+  *Issues:* [#25](https://github.com/w3c/lws-ucs/issues/25), [#115](https://github.com/w3c/lws-ucs/issues/115), [#211](https://github.com/w3c/lws-ucs/issues/211), [#128](https://github.com/w3c/lws-ucs/issues/128)  
+  *Addressed by:* [Core: Authentication](https://w3c.github.io/lws-protocol/lws10-core/#authentication), [Authentication Suite: Self-signed CID](https://w3c.github.io/lws-protocol/lws10-authn-ssi-cid/), [Authentication Suite: did:key](https://w3c.github.io/lws-protocol/lws10-authn-ssi-did-key/)
 
 - <dfn>Authentication Mechanism(s)</dfn>
 
   **As a** user, **I want** support for modern authentication methods like passkeys, silent authentication, and script-friendly options, **so that** I can authenticate securely across diverse scenarios.  
   *Context:* Flexible authentication meets varied user needs.  
-  *Issues:* [#39](https://github.com/w3c/lws-ucs/issues/39), [#41](https://github.com/w3c/lws-ucs/issues/41), [#49](https://github.com/w3c/lws-ucs/issues/49), [#50](https://github.com/w3c/lws-ucs/issues/50), [#51](https://github.com/w3c/lws-ucs/issues/51), [#114](https://github.com/w3c/lws-ucs/issues/114), [#162](https://github.com/w3c/lws-ucs/issues/162), [#129](https://github.com/w3c/lws-ucs/issues/129), [#130](https://github.com/w3c/lws-ucs/issues/130), [#136](https://github.com/w3c/lws-ucs/issues/136)
+  *Issues:* [#39](https://github.com/w3c/lws-ucs/issues/39), [#41](https://github.com/w3c/lws-ucs/issues/41), [#49](https://github.com/w3c/lws-ucs/issues/49), [#50](https://github.com/w3c/lws-ucs/issues/50), [#51](https://github.com/w3c/lws-ucs/issues/51), [#71](https://github.com/w3c/lws-ucs/issues/71), [#90](https://github.com/w3c/lws-ucs/issues/90), [#114](https://github.com/w3c/lws-ucs/issues/114), [#162](https://github.com/w3c/lws-ucs/issues/162)  
+  *Addressed by:* [Core: Authentication](https://w3c.github.io/lws-protocol/lws10-core/#authentication), [Authentication Suite: OpenID Connect](https://w3c.github.io/lws-protocol/lws10-authn-openid/), [Authentication Suite: SAML 2.0](https://w3c.github.io/lws-protocol/lws10-authn-saml/), [Authentication Suite: Self-signed CID](https://w3c.github.io/lws-protocol/lws10-authn-ssi-cid/), [Authentication Suite: did:key](https://w3c.github.io/lws-protocol/lws10-authn-ssi-did-key/)
 
 - <dfn>Trust Mechanism for Storage Providers</dfn>
 
   **As a** Storage Provider, **I want** a mechanism to trust Identity Providers for authenticating entities, **so that** I can ensure only authenticated and authorized entities access the storage.  
   *Context:* This trust relationship is crucial for maintaining security in a decentralized system where multiple Identity Providers may be involved.  
-  *Issues:* [#129](https://github.com/w3c/lws-ucs/issues/129)
+  *Issues:* [#129](https://github.com/w3c/lws-ucs/issues/129), [#29](https://github.com/w3c/lws-ucs/issues/29), [#68](https://github.com/w3c/lws-ucs/issues/68)  
+  *Addressed by:* [Core: Authentication Credential Validation](https://w3c.github.io/lws-protocol/lws10-core/#authentication-validation), [Core: Token Validation by a Storage Server](https://w3c.github.io/lws-protocol/lws10-core/#authorization-token-validation), [Authentication Suite: OpenID Connect — Validation](https://w3c.github.io/lws-protocol/lws10-authn-openid/#validation)
 
 ### API and Protocol Flexibility
 
@@ -283,19 +306,22 @@
 
   **As a** developer, **I want** APIs decoupled from HTTP, **so that** I can build local-first applications or use alternative protocols like gRPC or GraphQL.  
   *Context:* Decoupling enhances development flexibility.  
-  *Issues:* [#24](https://github.com/w3c/lws-ucs/issues/24)
+  *Issues:* [#24](https://github.com/w3c/lws-ucs/issues/24)  
+  *Addressed by:* [Core: Operations](https://w3c.github.io/lws-protocol/lws10-core/#operations) (abstract, transport-independent operations with a separable HTTP binding)
 
 - <dfn>Backend Service Integration</dfn>
 
   **As a** service provider, **I want** secure authentication methods like mTLS or simpler alternatives for backend services, **so that** integration with LWS is seamless and secure.  
   *Context:* This ensures reliable backend connectivity.  
-  *Issues:* [#40](https://github.com/w3c/lws-ucs/issues/40), [#56](https://github.com/w3c/lws-ucs/issues/56), [#92](https://github.com/w3c/lws-ucs/issues/92)
+  *Issues:* [#40](https://github.com/w3c/lws-ucs/issues/40), [#56](https://github.com/w3c/lws-ucs/issues/56), [#92](https://github.com/w3c/lws-ucs/issues/92)  
+  *Addressed by:* [Authentication Suite: Self-signed CID](https://w3c.github.io/lws-protocol/lws10-authn-ssi-cid/), [Authentication Suite: did:key](https://w3c.github.io/lws-protocol/lws10-authn-ssi-did-key/), [Core: Authorization](https://w3c.github.io/lws-protocol/lws10-core/#authorization)
 
 - <dfn>Storage Description and Discovery</dfn>
 
   **As a** user or application, **I want** to retrieve metadata about available storage and service capabilities, **so that** I can configure interactions appropriately and adapt to different storage behaviors.  
   *Context:* Describing server capabilities in a standardized way allows clients to dynamically adjust their operations, improves interoperability, and facilitates tooling or automation.  
-  *Issues:* [#21](https://github.com/w3c/lws-ucs/issues/21)
+  *Issues:* [#21](https://github.com/w3c/lws-ucs/issues/21), [#207](https://github.com/w3c/lws-ucs/issues/207)  
+  *Addressed by:* [Core: Storage Description Resource](https://w3c.github.io/lws-protocol/lws10-core/#storage-description), [Core: Storage Capabilities](https://w3c.github.io/lws-protocol/lws10-core/#storage-description-capabilities), [Core: Storage Services](https://w3c.github.io/lws-protocol/lws10-core/#storage-description-services)
 
 ### Storage and Resource Management
 
@@ -303,12 +329,13 @@
 
   **As a** user, **I want** the ability to dynamically split or aggregate storage units, **so that** I can adjust capacity and organization as my needs evolve.  
   *Context:* Flexible storage supports scalability and customization.  
-  *Issues:* [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136), [#127](https://github.com/w3c/lws-ucs/issues/127), [#69](https://github.com/w3c/lws-ucs/issues/69), [#70](https://github.com/w3c/lws-ucs/issues/70)
+  *Issues:* [#110](https://github.com/w3c/lws-ucs/issues/110), [#109](https://github.com/w3c/lws-ucs/issues/109), [#130](https://github.com/w3c/lws-ucs/issues/130), [#136](https://github.com/w3c/lws-ucs/issues/136), [#215](https://github.com/w3c/lws-ucs/issues/215)
 
 - <dfn>Hypermedia Authoring</dfn>
 
   **As a** developer, **I want** consistent mechanisms for authoring hypermedia representations (e.g., JSON-LD, Siren), **so that** clients can navigate and interact with APIs uniformly.  
   *Context:* Standardized hypermedia improves API usability.  
-  *Issues:* [#33](https://github.com/w3c/lws-ucs/issues/33), [#124](https://github.com/w3c/lws-ucs/issues/124)
+  *Issues:* [#33](https://github.com/w3c/lws-ucs/issues/33), [#124](https://github.com/w3c/lws-ucs/issues/124)  
+  *Addressed by:* [Core: Operations](https://w3c.github.io/lws-protocol/lws10-core/#operations), [Core: Container Representation](https://w3c.github.io/lws-protocol/lws10-core/#container-representation), [Core: LWS Media Type](https://w3c.github.io/lws-protocol/lws10-core/#lws-media-type)
 
 ---
