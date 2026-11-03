@@ -168,11 +168,6 @@
 
     **Stories:** Delegation of Control
 
-1. <dfn>Resumable Large Data Transfers</dfn> — The protocol shall support efficient handling of large files and data streams, including the ability to resume interrupted uploads/downloads. This ensures that network or server interruptions do not force restarting an entire transfer, improving reliability for big file operations. Note that supporting resumption for query-generated datasets may require large local storage, which may mean that resumption is not supported for all deployments.
-
-    **Issues:** [#18](https://github.com/w3c/lws-ucs/issues/18)  
-    **Stories:** Large File Uploads
-
 1. <dfn>Scalable Storage Management</dfn> — The protocol shall permit flexible management of an Entity's data across multiple storage units or providers, allowing logical unification of disparate back-ends. Clients should be able to experience a single coherent Storage view even if data is split or migrated across providers, supporting scenarios like jurisdictional partitioning or provider failover.
 
     **Issues:** [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136)  
@@ -193,10 +188,10 @@
     **Issues:** [#4](https://github.com/w3c/lws-ucs/issues/4), [#44](https://github.com/w3c/lws-ucs/issues/44)  
     **Stories:** End-to-End Encryption
 
-1. <dfn>Performance and Scalability</dfn> — The protocol and its implementations shall be designed for high performance at scale. Access control checks and data operations should incur minimal overhead, and the design should allow batching, caching, and distributed/clustered deployments to meet typical web performance needs.
+1.  <dfn>Performance and Scalability</dfn> — The protocol shall support partial retrieval of large Resources, so that interrupted downloads can be resumed, and shall afford caching and conditional requests. It shall not preclude distributed or clustered deployments.
 
-    **Issues:** [#72](https://github.com/w3c/lws-ucs/issues/72)  
-    **Stories:** Performant Access Control
+    **Issues:** [#18](https://github.com/w3c/lws-ucs/issues/18), [#72](https://github.com/w3c/lws-ucs/issues/72)  
+    **Stories:** Large File Uploads, Performant Access Control
 
 1. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including Federated SPARQL), aggregating and returning results transparently while maintaining each Storage's access controls.
 
