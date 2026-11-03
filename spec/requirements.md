@@ -13,7 +13,7 @@
     **Issues:** [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
     **Stories:** Identity & Credentials Management, Authentication Mechanisms
 
-1.  <dfn>Globally Unique Identifiers</dfn> — Resources, including Entities and Storages, shall be uniquely identifiable globally. No two distinct Resources shall share the same Identifier (though a "collective" Resource with one Identifier may be comprised of several Resources, each with its own Identifier, and actions taken on the collective Resource can affect all the Resources which comprise the collective Resource). Further, a Resource may be identifiable via multiple, distinct identifiers. 
+1.  <dfn>Identification</dfn> — The protocol shall identify every Resource, Entity, and Storage by a globally unique Identifier, so that it can be referenced from anywhere on the Web. No two distinct Resources shall share an Identifier.
 
     **Issues:** [#136](https://github.com/w3c/lws-ucs/issues/136), [#108](https://github.com/w3c/lws-ucs/issues/108)  
     **Stories:** Globally Unique Identifiers
