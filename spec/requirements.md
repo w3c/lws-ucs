@@ -164,10 +164,6 @@
     **Issues:** [#129](https://github.com/w3c/lws-ucs/issues/129)  
     **Stories:** Trust Mechanism for Storage Providers
 
-1.  <dfn>Transfer of Control</dfn> — The protocol shall allow for an Entity to transfer, i.e., irrevocably reassign, control of a Storage to another Entity.
-
-    **Stories:** Delegation of Control
-
 1. <dfn>Resumable Large Data Transfers</dfn> — The protocol shall support efficient handling of large files and data streams, including the ability to resume interrupted uploads/downloads. This ensures that network or server interruptions do not force restarting an entire transfer, improving reliability for big file operations. Note that supporting resumption for query-generated datasets may require large local storage, which may mean that resumption is not supported for all deployments.
 
     **Issues:** [#18](https://github.com/w3c/lws-ucs/issues/18)  
