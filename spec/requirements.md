@@ -56,7 +56,7 @@
     **Issues:** [#127](https://github.com/w3c/lws-ucs/issues/127)  
     **Stories:** Trust Mechanism for Storage Providers
 
-1. <dfn>Storage Portability</dfn> — The protocol shall allow for an Entity to port, i.e., copy, move, or transfer, the entire contents of a Storage from one Storage Provider to another. Once a move or transfer is complete, at the Entity's choice, the initial Storage Provider can be freed from any responsibility related to the Storage.
+1.  <dfn>Storage Portability</dfn> — The protocol shall allow the Storage Controller to copy the entire contents of a Storage, including Resource metadata and Container structure, to another Storage Provider using standard protocol operations.
 
     **Issues:** [#140](https://github.com/w3c/lws-ucs/issues/140)  
     **Stories:** Portable Storage
