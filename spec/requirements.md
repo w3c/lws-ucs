@@ -212,11 +212,6 @@
     **Issues:** [#22](https://github.com/w3c/lws-ucs/issues/22), [#99](https://github.com/w3c/lws-ucs/issues/99)  
     **Stories:** Universal Communication
 
-1. <dfn>Personal Data Projection</dfn> — The protocol shall provide a mechanism to support automatic transformation (projection) of personal data in formats consumable by non-LWS applications (e.g., JSON, vCard), without duplicating underlying resources, to prevent data silos and provide compatibility and interoperability with existing Web standards. (This may also apply to converting from one LWS data schema or structure to another, for interoperability across LWS applications.)
-
-    **Issues:** [#2](https://github.com/w3c/lws-ucs/issues/2)  
-    **Stories:** Personal Information Management
-
 1.  <dfn>Auditable Trail</dfn> — The protocol shall make it possible for an authorized Entity to access an auditable log of all access requests and grants to Resources and all read/write/delete of Resources. This log shall include verifiable receipts or acknowledgements when Resources (such as digital goods) are created, modified, delivered, or accessed, ensuring publishers can confirm successful delivery or consumption.
 
     **Issues:** [#84](https://github.com/w3c/lws-ucs/issues/84), [#85](https://github.com/w3c/lws-ucs/issues/85)
