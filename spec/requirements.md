@@ -241,11 +241,6 @@
     **Issues:** [#6](https://github.com/w3c/lws-ucs/issues/6)  
     **Stories:** Timeseries Storage
 
-1. <dfn>Legal Basis Enforcement</dfn> — The protocol shall support associating access control decisions with legal bases or policies. For example, implementers should be able to tag data access rules with specific legal grounds (such as "Consent – GDPR Article 6(1)(a)" or "Contract – GDPR Article 6(1)(b)"), and record these as metadata alongside audit trails.
-
-    **Issues:** [#80](https://github.com/w3c/lws-ucs/issues/80), [#77](https://github.com/w3c/lws-ucs/issues/77)  
-    **Stories:** Legal Grounds Support
-
 1. <dfn>Profile Interaction UI</dfn> — The protocol shall define a standard method for clients to fetch and display an Entity's profile (e.g., WebID), along with supported actions (follow, message, share), so users can engage seamlessly with contacts.
 
     **Issues:** [#47](https://github.com/w3c/lws-ucs/issues/47), [#48](https://github.com/w3c/lws-ucs/issues/48)  
