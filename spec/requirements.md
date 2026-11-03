@@ -23,10 +23,6 @@
     **Issues:** [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)  
     **Stories:** Group Sharing
 
-1.  <dfn>Delegation of Control</dfn> — The system shall allow an Entity to delegate control of a Storage to another Entity. Such delegation could be temporary &mdash; i.e., have an expiration date & time &mdash; or permanent &mdash; i.e., have an expiration date of "never" or similar. An Entity shall be able to modify their delegations at a later time, such as by changing expiration or revoking the delegation altogether.
-
-    **Stories:** Delegation of Control
-
 1. <dfn>Subscribing to resource changes (notifications)</dfn> — The protocol shall provide a mechanism to notify relevant Entities of significant events, such as changes to Resources or updates to access permissions. For example, if access rights on a Resource change or new data is made available, the affected parties can be alerted in a timely manner. Notification delivery may be real-time (e.g., push/SSE) or via queued channels (e.g., email or inbox), respecting user preferences and privacy.
 
     **Issues:** [#32](https://github.com/w3c/lws-ucs/issues/32), [#100](https://github.com/w3c/lws-ucs/issues/100), [#101](https://github.com/w3c/lws-ucs/issues/101)  
