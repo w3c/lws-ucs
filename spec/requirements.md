@@ -173,11 +173,6 @@
     **Issues:** [#18](https://github.com/w3c/lws-ucs/issues/18)  
     **Stories:** Large File Uploads
 
-1. <dfn>Scalable Storage Management</dfn> — The protocol shall permit flexible management of an Entity's data across multiple storage units or providers, allowing logical unification of disparate back-ends. Clients should be able to experience a single coherent Storage view even if data is split or migrated across providers, supporting scenarios like jurisdictional partitioning or provider failover.
-
-    **Issues:** [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136)  
-    **Stories:** Storage Flexibility
-
 1. <dfn>View-Based Data Sharing</dfn> — The protocol shall enable Controllers to define and expose derived "views" of a Resource (e.g., filtered, aggregated, or redacted subsets) such that recipients see only the authorized slice without duplicating the underlying data.
 
     **Issues:** [#63](https://github.com/w3c/lws-ucs/issues/63), [#106](https://github.com/w3c/lws-ucs/issues/106), [#116](https://github.com/w3c/lws-ucs/issues/116)  
