@@ -245,8 +245,3 @@
 
     **Issues:** [#80](https://github.com/w3c/lws-ucs/issues/80), [#77](https://github.com/w3c/lws-ucs/issues/77)  
     **Stories:** Legal Grounds Support
-
-1. <dfn>Profile Interaction UI</dfn> — The protocol shall define a standard method for clients to fetch and display an Entity's profile (e.g., WebID), along with supported actions (follow, message, share), so users can engage seamlessly with contacts.
-
-    **Issues:** [#47](https://github.com/w3c/lws-ucs/issues/47), [#48](https://github.com/w3c/lws-ucs/issues/48)  
-    **Stories:** WebID Profile Interaction
