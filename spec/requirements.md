@@ -178,11 +178,6 @@
     **Issues:** [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136)  
     **Stories:** Storage Flexibility
 
-1. <dfn>View-Based Data Sharing</dfn> — The protocol shall enable Controllers to define and expose derived "views" of a Resource (e.g., filtered, aggregated, or redacted subsets) such that recipients see only the authorized slice without duplicating the underlying data.
-
-    **Issues:** [#63](https://github.com/w3c/lws-ucs/issues/63), [#106](https://github.com/w3c/lws-ucs/issues/106), [#116](https://github.com/w3c/lws-ucs/issues/116)  
-    **Stories:** Sensor Data Sharing
-
 1. <dfn>Loose Coupling of Underlying Protocols</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative or future transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
 
     **Issues:** [#24](https://github.com/w3c/lws-ucs/issues/24)  
