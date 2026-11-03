@@ -305,6 +305,12 @@
   *Context:* Flexible storage supports scalability and customization.  
   *Issues:* [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136), [#127](https://github.com/w3c/lws-ucs/issues/127), [#69](https://github.com/w3c/lws-ucs/issues/69), [#70](https://github.com/w3c/lws-ucs/issues/70)
 
+- <dfn>Reorganizing Resources</dfn>
+
+  **As a** user, **I want** to move a document or folder to a different place in my storage without its address changing or links to it breaking, **so that** I can reorganise my data as my needs change without disrupting the people and applications that refer to it.  
+  *Context:* Copying a resource to a new container and deleting the original gives it a new identifier, breaks every link to it, and is not atomic. Moving can also change who can access the resource, since access is often tied to where it sits.  
+  *Issues:* [#171](https://github.com/w3c/lws-ucs/issues/171), [#97](https://github.com/w3c/lws-ucs/issues/97), [#232](https://github.com/w3c/lws-ucs/issues/232)
+
 - <dfn>Hypermedia Authoring</dfn>
 
   **As a** developer, **I want** consistent mechanisms for authoring hypermedia representations (e.g., JSON-LD, Siren), **so that** clients can navigate and interact with APIs uniformly.  

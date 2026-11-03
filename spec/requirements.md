@@ -1,7 +1,7 @@
-1.  <dfn>Adding, Updating, Deleting Resources in Storage</dfn> — The protocol shall allow for Resources to be added, updated and/or deleted within a Storage by authorized Entities. In general the protocol shall allow for any type of resource to be stored in a Storage, however Storage Providers may impose certain limitations, such as of type or size.
+1.  <dfn>Create, Read, Update, Delete</dfn> — The protocol shall allow authorized Entities to create, read, update, and delete Resources of any media type within a Storage, and to organize Resources into Containers. The protocol shall afford optional capabilities beyond these core operations, such as moving a Resource between Containers as a single atomic operation, preserving its Identifier where possible. Storage Providers may limit the types and sizes of Resources they accept, and may choose which optional capabilities they support.
 
-    **Issues:** [#117](https://github.com/w3c/lws-ucs/issues/117), [#124](https://github.com/w3c/lws-ucs/issues/124)  
-    **Stories:** Generic Storage
+    **Issues:** [#117](https://github.com/w3c/lws-ucs/issues/117), [#124](https://github.com/w3c/lws-ucs/issues/124), [#171](https://github.com/w3c/lws-ucs/issues/171), [#97](https://github.com/w3c/lws-ucs/issues/97), [#232](https://github.com/w3c/lws-ucs/issues/232)  
+    **Stories:** Generic Storage, Reorganizing Resources
 
 1.  <dfn>Data Sharing</dfn> — The protocol shall allow an Entity to grant access to a Resource it controls to another Entity. In other words, the first Entity may allow the other Entity to perform some operations (read, modify, remove, ...) on the Resource. Access grant could be temporary, i.e., have an expiration time, or not. The first Entity shall be able to modify such delegation at a later time, by changing the expiration time or revoking the delegation altogether.
 
