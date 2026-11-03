@@ -198,11 +198,6 @@
     **Issues:** [#72](https://github.com/w3c/lws-ucs/issues/72)  
     **Stories:** Performant Access Control
 
-1. <dfn>Federated Data Queries</dfn> — The protocol shall support Clients performing queries across multiple Storages (including Federated SPARQL), aggregating and returning results transparently while maintaining each Storage's access controls.
-
-    **Issues:** [#88](https://github.com/w3c/lws-ucs/issues/88)  
-    **Stories:** Data Integration, SPARQL Queries
-
 1. <dfn>Resource Versioning</dfn> — The protocol shall support maintaining and retrieving previous versions of Resources. Authorized Entities should be able to recover or inspect earlier versions of data (including metadata and access control states) to enable modification audits and change reversion, including recovery from accidental deletions. This helps ensure data durability and traceability over time.
 
     **Stories:** Generic Storage
