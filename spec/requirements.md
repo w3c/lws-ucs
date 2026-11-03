@@ -133,10 +133,6 @@
           Host: <my-pod-server>
           ```
 
-1. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.
-
-    **Stories:** Profile Sharing
-
 1. <dfn>Access Request Handling</dfn> — The protocol shall enable an Entity to easily request access to a Resource they are currently not authorized to access, and allow the Resource owner (or controller) to easily review and grant or deny such requests. There shall be a standard way for a requester to signal a desire for access, and for the owner to be notified and respond. This will ensure that data owners can easily share particular data upon request without preemptively granting broad access.
 
     **Issues:** [#11](https://github.com/w3c/lws-ucs/issues/11), [#28](https://github.com/w3c/lws-ucs/issues/28), [#78](https://github.com/w3c/lws-ucs/issues/78), [#79](https://github.com/w3c/lws-ucs/issues/79), [#92](https://github.com/w3c/lws-ucs/issues/92)  
