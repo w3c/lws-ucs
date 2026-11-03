@@ -8,10 +8,10 @@
     **Issues:** [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
     **Stories:** Sharing Access, Profile Sharing, Group Sharing, Health Record Access
 
-1. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and/or self-sovereign types of authentication mechanism.
+1.  <dfn>Authentication</dfn> — The protocol shall support centralized, federated, and self-sovereign authentication, including for non-interactive Entities such as backend services and bots, without requiring an Entity to hold an account with the Storage Provider.
 
-    **Issues:** [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
-    **Stories:** Identity & Credentials Management, Authentication Mechanisms
+    **Issues:** [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49), [#40](https://github.com/w3c/lws-ucs/issues/40), [#92](https://github.com/w3c/lws-ucs/issues/92)  
+    **Stories:** Identity & Credentials Management, Authentication Mechanisms, Backend Service Integration
 
 1.  <dfn>Globally Unique Identifiers</dfn> — Resources, including Entities and Storages, shall be uniquely identifiable globally. No two distinct Resources shall share the same Identifier (though a "collective" Resource with one Identifier may be comprised of several Resources, each with its own Identifier, and actions taken on the collective Resource can affect all the Resources which comprise the collective Resource). Further, a Resource may be identifiable via multiple, distinct identifiers. 
 
@@ -31,11 +31,6 @@
 
     **Issues:** [#32](https://github.com/w3c/lws-ucs/issues/32), [#100](https://github.com/w3c/lws-ucs/issues/100), [#101](https://github.com/w3c/lws-ucs/issues/101)  
     **Stories:** Notifications for Permission Changes, Real-Time Notifications, Application Notifications
-
-1. <dfn>Server-to-server Authentication</dfn> — The protocol shall support secure authentication and authorization flows, suitable for server-to-server and backend service integration, enabling trusted services to access user Storages without interactive login. Possibilities include mutual TLS, signed JWT-based service credentials, and scoped long-lived tokens, among others.
-
-    **Issues:** [#40](https://github.com/w3c/lws-ucs/issues/40), [#92](https://github.com/w3c/lws-ucs/issues/92)  
-    **Stories:** Backend Service Integration
 
 1. <dfn>Serialization Format</dfn> — The protocol shall make it possible for data in a Storage to be serialized in a known format.
 
