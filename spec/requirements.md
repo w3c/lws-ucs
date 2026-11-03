@@ -18,11 +18,6 @@
     **Issues:** [#136](https://github.com/w3c/lws-ucs/issues/136), [#108](https://github.com/w3c/lws-ucs/issues/108)  
     **Stories:** Globally Unique Identifiers
 
-1. <dfn>Group-Based Access Control</dfn> — The protocol shall allow Controllers to define and manage Groups of Entities, apply access control rules at the group level, and dynamically propagate membership changes so that permissions update automatically as the group evolves. The protocol should also allow for group hierarchies (which may also be thought of as nested groups), e.g., Solid-admin can be defined as a subset of Solid-contributors, so all permissions given to Solid-contributors also apply to Solid-admin.
-
-    **Issues:** [#38](https://github.com/w3c/lws-ucs/issues/38), [#102](https://github.com/w3c/lws-ucs/issues/102)  
-    **Stories:** Group Sharing
-
 1.  <dfn>Delegation of Control</dfn> — The system shall allow an Entity to delegate control of a Storage to another Entity. Such delegation could be temporary &mdash; i.e., have an expiration date & time &mdash; or permanent &mdash; i.e., have an expiration date of "never" or similar. An Entity shall be able to modify their delegations at a later time, such as by changing expiration or revoking the delegation altogether.
 
     **Stories:** Delegation of Control
