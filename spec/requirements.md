@@ -203,10 +203,6 @@
     **Issues:** [#88](https://github.com/w3c/lws-ucs/issues/88)  
     **Stories:** Data Integration, SPARQL Queries
 
-1. <dfn>Resource Versioning</dfn> — The protocol shall support maintaining and retrieving previous versions of Resources. Authorized Entities should be able to recover or inspect earlier versions of data (including metadata and access control states) to enable modification audits and change reversion, including recovery from accidental deletions. This helps ensure data durability and traceability over time.
-
-    **Stories:** Generic Storage
-
 1. <dfn>Inbox (notifications)</dfn> — The protocol shall provide a mechanism for users (or their agents/applications) to exchange messages or data directly via their Storages in a standardized way, enabling built-in collaboration without relying on external messaging services. For example, a user should be able to send a message, notification, or invite to another user's Storage (with appropriate authorization), and the receiving user's client can retrieve or be alerted to this message.
 
     **Issues:** [#22](https://github.com/w3c/lws-ucs/issues/22), [#99](https://github.com/w3c/lws-ucs/issues/99)  
