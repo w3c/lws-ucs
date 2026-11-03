@@ -61,11 +61,6 @@
     **Issues:** [#140](https://github.com/w3c/lws-ucs/issues/140)  
     **Stories:** Portable Storage
 
-1. <dfn>Delegation of Access Rights</dfn> — Beyond whole-storage control delegation, the protocol shall allow an Entity who has certain access rights on a Resource to delegate a subset of those rights to another Entity, if permitted by the original owner. Such sub-delegation may be temporary or otherwise scoped, and the original grantor (or the Resource owner) shall be able to revoke or modify the original and thereby subsidiary delegated rights at any time.
-
-    **Issues:** [#10 [UC] Administrative assistant working for department head](https://github.com/w3c/lws-ucs/issues/10), [#104 [UC] Access delegation by autonomous groups/organizations](https://github.com/w3c/lws-ucs/issues/104) <br>
-    **Stories:** Administrative Assistant, Health Record Access
-
 1. <dfn>Search and Query</dfn> — Collection of query reqs:
   
       Stories: Search Functionality, Pagination & Filtering, SPARQL Queries
