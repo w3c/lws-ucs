@@ -51,9 +51,9 @@
     **Issues:** [#12](https://github.com/w3c/lws-ucs/issues/12), [#21](https://github.com/w3c/lws-ucs/issues/21), [#70](https://github.com/w3c/lws-ucs/issues/70), [#120](https://github.com/w3c/lws-ucs/issues/120)  
     **Stories:** Storage Description and Discovery, Bring-Your-Own-Data Apps
 
-1.  <dfn>Use of Service Providers</dfn> — The protocol shall provide a mechanism by which Entities can delegate some functions to trusted Service Providers. Some interactions might further require a trust relationship between Service Providers and Entities. This should not impede the ability of an Entity to operate or self-host such a service. Also note that trust relationships are not transitive, in the sense that if an Entity trusts a Service Provider, e.g. an Identity Provider, no other Service Provider the Entity interacts with, e.g. a Storage Provider, is under any obligation to trust said Identity Provider.
+1.  <dfn>Service Independence and Trust</dfn> — The protocol shall allow Entities to use independent Service Providers for identity, authorization, and storage, including self-hosted ones. The protocol shall afford Storage Providers the choice of which Identity Providers they trust, and trust shall not be transitive between Service Providers.
 
-    **Issues:** [#127](https://github.com/w3c/lws-ucs/issues/127)  
+    **Issues:** [#127](https://github.com/w3c/lws-ucs/issues/127), [#129](https://github.com/w3c/lws-ucs/issues/129)  
     **Stories:** Trust Mechanism for Storage Providers
 
 1. <dfn>Storage Portability</dfn> — The protocol shall allow for an Entity to port, i.e., copy, move, or transfer, the entire contents of a Storage from one Storage Provider to another. Once a move or transfer is complete, at the Entity's choice, the initial Storage Provider can be freed from any responsibility related to the Storage.
@@ -158,11 +158,6 @@
 
     **Issues:** [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65), [#179](https://github.com/w3c/lws-ucs/issues/179)  
     **Stories:** Context-Aware Access Policies
-
-1. <dfn>Trusted Identity Providers</dfn> — The protocol shall enable Storage Providers to establish trust relationships with Identity Providers of their choosing, rather than blindly accepting any identity source (though such blind acceptance SHOULD also be a configurable option). Trust is non-transitive: a Storage does not inherit trust relationships; it only accepts credentials from IdPs it is configured to trust (which might be or include a wildcard, e.g., for website content intended for general consumption).
-
-    **Issues:** [#129](https://github.com/w3c/lws-ucs/issues/129)  
-    **Stories:** Trust Mechanism for Storage Providers
 
 1.  <dfn>Transfer of Control</dfn> — The protocol shall allow for an Entity to transfer, i.e., irrevocably reassign, control of a Storage to another Entity.
 
