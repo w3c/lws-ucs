@@ -27,7 +27,7 @@
 
     **Stories:** Delegation of Control
 
-1. <dfn>Subscribing to resource changes (notifications)</dfn> — The protocol shall provide a mechanism to notify relevant Entities of significant events, such as changes to Resources or updates to access permissions. For example, if access rights on a Resource change or new data is made available, the affected parties can be alerted in a timely manner. Notification delivery may be real-time (e.g., push/SSE) or via queued channels (e.g., email or inbox), respecting user preferences and privacy.
+1.  <dfn>Notifications</dfn> — The protocol shall allow authorized Entities to subscribe to changes to Resources, including creation, update, deletion, and movement, and to receive notifications of those changes through one or more delivery channels. Notifications shall be sent only for Resources the subscriber is authorized to read.
 
     **Issues:** [#32](https://github.com/w3c/lws-ucs/issues/32), [#100](https://github.com/w3c/lws-ucs/issues/100), [#101](https://github.com/w3c/lws-ucs/issues/101)  
     **Stories:** Notifications for Permission Changes, Real-Time Notifications, Application Notifications
