@@ -305,6 +305,12 @@
   *Context:* Flexible storage supports scalability and customization.  
   *Issues:* [#110](https://github.com/w3c/lws-ucs/issues/110), [#136](https://github.com/w3c/lws-ucs/issues/136), [#127](https://github.com/w3c/lws-ucs/issues/127), [#69](https://github.com/w3c/lws-ucs/issues/69), [#70](https://github.com/w3c/lws-ucs/issues/70)
 
+- <dfn>Resource Annotation</dfn>
+
+  **As a** user, **I want** to attach descriptive information (such as a title, a licence, the schema a file conforms to, or links to related resources) to any resource in my storage, including images and other files that cannot carry it themselves, **so that** applications can find, describe and interpret my data consistently without rewriting its content.  
+  *Context:* Many resources are binary or in formats with no place for metadata. Keeping metadata beside the resource lets applications organise and discover data without parsing every file, and keeps what the storage maintains (size, type, modification date) separate from what users and applications add.  
+  *Issues:* [#94](https://github.com/w3c/lws-ucs/issues/94), [#87](https://github.com/w3c/lws-ucs/issues/87)
+
 - <dfn>Hypermedia Authoring</dfn>
 
   **As a** developer, **I want** consistent mechanisms for authoring hypermedia representations (e.g., JSON-LD, Siren), **so that** clients can navigate and interact with APIs uniformly.  
