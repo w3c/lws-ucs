@@ -183,11 +183,6 @@
     **Issues:** [#63](https://github.com/w3c/lws-ucs/issues/63), [#106](https://github.com/w3c/lws-ucs/issues/106), [#116](https://github.com/w3c/lws-ucs/issues/116)  
     **Stories:** Sensor Data Sharing
 
-1. <dfn>Loose Coupling of Underlying Protocols</dfn> — The core data access and identity interactions shall be defined abstractly, decoupled from any single transport or encoding. While HTTP(S) is expected, the protocol's semantics must be mappable to alternative or future transports (e.g., gRPC, GraphQL over WebSocket, local IPC) without changing its fundamental model.
-
-    **Issues:** [#24](https://github.com/w3c/lws-ucs/issues/24)  
-    **Stories:** API Protocol Decoupling
-
 1. <dfn>End-to-End Encryption</dfn> — The protocol shall enable end-to-end encryption of data such that data stored or transmitted is unreadable to anyone except the authorized parties. Even Storage Providers or network intermediaries cannot decrypt the content (only the data owner and intended recipients can). End-to-end encryption should be achievable for data at rest and in transit, using standard algorithms.
 
     **Issues:** [#4](https://github.com/w3c/lws-ucs/issues/4), [#44](https://github.com/w3c/lws-ucs/issues/44)  
