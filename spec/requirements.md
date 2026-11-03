@@ -46,7 +46,7 @@
     **Issues:** [#130](https://github.com/w3c/lws-ucs/issues/130)  
     **Stories:** Storage Ownership
 
-1. <dfn>Self-Descriptive and Discoverable APIs</dfn> — The protocol shall include means by which Services can discover a Storage's available capabilities and uniformly navigate its data and access control interfaces. This way, Services can store, read, update, and delete their data within user-managed Storages, so that Users retain ownership of data and sovereignty over app-generated content. This might be achieved via hypermedia controls or standard descriptors in responses (e.g., JSON-LD links indicating available actions or endpoints). Servers should provide a discoverable description of their supported protocol versions, extensions, and features.
+1.  <dfn>Discovery</dfn> — The protocol shall allow Applications to discover a Storage's capabilities and services and to navigate its Resources without prior knowledge of the server, so that Applications work with any conforming Storage Provider.
 
     **Issues:** [#12](https://github.com/w3c/lws-ucs/issues/12), [#21](https://github.com/w3c/lws-ucs/issues/21), [#70](https://github.com/w3c/lws-ucs/issues/70), [#120](https://github.com/w3c/lws-ucs/issues/120)  
     **Stories:** Storage Description and Discovery, Bring-Your-Own-Data Apps
