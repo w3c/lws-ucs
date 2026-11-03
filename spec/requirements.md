@@ -37,10 +37,6 @@
     **Issues:** [#40](https://github.com/w3c/lws-ucs/issues/40), [#92](https://github.com/w3c/lws-ucs/issues/92)  
     **Stories:** Backend Service Integration
 
-1. <dfn>Serialization Format</dfn> — The protocol shall make it possible for data in a Storage to be serialized in a known format.
-
-    **Stories:** Data Integration, Personal Information Management
-
 1.  <dfn>Control of Storages</dfn> — An Entity shall be able to control one or more Storages across one or more Storage Providers. A Storage shall have exactly one Controller; this controller may be an abstract entity such as a group, rather than necessarily being an individual person or agent.
 
     **Issues:** [#130](https://github.com/w3c/lws-ucs/issues/130)  
