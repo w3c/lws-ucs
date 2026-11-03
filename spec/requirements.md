@@ -222,19 +222,15 @@
     **Issues:** [#84](https://github.com/w3c/lws-ucs/issues/84), [#85](https://github.com/w3c/lws-ucs/issues/85)
     **Stories:** Administrative Assistant, Legal Reporting, Health Record Access, Digital Goods Delivery
 
-1. <dfn>Offline Access and Synchronization</dfn> — The protocol shall allow Entities to access and modify data even when disconnected from the network, with local changes synchronized to the online Storage once connectivity is restored. This includes providing strong guarantees against data corruption and robust conflict resolution to ensure data consistency after offline edits.
+1.  <dfn>Concurrency and Offline Use</dfn> — The protocol shall support detecting concurrent changes, so that updates do not silently overwrite one another, and partial updates to Resources. Together with Notifications, this shall afford Applications that work offline and synchronize safely on reconnection.
 
-    **Stories:** Offline Data Access, Storage Listening
+    **Issues:** [#146](https://github.com/w3c/lws-ucs/issues/146)  
+    **Stories:** Semantic Collaboration, Offline Data Access, Storage Listening
 
 1. <dfn>Self-Describing Website Publication</dfn> — The protocol shall support publication of self-describing websites with persistent URIs directly from a Storage, enabling durable, interoperable content hosting.
 
     **Issues:** [#31](https://github.com/w3c/lws-ucs/issues/31)  
     **Stories:** Website Creation
-
-1. <dfn>Collaborative Editing</dfn> — The protocol shall define optional mechanisms (e.g., locking, optimistic concurrency, CRDT-based merges) to allow multiple Entities to co-author or edit the same Resource concurrently, with built-in conflict detection and resolution.
-
-    **Issues:** [#146](https://github.com/w3c/lws-ucs/issues/146)  
-    **Stories:** Semantic Collaboration
 
 1. <dfn>Timeseries Data Support</dfn> — The protocol shall include primitives for storing, querying, and aggregating time series Resources, supporting configurable resolution limits and multidimensional analysis for data like IoT streams or metrics.
 
