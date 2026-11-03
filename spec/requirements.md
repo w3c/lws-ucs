@@ -3,10 +3,10 @@
     **Issues:** [#117](https://github.com/w3c/lws-ucs/issues/117), [#124](https://github.com/w3c/lws-ucs/issues/124)  
     **Stories:** Generic Storage
 
-1.  <dfn>Data Sharing</dfn> — The protocol shall allow an Entity to grant access to a Resource it controls to another Entity. In other words, the first Entity may allow the other Entity to perform some operations (read, modify, remove, ...) on the Resource. Access grant could be temporary, i.e., have an expiration time, or not. The first Entity shall be able to modify such delegation at a later time, by changing the expiration time or revoking the delegation altogether.
+1.  <dfn>Authorization</dfn> — The protocol shall allow Storage Controllers to make a Resource public, private, or accessible only to specific Entities, and to permit each of the create, read, update, and delete operations independently. The protocol shall allow conditions to be attached to such permissions, including a time window, the Application in use, the purpose of access, and the type or media type of the Resource, and shall allow permissions to be revoked at any time.
 
-    **Issues:** [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
-    **Stories:** Sharing Access, Profile Sharing, Group Sharing, Health Record Access
+    **Issues:** [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118), [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65), [#179](https://github.com/w3c/lws-ucs/issues/179), [#31](https://github.com/w3c/lws-ucs/issues/31)  
+    **Stories:** Sharing Access, Profile Sharing, Group Sharing, Health Record Access, Context-Aware Access Policies, Website Creation
 
 1. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and/or self-sovereign types of authentication mechanism.
 
@@ -154,11 +154,6 @@
     **Issues:**   
     **Stories:** Legal Reporting
 
-1. <dfn>Contextual Access Control</dfn> — The access control mechanisms shall support context-aware policies. An Entity SHOULD be able to impose additional conditions on Resource access based on contexts such as time windows, location, and group membership status, among others. For instance, a policy could allow access only during certain hours, or only if the requesting party is within a specific role or group at the time.
-
-    **Issues:** [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65), [#179](https://github.com/w3c/lws-ucs/issues/179)  
-    **Stories:** Context-Aware Access Policies
-
 1. <dfn>Trusted Identity Providers</dfn> — The protocol shall enable Storage Providers to establish trust relationships with Identity Providers of their choosing, rather than blindly accepting any identity source (though such blind acceptance SHOULD also be a configurable option). Trust is non-transitive: a Storage does not inherit trust relationships; it only accepts credentials from IdPs it is configured to trust (which might be or include a wildcard, e.g., for website content intended for general consumption).
 
     **Issues:** [#129](https://github.com/w3c/lws-ucs/issues/129)  
@@ -225,11 +220,6 @@
 1. <dfn>Offline Access and Synchronization</dfn> — The protocol shall allow Entities to access and modify data even when disconnected from the network, with local changes synchronized to the online Storage once connectivity is restored. This includes providing strong guarantees against data corruption and robust conflict resolution to ensure data consistency after offline edits.
 
     **Stories:** Offline Data Access, Storage Listening
-
-1. <dfn>Self-Describing Website Publication</dfn> — The protocol shall support publication of self-describing websites with persistent URIs directly from a Storage, enabling durable, interoperable content hosting.
-
-    **Issues:** [#31](https://github.com/w3c/lws-ucs/issues/31)  
-    **Stories:** Website Creation
 
 1. <dfn>Collaborative Editing</dfn> — The protocol shall define optional mechanisms (e.g., locking, optimistic concurrency, CRDT-based merges) to allow multiple Entities to co-author or edit the same Resource concurrently, with built-in conflict detection and resolution.
 
