@@ -217,11 +217,6 @@
     **Issues:** [#2](https://github.com/w3c/lws-ucs/issues/2)  
     **Stories:** Personal Information Management
 
-1.  <dfn>Auditable Trail</dfn> — The protocol shall make it possible for an authorized Entity to access an auditable log of all access requests and grants to Resources and all read/write/delete of Resources. This log shall include verifiable receipts or acknowledgements when Resources (such as digital goods) are created, modified, delivered, or accessed, ensuring publishers can confirm successful delivery or consumption.
-
-    **Issues:** [#84](https://github.com/w3c/lws-ucs/issues/84), [#85](https://github.com/w3c/lws-ucs/issues/85)
-    **Stories:** Administrative Assistant, Legal Reporting, Health Record Access, Digital Goods Delivery
-
 1. <dfn>Offline Access and Synchronization</dfn> — The protocol shall allow Entities to access and modify data even when disconnected from the network, with local changes synchronized to the online Storage once connectivity is restored. This includes providing strong guarantees against data corruption and robust conflict resolution to ensure data consistency after offline edits.
 
     **Stories:** Offline Data Access, Storage Listening
