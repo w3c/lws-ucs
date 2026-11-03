@@ -149,11 +149,6 @@
     **Issues:** [#141](https://github.com/w3c/lws-ucs/issues/141), [#81](https://github.com/w3c/lws-ucs/issues/81)  
     **Stories:** Consent-Based Sharing
 
-1. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities SHOULD be able to detect whether data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, and/or checksums such that clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.
-
-    **Issues:**   
-    **Stories:** Legal Reporting
-
 1. <dfn>Contextual Access Control</dfn> — The access control mechanisms shall support context-aware policies. An Entity SHOULD be able to impose additional conditions on Resource access based on contexts such as time windows, location, and group membership status, among others. For instance, a policy could allow access only during certain hours, or only if the requesting party is within a specific role or group at the time.
 
     **Issues:** [#17](https://github.com/w3c/lws-ucs/issues/17), [#65](https://github.com/w3c/lws-ucs/issues/65), [#179](https://github.com/w3c/lws-ucs/issues/179)  
