@@ -207,11 +207,6 @@
 
     **Stories:** Generic Storage
 
-1. <dfn>Inbox (notifications)</dfn> — The protocol shall provide a mechanism for users (or their agents/applications) to exchange messages or data directly via their Storages in a standardized way, enabling built-in collaboration without relying on external messaging services. For example, a user should be able to send a message, notification, or invite to another user's Storage (with appropriate authorization), and the receiving user's client can retrieve or be alerted to this message.
-
-    **Issues:** [#22](https://github.com/w3c/lws-ucs/issues/22), [#99](https://github.com/w3c/lws-ucs/issues/99)  
-    **Stories:** Universal Communication
-
 1. <dfn>Personal Data Projection</dfn> — The protocol shall provide a mechanism to support automatic transformation (projection) of personal data in formats consumable by non-LWS applications (e.g., JSON, vCard), without duplicating underlying resources, to prevent data silos and provide compatibility and interoperability with existing Web standards. (This may also apply to converting from one LWS data schema or structure to another, for interoperability across LWS applications.)
 
     **Issues:** [#2](https://github.com/w3c/lws-ucs/issues/2)  
