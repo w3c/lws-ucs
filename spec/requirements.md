@@ -66,72 +66,10 @@
     **Issues:** [#10 [UC] Administrative assistant working for department head](https://github.com/w3c/lws-ucs/issues/10), [#104 [UC] Access delegation by autonomous groups/organizations](https://github.com/w3c/lws-ucs/issues/104) <br>
     **Stories:** Administrative Assistant, Health Record Access
 
-1. <dfn>Search and Query</dfn> — Collection of query reqs:
-  
-      Stories: Search Functionality, Pagination & Filtering, SPARQL Queries
+1.  <dfn>Search and Query</dfn> — The protocol shall afford finding Resources in a Storage by their declared types (the RDF types a Resource advertises in its metadata, such as an application-defined class, not its media type) without traversing every Container. The protocol shall afford incremental retrieval of large Container listings and result sets. Results shall include only Resources the requester is authorized to read.
 
-    1. <dfn>pod-level query</dfn> — SPARQL queries, respecting ACLs to easily find stuff in potentially large pods
-      ```
-      GET <my-pod-path>/__SPARQL?query=SELECT…
-      Host: <my-pod-server>
-      ```
-  
-      **Issues:** [#45 SPARQL queries](https://github.com/w3c/lws-ucs/issues/45), [#152 query (/search)](https://github.com/w3c/lws-ucs/issues/152)  
-      **Stories:** Search Functionality, SPARQL Queries
-
-    2. <dfn>metadata query</dfn> — SPARQL queries, respecting ACLs, over server-maintained data
-
-      e.g., on a root Container:
-      ```
-      GET <my-pod-path>?query=SELECT…
-      Host: <my-pod-server>
-      ```
-
-      e.g., on a Resource (or nested Container)
-      ```
-      GET <my-pod-path>/<my-resource>?query=SELECT…
-      Host: <my-pod-server>
-      ```
-
-    3. <dfn>resource-level query</dfn> — query other people's pods, respecting ACLs
-      ```
-      GET <my-pod-path>/<my-resource>?query=SELECT…
-      Host: <my-pod-server>
-      ```
-
-    4. <dfn>query other pods</dfn> — query other people's pods, respecting ACLs
-      ```
-      GET <other-pod-path>/__SPARQL?query=SELECT…
-      Host: <my-pod-server>
-      ```
-
-    5. <dfn>paginate,filter,sort</dfn> — To handle large result sets, the protocol shall provide features like pagination, filtering, and sorting of query results, and may support standard query languages (such as SPARQL) for advanced semantic queries over the data.
-
-      <span class="issue">This could equally apply to protocol-level query, e.g., `GET` on an LWP Container</span>
-
-      **Issues:** [#103 Pagination, filtering and ordering](https://github.com/w3c/lws-ucs/issues/103)
-      **Stories:** Search Functionality, Pagination & Filtering, SPARQL Queries
-
-    6. <dfn>federated query</dfn> — SPARQL queries joining external data, respecting ACLs to easily find stuff in potentially large pods
-
-        1. <dfn>joins across multiple pods</dfn> — SPARQL queries joining pods, respecting ACLs
-          ```
-          GET <my-resource>?query=SELECT…FROM <other-pod-path>…
-          Host: <my-pod-server>
-          ```
-
-        **Issues:** [#88 Resource Aggregation](https://github.com/w3c/lws-ucs/issues/88)  
-        **Stories:** Data Integration, SPARQL Queries
-
-        2. <dfn>joins across multiple resources</dfn> — SPARQL queries joining external data, respecting ACLs
-          ```
-          GET <my-resource>?query=SELECT…FROM <wikidata>…
-          Host: <my-pod-server>
-          ```
-          ```
-          GET <my-resource>?query=SELECT…SERVICE <wikidata>…
-          Host: <my-pod-server>
-          ```
+    **Issues:** [#45](https://github.com/w3c/lws-ucs/issues/45), [#103](https://github.com/w3c/lws-ucs/issues/103), [#152](https://github.com/w3c/lws-ucs/issues/152)  
+    **Stories:** Search Functionality, Pagination & Filtering
 
 1. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.
 
