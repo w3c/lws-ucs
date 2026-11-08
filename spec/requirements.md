@@ -8,6 +8,11 @@
     **Issues:** [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
     **Stories:** Sharing Access, Profile Sharing, Group Sharing, Health Record Access
 
+1.  <dfn>Access Requests and Grants</dfn> — The protocol shall allow an Entity to request access to a Resource it is not authorized to access, and shall support notifying the Resource owner, or an Entity authorized to manage access to that Resource, of the request and afford them the means to approve or deny it. The protocol shall define a record of each grant stating to whom access was granted, to which Resources, for which operations, for what purpose, and for how long; revoking a grant shall revoke the corresponding access.
+
+    **Issues:** [#11](https://github.com/w3c/lws-ucs/issues/11), [#28](https://github.com/w3c/lws-ucs/issues/28), [#78](https://github.com/w3c/lws-ucs/issues/78), [#79](https://github.com/w3c/lws-ucs/issues/79), [#92](https://github.com/w3c/lws-ucs/issues/92), [#141](https://github.com/w3c/lws-ucs/issues/141), [#81](https://github.com/w3c/lws-ucs/issues/81)  
+    **Stories:** Health Record Access, Consent-Based Sharing
+
 1. <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and/or self-sovereign types of authentication mechanism.
 
     **Issues:** [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49)  
@@ -136,18 +141,6 @@
 1. <dfn>Profile Management</dfn> — The protocol shall support Entities having multiple distinct Profiles (e.g., "work" vs. "personal"), each with its own identifiers, metadata namespaces and access-control rules, so that data can be selectively shared under different personas.
 
     **Stories:** Profile Sharing
-
-1. <dfn>Access Request Handling</dfn> — The protocol shall enable an Entity to easily request access to a Resource they are currently not authorized to access, and allow the Resource owner (or controller) to easily review and grant or deny such requests. There shall be a standard way for a requester to signal a desire for access, and for the owner to be notified and respond. This will ensure that data owners can easily share particular data upon request without preemptively granting broad access.
-
-    **Issues:** [#11](https://github.com/w3c/lws-ucs/issues/11), [#28](https://github.com/w3c/lws-ucs/issues/28), [#78](https://github.com/w3c/lws-ucs/issues/78), [#79](https://github.com/w3c/lws-ucs/issues/79), [#92](https://github.com/w3c/lws-ucs/issues/92)  
-    **Stories:** Health Record Access
-
-1. <dfn>Consent-Based Data Sharing</dfn> —
-   * The protocol shall provide a means to record and honor user consent for data sharing, including details on whom they are sharing with, what they are sharing, the purpose of the sharing, and the duration of the sharing.
-   * There shall be a verifiable, auditable record of user consent (e.g., receipts or tokens) that is revocable, ensuring access removal upon withdrawal of consent.
-
-    **Issues:** [#141](https://github.com/w3c/lws-ucs/issues/141), [#81](https://github.com/w3c/lws-ucs/issues/81)  
-    **Stories:** Consent-Based Sharing
 
 1. <dfn>Data Integrity Verification</dfn> — The protocol shall incorporate mechanisms to ensure and verify the integrity of stored data. Authorized Entities SHOULD be able to detect whether data has been tampered with or corrupted (whether at rest or in transit). For example, the system may use cryptographic hashes, signatures, and/or checksums such that clients can confirm that a Resource retrieved from Storage is exactly as originally stored by the owner.
 
