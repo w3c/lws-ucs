@@ -8,7 +8,7 @@
     **Issues:** [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
     **Stories:** Sharing Access, Profile Sharing, Group Sharing, Health Record Access
 
-1.  <dfn>Authentication</dfn> — The protocol shall support centralized, federated, and self-sovereign authentication, including for non-interactive Entities such as backend services and bots, without requiring an Entity to hold an account with the Storage Provider.
+1.  <dfn>Authentication Mechanisms</dfn> — The protocol shall support centralized, federated, and self-sovereign authentication mechanisms, including mechanisms usable by non-interactive Entities such as backend services and bots. Authentication shall not require an Entity to hold an account with the Storage Provider.
 
     **Issues:** [#25](https://github.com/w3c/lws-ucs/issues/25), [#90](https://github.com/w3c/lws-ucs/issues/90), [#115](https://github.com/w3c/lws-ucs/issues/115), [#128](https://github.com/w3c/lws-ucs/issues/128), [#39](https://github.com/w3c/lws-ucs/issues/39), [#49](https://github.com/w3c/lws-ucs/issues/49), [#40](https://github.com/w3c/lws-ucs/issues/40), [#92](https://github.com/w3c/lws-ucs/issues/92)  
     **Stories:** Identity & Credentials Management, Authentication Mechanisms, Backend Service Integration
