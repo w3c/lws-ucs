@@ -8,7 +8,7 @@
     **Issues:** [#27](https://github.com/w3c/lws-ucs/issues/27), [#118](https://github.com/w3c/lws-ucs/issues/118)  
     **Stories:** Sharing Access, Profile Sharing, Group Sharing, Health Record Access
 
-1.  <dfn>Access Requests and Grants</dfn> — The protocol shall allow an Entity to request access to a Resource it is not authorized to access, and shall afford the Storage Controller the means to be notified of, review, approve, or deny that request. The protocol shall define a record of each grant stating to whom access was granted, to which Resources, for which operations, for what purpose, and for how long; revoking a grant shall revoke the corresponding access.
+1.  <dfn>Access Requests and Grants</dfn> — The protocol shall allow an Entity to request access to a Resource it is not authorized to access, and shall support notifying the Resource owner, or an Entity authorized to manage access to that Resource, of the request and afford them the means to approve or deny it. The protocol shall define a record of each grant stating to whom access was granted, to which Resources, for which operations, for what purpose, and for how long; revoking a grant shall revoke the corresponding access.
 
     **Issues:** [#11](https://github.com/w3c/lws-ucs/issues/11), [#28](https://github.com/w3c/lws-ucs/issues/28), [#78](https://github.com/w3c/lws-ucs/issues/78), [#79](https://github.com/w3c/lws-ucs/issues/79), [#92](https://github.com/w3c/lws-ucs/issues/92), [#141](https://github.com/w3c/lws-ucs/issues/141), [#81](https://github.com/w3c/lws-ucs/issues/81)  
     **Stories:** Health Record Access, Consent-Based Sharing
